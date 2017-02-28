@@ -14,6 +14,8 @@ This project is a WIP. The following is what must be implemented before the proj
 - [ ] SwiftLint Integration
 - [ ] Tests
 
++ A LOT MORE FUNCTIONS!
+
 ## Implemented Functionality (more to come)
 - **Boolean Operations**
   - isAlpha()
