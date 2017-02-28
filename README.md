@@ -3,7 +3,7 @@ A Cross-Platform String Library Written in Swift.
 
 ## Project Status
 
-This project is a WIP. The following is what must be implemented before the project is, at a minimum, ready for the public:
+This project is a WIP. On top of a lot of missing functions, the following is what must be implemented before the project is ready for the public:
 - [x] Carthage Support
 - [x] CocoaPods Support
 - [x] Function Documentation
@@ -13,8 +13,6 @@ This project is a WIP. The following is what must be implemented before the proj
 - [ ] Swift Package Manager
 - [ ] SwiftLint Integration
 - [ ] Tests
-
-+ A LOT MORE FUNCTIONS!
 
 ## Implemented Functionality (more to come)
 - **Boolean Operations**
