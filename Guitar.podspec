@@ -7,10 +7,10 @@ description      = <<-DESC
 A Cross-Platform String Library Written in Swift.
                        DESC
 
-  platform :ios, '10.0'
-  platform :macos, '10.12'
-  platform :tvos, '10.0'
-  platform :watchos, '3.0'
+  s.ios.deployment_target = '10.0'
+  s.macos.deployment_target = '10.12'
+  s.tvos.deployment_target = '10.0'
+  s.watchos.deployment_target = '3.0'
 
   s.homepage         = 'https://github.com/ArtSabintsev/Guitar'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -18,6 +18,6 @@ A Cross-Platform String Library Written in Swift.
   s.source           = { :git => 'https://github.com/ArtSabintsev/Guitar.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/artsabintsev'
 
-  s.source_files = 'Guitar/**/*'
+  s.source_files = 'Guitar/*'
 
 end
