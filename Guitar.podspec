@@ -18,6 +18,8 @@ A Cross-Platform String Library Written in Swift.
   s.source           = { :git => 'https://github.com/ArtSabintsev/Guitar.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/artsabintsev'
 
-  s.source_files = 'Guitar/*'
+  s.framework = 'Foundation'
+
+  s.source_files = 'Guitar//*'
 
 end
