@@ -12,30 +12,51 @@ import Foundation
 
 public extension String {
 
+    /// A Boolean value indicating if all the characters are letters.
+    ///
+    /// - Returns: True, if all characters are letters. Otherwise, false.
     func isAlpha() -> Bool {
         return containsCharactersFound(in: .letters)
     }
 
+    /// A Boolean value indicating if all the characters are alphanumeric.
+    ///
+    /// - Returns: True, if all characters are alphanumeric. Otherwise, false.
     func isAlphanumeric() -> Bool {
         return containsCharactersFound(in: .alphanumerics)
     }
 
+    /// A Boolean value indicating if the string is capitalized.
+    ///
+    /// - Returns: True, if first character is uppercased. Otherwise, false.
     func isCapitalized() -> Bool {
         return self == capitalized
     }
 
+    /// A Boolean value indicating if the string's first character is lowercase.
+    ///
+    /// - Returns: True, if first character is lowercased. Otherwise, false.
     func isDecpitalized() -> Bool {
         return self == decapitalized()
     }
 
+    /// A Boolean value indicating if all the characters are lowercased.
+    ///
+    /// - Returns: True, if all characters are lowercased. Otherwise, false.
     func isLowercased() -> Bool {
         return self == lowercased()
     }
 
+    /// A Boolean value indicating if all the characters are numbers.
+    ///
+    /// - Returns: True, if all characters are numbers. Otherwise, false.
     func isNumeric() -> Bool {
         return containsCharactersFound(in: .decimalDigits)
     }
 
+    /// A Boolean value indicating if all the characters are uppercased.
+    ///
+    /// - Returns: True, if all characters are uppercased. Otherwise, false.
     func isUppercased() -> Bool {
         return self == uppercased()
     }
@@ -207,7 +228,7 @@ public extension String {
     /// - Returns: The left-padded copy of the string.
     @discardableResult
     func padLeft(token: String = " ", length: Int) -> String {
-        guard padConditionsSatisfied(token: token, length: length) else { return self }
+        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
 
         var s = self
         repeat { s.insert(token.characters[token.startIndex], at: startIndex) } while s.characters.count < length
@@ -234,7 +255,7 @@ public extension String {
     /// - Returns: The right-padded copy of the string.
     @discardableResult
     func padRight(token: String = " ", length: Int) -> String {
-        guard padConditionsSatisfied(token: token, length: length) else { return self }
+        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
 
         var s = self
         repeat { s.insert(token.characters[token.startIndex], at: endIndex) } while s.characters.count < length
@@ -255,8 +276,7 @@ public extension String {
     ///     print(string.prefixed(length: 7))
     ///     // Prints "Hello W"
     ///
-    /// - Parameters:
-    ///   - length: The length of the string that you'd like to return, starting at the beginning of the string. If the provided length is greater than the original string, the original string is returned.
+    /// - Parameter length: The length of the string that you'd like to return, starting at the beginning of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: A prefixed copy of the string.
     @discardableResult
     func prefixed(length: Int) -> String {
@@ -271,8 +291,7 @@ public extension String {
     ///     print(string.prefixed(length: 7))
     ///     // Prints "o World"
     ///
-    /// - Parameters:
-    ///   - length: The length of the string that you'd like to return, starting at the end of the string. If the provided length is greater than the original string, the original string is returned.
+    /// - Parameter length: The length of the string that you'd like to return, starting at the end of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: A prefixed copy of the string.
     @discardableResult
     func suffixed(length: Int) -> String {
@@ -287,8 +306,7 @@ public extension String {
     ///     print(string.trimLeft(length: 7))
     ///     // Prints "o World"
     ///
-    /// - Parameters:
-    ///   - length: The number of characters to trim from the beginning of the string. If the provided length is greater than the original string, the original string is returned.
+    /// - Parameter length: The number of characters to trim from the beginning of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: The left-trimmed copy of the string.
     @discardableResult
     func trimLeft(length: Int) -> String {
@@ -304,8 +322,7 @@ public extension String {
     ///     print(string.trimRight(length: 7))
     ///     // Prints "Hello"
     ///
-    /// - Parameters:
-    ///   - length: The number of characters to trim from the end of the string. If the provided length is greater than the original string, the original string is returned.
+    /// - Parameter length: The number of characters to trim from the end of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: The right-trimmed copy of the string.
     @discardableResult
     func trimRight(length: Int) -> String {
@@ -319,18 +336,28 @@ public extension String {
 
 private extension String {
 
-    func padConditionsSatisfied(token: String, length: Int) -> Bool {
+    /// A Boolean value indicating if all the pre-padding operation conditions are satisfied.
+    ///
+    /// - Parameters:
+    ///   - token: The token that will be used for padding.
+    ///   - length: The final length of the string.
+    /// - Returns: True, if the string can be padded. Otherise, false.
+    func padConditionsSatisfied(tokenCount: Int, length: Int) -> Bool {
         guard length > characters.count else {
             return false
         }
 
-        guard token.characters.count == 1 else {
+        guard tokenCount == 1 else {
             return false
         }
 
         return true
     }
 
+    /// A Boolean value indicating if all the characters in the string belong to a specific `CharacterSet`.
+    ///
+    /// - Parameter characterSet: The `CharacterSet` used to test the string.
+    /// - Returns: True, if all the characters in the string belong to the `CharacterSet`. Otherwise, false.
     func containsCharactersFound(in characterSet: CharacterSet) -> Bool {
         for scalar in unicodeScalars {
             guard characterSet.contains(scalar) else {
@@ -348,6 +375,10 @@ prefix operator -
 
 private extension String {
 
+    /// Replaces a String's underscores and dashes with a white space using the custom `-` prefix operator.
+    ///
+    /// - Parameter string: The string that will be sanitzed.
+    /// - Returns: The sanitized string.
     static prefix func - (string: String) -> String {
         return string.replacingOccurrences(of: "_", with: " ").replacingOccurrences(of: "-", with: " ")
     }
