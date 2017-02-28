@@ -5,7 +5,7 @@ A Cross-Platform String Library Written in Swift.
 
 This project is a WIP. The following is what must be implemented before the project is, at a minimum, ready for the public:
 - [x] Carthage Support
-- [ ] CocoaPods Support
+- [x] CocoaPods Support
 - [x] Function Documentation
 - [ ] GitHub <-> CI (Travis or Circle)
 - [ ] HTML String Manipulation Support
