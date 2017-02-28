@@ -20,6 +20,6 @@ A Cross-Platform String Library Written in Swift.
 
   s.framework = 'Foundation'
 
-  s.source_files = 'Guitar//*'
+  s.source_files = 'Guitar/*'
 
 end
