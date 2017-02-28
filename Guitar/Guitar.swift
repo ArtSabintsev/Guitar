@@ -204,7 +204,7 @@ public extension String {
 
 }
 
-// MARK: - Pad Operations
+// MARK: - Padding Operations
 
 public extension String {
 
