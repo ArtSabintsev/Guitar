@@ -8,7 +8,7 @@ A Cross-Platform String Library Written in Swift.
                        DESC
 
   s.ios.deployment_target = '10.0'
-  s.macos.deployment_target = '10.12'
+  s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
 
