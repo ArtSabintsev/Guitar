@@ -3,20 +3,21 @@ A Cross-Platform String Library Written in Swift.
 
 ## Project Status
 
-This project is a WIP. 
+This project is a Work In Progress.
 
-On top of a lot of missing functions, the following is what must be implemented before the project is ready for the public:
+### Roadmap to 1.0.0 (Alphabetical Order)
 - [x] Carthage Support
 - [x] CocoaPods Support
+- [ ] Continuous Integration
 - [x] Function Documentation
-- [ ] GitHub <-> CI (Travis or Circle)
 - [ ] HTML String Manipulation Support
 - [ ] Jazzy Docs
+- [ ] Performance Tests
 - [ ] Swift Package Manager
 - [ ] SwiftLint Integration
-- [ ] Tests
+- [ ] Unit Tests
 
-## Implemented Functionality (more to come)
+## Implemented Functionality
 - **Boolean Operations**
   - isAlpha()
   - isAlphanumeric()
@@ -36,7 +37,9 @@ On top of a lot of missing functions, the following is what must be implemented 
 - **Character Operations**
  - first()
  - last()
+ - reverse()
 - **Padding Operations**
+ - pad()
  - padLeft()
  - padRight()
 - **Trimming Operations**
@@ -44,6 +47,7 @@ On top of a lot of missing functions, the following is what must be implemented 
  - suffixed()
  - trimLeft()
  - trimRight()
+ - truncate()
 
 ## Inspiration
 This project was inspired by [Voca](https://vocajs.com/).
