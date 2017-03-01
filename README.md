@@ -5,7 +5,7 @@
 
 ## Project Status
 
-This project is a Work In Progress.
+This project is currently a work in progress. Contributions by the community are highly encouraged.
 
 ### Roadmap to 1.0.0 (Alphabetical Order)
 - [x] Carthage Support
