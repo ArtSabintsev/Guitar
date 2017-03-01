@@ -16,7 +16,7 @@ This project is currently a work in progress. Contributions by the community are
 - [x] Jazzy Docs
 - [ ] Performance Tests
 - [ ] Regex Support (Pure Swift Implementation)
-- [ ] Swift Package Manager
+- [x] Swift Package Manager
 - [ ] SwiftLint Integration
 - [ ] Unit Tests
 
