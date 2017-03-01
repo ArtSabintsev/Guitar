@@ -12,14 +12,9 @@ import XCTest
 class GuitarExampleTests: XCTestCase {
 
     func testIsAlpha() {
-        XCTAssertTrue("a".isAlpha())
-    }
-
-    func testPerformanceExample() {
-
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        XCTAssertTrue("HelloWorld".isAlpha())
+        XCTAssertFalse("Hell0World".isAlpha())
+        XCTAssertFalse("Hell World".isAlpha())
     }
     
 }

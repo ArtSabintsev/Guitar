@@ -1,7 +1,8 @@
 platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
 
 target 'GuitarExample' do
-  use_frameworks!
   pod 'Guitar', path: '../'
 
   target 'GuitarExampleTests' do
