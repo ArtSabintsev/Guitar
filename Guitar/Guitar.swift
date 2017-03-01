@@ -174,7 +174,7 @@ public extension String {
 
 public extension String {
 
-    /// Returns the first character of the string
+    /// Returns the first character of the string.
     ///
     /// Example:
     ///
@@ -202,6 +202,13 @@ public extension String {
         return String(describing: self[endIndex])
     }
 
+    /// Retuns the reversed version of the string.
+    ///
+    /// - Returns: The reversed copy of the string.
+    @discardableResult
+    func reverse() -> String {
+        return String(characters.reversed())
+    }
 }
 
 // MARK: - Padding Operations
