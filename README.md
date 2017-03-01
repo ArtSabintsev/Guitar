@@ -10,7 +10,7 @@ This project is currently a work in progress. Contributions by the community are
 ### Roadmap to 1.0.0 (Alphabetical Order)
 - [x] Carthage Support
 - [x] CocoaPods Support
-- [ ] Continuous Integration
+- [x] Continuous Integration (Buddy Build)
 - [x] Function Documentation
 - [ ] HTML String Manipulation Support
 - [x] Jazzy Docs
