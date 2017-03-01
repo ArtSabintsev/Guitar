@@ -15,6 +15,7 @@ This project is currently a work in progress. Contributions by the community are
 - [ ] HTML String Manipulation Support
 - [ ] Jazzy Docs
 - [ ] Performance Tests
+- [ ] Regex Support (Pure Swift Implementation)
 - [ ] Swift Package Manager
 - [ ] SwiftLint Integration
 - [ ] Unit Tests
