@@ -60,7 +60,7 @@ public extension String {
     func isUppercased() -> Bool {
         return self == uppercased()
     }
-    
+
 }
 
 // MARK: - Case Operations
@@ -446,6 +446,5 @@ private extension String {
     static prefix func - (string: String) -> String {
         return string.replacingOccurrences(of: "_", with: " ").replacingOccurrences(of: "-", with: " ")
     }
-    
-}
 
+}
