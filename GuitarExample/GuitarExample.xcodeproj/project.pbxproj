@@ -41,7 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDB77D61E0A519000B13A61 /* Guitar */,
-				8EDB77C31E0A516B00B13A61 /* GuitarSample */,
+				8EDB77C31E0A516B00B13A61 /* GuitarExample */,
 				8EDB77C21E0A516B00B13A61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,7 +54,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EDB77C31E0A516B00B13A61 /* GuitarSample */ = {
+		8EDB77C31E0A516B00B13A61 /* GuitarExample */ = {
 			isa = PBXGroup;
 			children = (
 				55FA6A911E66919600806B9C /* AppDelegate.swift */,
@@ -64,6 +64,7 @@
 				55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */,
 				55FA6A951E6691A400806B9C /* Info.plist */,
 			);
+			name = GuitarExample;
 			path = GuitarSample;
 			sourceTree = "<group>";
 		};
