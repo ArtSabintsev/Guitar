@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_GuitarVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_GuitarVersionString[];
+FOUNDATION_EXPORT double Pods_GuitarExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_GuitarExampleVersionString[];
 

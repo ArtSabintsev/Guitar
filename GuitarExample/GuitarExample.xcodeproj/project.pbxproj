@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04048B9A692B5EA820187B8A /* Pods_GuitarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF44DE2A8B31467596FC861 /* Pods_GuitarExample.framework */; };
+		55DA075A1E66AF2200080633 /* GuitarExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA07591E66AF2200080633 /* GuitarExampleTests.swift */; };
 		55FA6A901E66919100806B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA6A8F1E66919100806B9C /* ViewController.swift */; };
 		55FA6A921E66919600806B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA6A911E66919600806B9C /* AppDelegate.swift */; };
 		55FA6A941E66919E00806B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A931E66919E00806B9C /* Assets.xcassets */; };
 		55FA6A991E6691DB00806B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A971E6691DB00806B9C /* Main.storyboard */; };
 		55FA6A9C1E6691E900806B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */; };
+		6FBFCDE4E8EAF1D3033E802A /* Pods_GuitarExample_GuitarExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D631744A8EEDB7F1361DCDC8 /* Pods_GuitarExample_GuitarExampleTests.framework */; };
 		D1F220DC57C2FD94161C7E49 /* Pods_Guitar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4C7E470DE1EEA99E729AE2 /* Pods_Guitar.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55DA075C1E66AF2200080633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EDB77B91E0A516B00B13A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EDB77C01E0A516B00B13A61;
+			remoteInfo = Guitar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1D5A513B2345DF794B85AC6B /* Pods-Guitar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guitar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guitar/Pods-Guitar.release.xcconfig"; sourceTree = "<group>"; };
+		55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55DA07591E66AF2200080633 /* GuitarExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarExampleTests.swift; sourceTree = "<group>"; };
+		55DA075B1E66AF2200080633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FA6A8F1E66919100806B9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GuitarExample/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55FA6A911E66919600806B9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GuitarExample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		55FA6A931E66919E00806B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GuitarExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -24,27 +40,55 @@
 		55FA6A981E6691DB00806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		55FA6A9B1E6691E900806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		58FDADB2EE9B4737DF83F733 /* Pods-Guitar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guitar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guitar/Pods-Guitar.debug.xcconfig"; sourceTree = "<group>"; };
-		8EDB77C11E0A516B00B13A61 /* Guitar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guitar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D78B80B33986C0323E66AC2 /* Pods-GuitarExample-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-GuitarExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-GuitarExampleTests/Pods-GuitarExample-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		6257DCF30E3BFC748739821F /* Pods-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8EDB77C11E0A516B00B13A61 /* GuitarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4C7E470DE1EEA99E729AE2 /* Pods_Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guitar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F32E18FB3B21F21A92CABB /* Pods-GuitarExample-GuitarExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-GuitarExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-GuitarExampleTests/Pods-GuitarExample-GuitarExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAF44DE2A8B31467596FC861 /* Pods_GuitarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12A8AC9B68B39E9D77790BB /* Pods-GuitarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample.release.xcconfig"; sourceTree = "<group>"; };
+		D631744A8EEDB7F1361DCDC8 /* Pods_GuitarExample_GuitarExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample_GuitarExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		55DA07541E66AF2200080633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBFCDE4E8EAF1D3033E802A /* Pods_GuitarExample_GuitarExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EDB77BE1E0A516B00B13A61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D1F220DC57C2FD94161C7E49 /* Pods_Guitar.framework in Frameworks */,
+				04048B9A692B5EA820187B8A /* Pods_GuitarExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55DA07581E66AF2200080633 /* GuitarExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				55DA07591E66AF2200080633 /* GuitarExampleTests.swift */,
+				55DA075B1E66AF2200080633 /* Info.plist */,
+			);
+			path = GuitarExampleTests;
+			sourceTree = "<group>";
+		};
 		8303CDF828E84039F5575681 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				58FDADB2EE9B4737DF83F733 /* Pods-Guitar.debug.xcconfig */,
 				1D5A513B2345DF794B85AC6B /* Pods-Guitar.release.xcconfig */,
+				6257DCF30E3BFC748739821F /* Pods-GuitarExample.debug.xcconfig */,
+				C12A8AC9B68B39E9D77790BB /* Pods-GuitarExample.release.xcconfig */,
+				A5F32E18FB3B21F21A92CABB /* Pods-GuitarExample-GuitarExampleTests.debug.xcconfig */,
+				5D78B80B33986C0323E66AC2 /* Pods-GuitarExample-GuitarExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -53,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8EDB77C31E0A516B00B13A61 /* GuitarExample */,
+				55DA07581E66AF2200080633 /* GuitarExampleTests */,
 				8EDB77C21E0A516B00B13A61 /* Products */,
 				8303CDF828E84039F5575681 /* Pods */,
 				B6E99AFAADC3B441592F0C42 /* Frameworks */,
@@ -62,7 +107,8 @@
 		8EDB77C21E0A516B00B13A61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EDB77C11E0A516B00B13A61 /* Guitar.app */,
+				8EDB77C11E0A516B00B13A61 /* GuitarExample.app */,
+				55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				8F4C7E470DE1EEA99E729AE2 /* Pods_Guitar.framework */,
+				BAF44DE2A8B31467596FC861 /* Pods_GuitarExample.framework */,
+				D631744A8EEDB7F1361DCDC8 /* Pods_GuitarExample_GuitarExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,9 +140,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EDB77C01E0A516B00B13A61 /* Guitar */ = {
+		55DA07561E66AF2200080633 /* GuitarExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "Guitar" */;
+			buildConfigurationList = 55DA075E1E66AF2200080633 /* Build configuration list for PBXNativeTarget "GuitarExampleTests" */;
+			buildPhases = (
+				AF7895AB7B7956318376ED94 /* [CP] Check Pods Manifest.lock */,
+				55DA07531E66AF2200080633 /* Sources */,
+				55DA07541E66AF2200080633 /* Frameworks */,
+				55DA07551E66AF2200080633 /* Resources */,
+				1CC39A4A89D34D9CE8AC22AC /* [CP] Embed Pods Frameworks */,
+				6DFD19341EB90492A25E8E1F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55DA075D1E66AF2200080633 /* PBXTargetDependency */,
+			);
+			name = GuitarExampleTests;
+			productName = GuitarExampleTests;
+			productReference = 55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EDB77C01E0A516B00B13A61 /* GuitarExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */;
 			buildPhases = (
 				DF08F3DAFF67D09C93AA6467 /* [CP] Check Pods Manifest.lock */,
 				8EDB77BD1E0A516B00B13A61 /* Sources */,
@@ -108,9 +177,9 @@
 			);
 			dependencies = (
 			);
-			name = Guitar;
+			name = GuitarExample;
 			productName = GuitarSample;
-			productReference = 8EDB77C11E0A516B00B13A61 /* Guitar.app */;
+			productReference = 8EDB77C11E0A516B00B13A61 /* GuitarExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,6 +192,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Arthur Ariel Sabintsev";
 				TargetAttributes = {
+					55DA07561E66AF2200080633 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HT94948NDD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8EDB77C01E0A516B00B13A61;
+					};
 					8EDB77C01E0A516B00B13A61 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = HT94948NDD;
@@ -130,7 +205,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "Guitar" */;
+			buildConfigurationList = 8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "GuitarExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -143,12 +218,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EDB77C01E0A516B00B13A61 /* Guitar */,
+				8EDB77C01E0A516B00B13A61 /* GuitarExample */,
+				55DA07561E66AF2200080633 /* GuitarExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		55DA07551E66AF2200080633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EDB77BF1E0A516B00B13A61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,7 +257,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guitar/Pods-Guitar-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CC39A4A89D34D9CE8AC22AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarExample-GuitarExampleTests/Pods-GuitarExample-GuitarExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		55FA6A9D1E6698C000806B9C /* SwiftLint */ = {
@@ -190,6 +288,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config ../.swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		6DFD19341EB90492A25E8E1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarExample-GuitarExampleTests/Pods-GuitarExample-GuitarExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7895AB7B7956318376ED94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		DF08F3DAFF67D09C93AA6467 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -218,12 +346,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Guitar/Pods-Guitar-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		55DA07531E66AF2200080633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55DA075A1E66AF2200080633 /* GuitarExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EDB77BD1E0A516B00B13A61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +370,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55DA075D1E66AF2200080633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EDB77C01E0A516B00B13A61 /* GuitarExample */;
+			targetProxy = 55DA075C1E66AF2200080633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55FA6A971E6691DB00806B9C /* Main.storyboard */ = {
@@ -255,6 +399,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		55DA075F1E66AF2200080633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F32E18FB3B21F21A92CABB /* Pods-GuitarExample-GuitarExampleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HT94948NDD;
+				INFOPLIST_FILE = GuitarExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample.app/GuitarExample";
+			};
+			name = Debug;
+		};
+		55DA07601E66AF2200080633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D78B80B33986C0323E66AC2 /* Pods-GuitarExample-GuitarExampleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = HT94948NDD;
+				INFOPLIST_FILE = GuitarExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample.app/GuitarExample";
+			};
+			name = Release;
+		};
 		8EDB77D11E0A516B00B13A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -350,7 +524,7 @@
 		};
 		8EDB77D41E0A516B00B13A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58FDADB2EE9B4737DF83F733 /* Pods-Guitar.debug.xcconfig */;
+			baseConfigurationReference = 6257DCF30E3BFC748739821F /* Pods-GuitarExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -364,7 +538,7 @@
 		};
 		8EDB77D51E0A516B00B13A61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D5A513B2345DF794B85AC6B /* Pods-Guitar.release.xcconfig */;
+			baseConfigurationReference = C12A8AC9B68B39E9D77790BB /* Pods-GuitarExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -379,7 +553,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "Guitar" */ = {
+		55DA075E1E66AF2200080633 /* Build configuration list for PBXNativeTarget "GuitarExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55DA075F1E66AF2200080633 /* Debug */,
+				55DA07601E66AF2200080633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "GuitarExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EDB77D11E0A516B00B13A61 /* Debug */,
@@ -388,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "Guitar" */ = {
+		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EDB77D41E0A516B00B13A61 /* Debug */,
