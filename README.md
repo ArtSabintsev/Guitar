@@ -19,6 +19,25 @@ This project is a Work In Progress.
 - [ ] SwiftLint Integration
 - [ ] Unit Tests
 
+### Installation
+
+## Installation Instructions
+
+### CocoaPods
+```ruby
+pod 'Guitar'
+```
+
+### Carthage
+``` swift
+github "ArtSabintsev/Guitar"
+```
+
+### Swift Package Manager
+```swift
+.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 0)
+```
+
 ## Implemented Functionality
 - **Boolean Operations**
   - isAlpha()
