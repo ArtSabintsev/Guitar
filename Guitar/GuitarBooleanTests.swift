@@ -3,7 +3,7 @@
 //  Guitar
 //
 //  Created by Arthur Sabintsev on 12/21/16.
-//
+//  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
 
 import Foundation
@@ -28,7 +28,7 @@ public extension String {
 
     /// A Boolean value indicating if the string is capitalized.
     ///
-    /// - Returns: True, if first character is uppercased. Otherwise, false.
+    /// - Returns: True, if the string is capitalized. Otherwise, false.
     func isCapitalized() -> Bool {
         return self == capitalized
     }
@@ -36,13 +36,13 @@ public extension String {
     /// A Boolean value indicating if the string's first character is lowercase.
     ///
     /// - Returns: True, if first character is lowercased. Otherwise, false.
-    func isDecpitalized() -> Bool {
+    func isDecapitalized() -> Bool {
         return self == decapitalized()
     }
 
     /// A Boolean value indicating if all the characters are lowercased.
     ///
-    /// - Returns: True, if all characters are lowercased. Otherwise, false.
+    /// - Returns: True, if the string is not capitalized. Otherwise, false.
     func isLowercased() -> Bool {
         return self == lowercased()
     }
@@ -72,7 +72,7 @@ public extension String {
     /// Example:
     ///
     ///     let string = "HelloWorld"
-    ///     print(string.lowercased())
+    ///     print(string.decapitalized())
     ///     // Prints "helloWorld"
     ///
     /// - Returns: A camel cased copy of the string.

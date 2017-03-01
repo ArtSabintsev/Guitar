@@ -1,5 +1,5 @@
 PODS:
-  - Guitar (0.0.1)
+  - Guitar (0.0.2)
 
 DEPENDENCIES:
   - Guitar (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Guitar: 50c65e4f53339bdb592206817e050c47a2e4a71b
+  Guitar: 0a710f8bdb8cd113bd14a1ee56d2e7d657dfa080
 
 PODFILE CHECKSUM: d2c1347ef15b53d3804762926464564780e7b227
 
