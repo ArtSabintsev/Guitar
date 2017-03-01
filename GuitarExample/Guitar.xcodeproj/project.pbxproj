@@ -22,7 +22,7 @@
 		55FA6A951E6691A400806B9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuitarExample/Info.plist; sourceTree = SOURCE_ROOT; };
 		55FA6A981E6691DB00806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		55FA6A9B1E6691E900806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		8EDB77C11E0A516B00B13A61 /* GuitarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDB77C11E0A516B00B13A61 /* Guitar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guitar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDB77D71E0A519000B13A61 /* Guitar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 		8EDB77C21E0A516B00B13A61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EDB77C11E0A516B00B13A61 /* GuitarExample.app */,
+				8EDB77C11E0A516B00B13A61 /* Guitar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8EDB77C01E0A516B00B13A61 /* GuitarExample */ = {
+		8EDB77C01E0A516B00B13A61 /* Guitar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */;
+			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "Guitar" */;
 			buildPhases = (
 				8EDB77BD1E0A516B00B13A61 /* Sources */,
 				8EDB77BE1E0A516B00B13A61 /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = GuitarExample;
+			name = Guitar;
 			productName = GuitarSample;
-			productReference = 8EDB77C11E0A516B00B13A61 /* GuitarExample.app */;
+			productReference = 8EDB77C11E0A516B00B13A61 /* Guitar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "GuitarExample" */;
+			buildConfigurationList = 8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "Guitar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -128,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EDB77C01E0A516B00B13A61 /* GuitarExample */,
+				8EDB77C01E0A516B00B13A61 /* Guitar */,
 			);
 		};
 /* End PBXProject section */
@@ -318,7 +318,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "GuitarExample" */ = {
+		8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "Guitar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EDB77D11E0A516B00B13A61 /* Debug */,
@@ -327,7 +327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */ = {
+		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "Guitar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EDB77D41E0A516B00B13A61 /* Debug */,

@@ -13,7 +13,7 @@ This project is currently a work in progress. Contributions by the community are
 - [ ] Continuous Integration
 - [x] Function Documentation
 - [ ] HTML String Manipulation Support
-- [ ] Jazzy Docs
+- [x] Jazzy Docs
 - [ ] Performance Tests
 - [ ] Regex Support (Pure Swift Implementation)
 - [ ] Swift Package Manager

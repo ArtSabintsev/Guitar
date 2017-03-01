@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/sabintseva/Documents/oss/guitar/GuitarSample/GuitarExample.xcodeproj">
+      location = "self:/Users/sabintseva/Documents/oss/guitar/GuitarExample/Guitar.xcodeproj">
    </FileRef>
 </Workspace>
