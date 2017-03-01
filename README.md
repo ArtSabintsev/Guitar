@@ -40,7 +40,7 @@ github "ArtSabintsev/Guitar"
 ```
 
 ## Documentation
-[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found in the [/docs] folder, or can be viewed as HTML by [clicking here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/ArtSabintsev/Guitar/master/docs/Extensions/String.html)
+[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found in the [Docs](https://github.com/ArtSabintsev/Guitar/tree/master/docs) folder, or can be viewed as HTML by [clicking here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/ArtSabintsev/Guitar/master/docs/Extensions/String.html)
 
 ## Implemented Functionality
 - **Boolean Operations**
