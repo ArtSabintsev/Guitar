@@ -18,7 +18,7 @@ This project is currently a work in progress. Contributions by the community are
 - [ ] Regex Support (Pure Swift Implementation)
 - [x] Swift Package Manager
 - [x] SwiftLint Integration
-- [ ] Unit Tests
+- [ ] Unit Tests (In Progress)
 
 ### Installation
 
