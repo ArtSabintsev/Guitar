@@ -208,6 +208,40 @@ public extension String {
 
 public extension String {
 
+    /// Returns the center-padded version of the string.
+    ///
+    /// Example 1:
+    ///
+    ///     let string = "Hello World"
+    ///     print(string.pad(length: 13))
+    ///     // Prints " Hello World "
+    ///
+    /// Example 2:
+    ///
+    ///     let string = "Hello World"
+    ///     print(string.pad(token: "*", length: 13))
+    ///     // Prints "*Hello World*"
+    ///
+    /// - Parameters:
+    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
+    ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned. If the the sum-total of characters added is odd, the left side of the string will have one less instance of the token.
+    /// - Returns: The left-padded copy of the string.
+    func pad(token: String = " ", length: Int) -> String {
+        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+
+        var s = self
+        repeat {
+            s.padLeft(token: token, length: length)
+            s.padRight(token: token, length: length)
+        } while s.characters.count < length
+
+        if s.characters.count == length {
+            s.trimLeft(length: 1)
+        }
+
+        return s
+    }
+
     /// Returns the left-padded version of the string.
     ///
     /// Example 1:
