@@ -167,7 +167,6 @@ public extension String {
         }).joined()
     }
 
-
 }
 
 // MARK: - Character Operations
@@ -440,7 +439,7 @@ prefix operator -
 
 private extension String {
 
-    /// Replaces a String's underscores and dashes with a white space using the custom `-` prefix operator.
+    /// Sanitizes strings by replacing underscores and dashes with whitespaces using the custom `-` prefix operator.
     ///
     /// - Parameter string: The string that will be sanitzed.
     /// - Returns: The sanitized string.

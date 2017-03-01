@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-               BuildableName = "GuitarSample.app"
-               BlueprintName = "GuitarSample"
-               ReferencedContainer = "container:GuitarSample.xcodeproj">
+               BuildableName = "GuitarExample.app"
+               BlueprintName = "GuitarExample"
+               ReferencedContainer = "container:GuitarExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarSample.app"
-            BlueprintName = "GuitarSample"
-            ReferencedContainer = "container:GuitarSample.xcodeproj">
+            BuildableName = "GuitarExample.app"
+            BlueprintName = "GuitarExample"
+            ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarSample.app"
-            BlueprintName = "GuitarSample"
-            ReferencedContainer = "container:GuitarSample.xcodeproj">
+            BuildableName = "GuitarExample.app"
+            BlueprintName = "GuitarExample"
+            ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarSample.app"
-            BlueprintName = "GuitarSample"
-            ReferencedContainer = "container:GuitarSample.xcodeproj">
+            BuildableName = "GuitarExample.app"
+            BlueprintName = "GuitarExample"
+            ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
