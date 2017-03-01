@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C96176D5E40ED88241237BC /* Pods_GuitarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCD5799359EFFB5184C2D90 /* Pods_GuitarExample.framework */; };
-		55DA075A1E66AF2200080633 /* GuitarExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA07591E66AF2200080633 /* GuitarExampleTests.swift */; };
+		55DA075A1E66AF2200080633 /* GuitarBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */; };
 		55FA6A901E66919100806B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA6A8F1E66919100806B9C /* ViewController.swift */; };
 		55FA6A921E66919600806B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FA6A911E66919600806B9C /* AppDelegate.swift */; };
 		55FA6A941E66919E00806B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A931E66919E00806B9C /* Assets.xcassets */; };
@@ -31,7 +31,7 @@
 		333BE5171CD336D9482032FA /* Pods-GuitarExample-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-GuitarExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-GuitarExampleTests/Pods-GuitarExample-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		537ED5FE32B5B35EA0D21FEF /* Pods-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
 		55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		55DA07591E66AF2200080633 /* GuitarExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarExampleTests.swift; sourceTree = "<group>"; };
+		55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarBooleanTests.swift; sourceTree = "<group>"; };
 		55DA075B1E66AF2200080633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55FA6A8F1E66919100806B9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GuitarExample/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		55FA6A911E66919600806B9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GuitarExample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -69,7 +69,7 @@
 		55DA07581E66AF2200080633 /* GuitarExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				55DA07591E66AF2200080633 /* GuitarExampleTests.swift */,
+				55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */,
 				55DA075B1E66AF2200080633 /* Info.plist */,
 			);
 			path = GuitarExampleTests;
@@ -348,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DA075A1E66AF2200080633 /* GuitarExampleTests.swift in Sources */,
+				55DA075A1E66AF2200080633 /* GuitarBooleanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

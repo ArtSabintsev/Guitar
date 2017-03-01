@@ -10,10 +10,10 @@
 		10E01776E1D145C1F3DA19B0A4ACD6A7 /* Pods-GuitarExample-GuitarExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4CEF8F79EFB30029EEF76AE81778873 /* Pods-GuitarExample-GuitarExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		214CA3ADC2BA805ED551E5E9F083EF24 /* Pods-GuitarExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A09996B391F03D9BC1FB4913C801918 /* Pods-GuitarExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B64AEEA61C72F0BA4103742D4F46F0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		67D32B3558B8BFCA53C54F323BEAF45C /* GuitarBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EEBA3F70EBD72C301EB3094DDDC89 /* GuitarBooleanTests.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33DDEE28EC406B9406700D8CC36701CA /* Guitar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73BD2D484BF957DEBD1744A0EB2A1E /* Guitar-dummy.m */; };
 		70B646EF6AC8AF72026EA78039523926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		85877FD6AC06141FAD46F3251C893FB3 /* Guitar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 885B2683C45DA42B323CF278B79EB354 /* Guitar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFAB54F5CF700023AD5E138CACBF5F66 /* Guitar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73BD2D484BF957DEBD1744A0EB2A1E /* Guitar-dummy.m */; };
+		9A121ECBBC2BCED9B149653BE6744060 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE22401FBD2D4E4ABB65AC4047FA153 /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		CFCA3A7726BDE378D0F908AF079C785E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		E826B54ED510864BDB7B7BB92EBDAABE /* Pods-GuitarExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5A7B6B71EDA63AC07DD91CF1E55773 /* Pods-GuitarExample-dummy.m */; };
 		F30EA9D3A7F84D1FA2FF38CC7D01125B /* Pods-GuitarExample-GuitarExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2E61F01E5BAAA00C7C0D2650550D48 /* Pods-GuitarExample-GuitarExampleTests-dummy.m */; };
@@ -58,6 +58,7 @@
 		8F73BD2D484BF957DEBD1744A0EB2A1E /* Guitar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Guitar-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E4DFA828911A69EA40F1C5EAF8F9AEB /* Guitar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-prefix.pch"; sourceTree = "<group>"; };
+		AFE22401FBD2D4E4ABB65AC4047FA153 /* Guitar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
 		C4CEF8F79EFB30029EEF76AE81778873 /* Pods-GuitarExample-GuitarExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarExample-GuitarExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D42478D4145CA523A984F41652E0986A /* Pods-GuitarExample-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarExample-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		EFC677CC7206A4C16B3EA2E674530D72 /* Pods-GuitarExample-GuitarExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarExample-GuitarExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EFE251FB12D82E5C63D3258FF83D35E0 /* Guitar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Guitar.modulemap; sourceTree = "<group>"; };
 		FBCC1609C49B6F6E9081E7FA25E3B73B /* Pods-GuitarExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarExample-frameworks.sh"; sourceTree = "<group>"; };
-		FE3EEBA3F70EBD72C301EB3094DDDC89 /* GuitarBooleanTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GuitarBooleanTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 		1BA778E35CB54DFAEAFB01C57AD06628 /* Guitar */ = {
 			isa = PBXGroup;
 			children = (
-				5F3CD4DCA91856528522A85AE05D1337 /* Guitar */,
+				65479CFCD8714C09C5BC841F50C834C3 /* Guitar */,
 				3C49A618A41171724C11661AD2256D8C /* Support Files */,
 			);
 			name = Guitar;
@@ -176,10 +176,10 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5F3CD4DCA91856528522A85AE05D1337 /* Guitar */ = {
+		65479CFCD8714C09C5BC841F50C834C3 /* Guitar */ = {
 			isa = PBXGroup;
 			children = (
-				FE3EEBA3F70EBD72C301EB3094DDDC89 /* GuitarBooleanTests.swift */,
+				AFE22401FBD2D4E4ABB65AC4047FA153 /* Guitar.swift */,
 			);
 			name = Guitar;
 			path = Guitar;
@@ -292,7 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB613477AD232A9665E137459437DC09 /* Build configuration list for PBXNativeTarget "Guitar" */;
 			buildPhases = (
-				E4BF31EEDDD425CEF3111687C67DBE0B /* Sources */,
+				978ECC767AD386AB17B78ED3DAE877FD /* Sources */,
 				5FB5FD40B24204284A83C884F9DDF396 /* Frameworks */,
 				81BE4A8FCA61F95387282AFEF843752B /* Headers */,
 			);
@@ -342,20 +342,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		978ECC767AD386AB17B78ED3DAE877FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DDEE28EC406B9406700D8CC36701CA /* Guitar-dummy.m in Sources */,
+				9A121ECBBC2BCED9B149653BE6744060 /* Guitar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BDF840FB1796F6B2641896945F84BA27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E826B54ED510864BDB7B7BB92EBDAABE /* Pods-GuitarExample-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E4BF31EEDDD425CEF3111687C67DBE0B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFAB54F5CF700023AD5E138CACBF5F66 /* Guitar-dummy.m in Sources */,
-				67D32B3558B8BFCA53C54F323BEAF45C /* GuitarBooleanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

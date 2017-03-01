@@ -2,10 +2,7 @@ module: Guitar
 author: Arthur Ariel Sabintsev
 author_url: http://www.sabintsev.com
 github_url: https://github.com/artsabintsev/guitar
-copyright: "© 2016 [Arthur Ariel Sabintsev](http://www.sabintsev.com)"
+copyright: "© 2016-2017 [Arthur Ariel Sabintsev](http://www.sabintsev.com)"
 clean: true
-
-custom_categories:
-  - name: Guitar
-    children:
-    - String
+theme: fullwidth
+podspec: Guitar.podspec
