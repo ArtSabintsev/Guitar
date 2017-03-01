@@ -204,6 +204,12 @@ public extension String {
 
     /// Retuns the reversed version of the string.
     ///
+    /// Example:
+    ///
+    ///     let string = "Hello World"
+    ///     print(string.reverse())
+    ///     // Prints "dlroW olleH"
+    ///
     /// - Returns: The reversed copy of the string.
     @discardableResult
     func reverse() -> String {
@@ -341,7 +347,7 @@ public extension String {
 
     /// Returns the left-trimmed version of the string.
     ///
-    /// Example 1:
+    /// Example:
     ///
     ///     let string = "Hello World"
     ///     print(string.trimLeft(length: 7))
@@ -352,7 +358,7 @@ public extension String {
     @discardableResult
     func trimLeft(length: Int) -> String {
         guard characters.count - length > 0 else { return self }
-        return String(characters.suffix(characters.count - length))
+        return suffixed(length: characters.count - length)
     }
 
     /// Returns the right-trimmed version of the string.
@@ -361,16 +367,34 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.trimRight(length: 7))
-    ///     // Prints "Hello"
+    ///     // Prints "Hello W"
     ///
     /// - Parameter length: The number of characters to trim from the end of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: The right-trimmed copy of the string.
     @discardableResult
     func trimRight(length: Int) -> String {
         guard characters.count - length > 0 else { return self }
-        return String(characters.prefix(characters.count - length))
+        return prefixed(length: characters.count - length)
     }
 
+    /// Returns the truncated string with an ellipsis.
+    ///
+    /// Example:
+    ///
+    ///     let string = "Hello World"
+    ///     print(string.truncate(length: 8))
+    ///     // Prints "Hello..."
+    ///
+    /// - Parameter length: The final length of the string, which includes the ellipsis: `...`).
+    /// - Returns: The truncated copy of the string.
+    @discardableResult
+    func truncate(length: Int) -> String {
+        guard (length-3) > characters.count else {
+            return self
+        }
+
+        return trimRight(length: length) + "..."
+    }
 }
 
 // MARK: - Helpers
