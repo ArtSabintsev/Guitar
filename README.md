@@ -17,7 +17,7 @@ This project is currently a work in progress. Contributions by the community are
 - [ ] Performance Tests
 - [ ] Regex Support (Pure Swift Implementation)
 - [x] Swift Package Manager
-- [ ] SwiftLint Integration
+- [x] SwiftLint Integration
 - [ ] Unit Tests
 
 ### Installation
