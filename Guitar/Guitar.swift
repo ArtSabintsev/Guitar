@@ -142,7 +142,7 @@ public extension String {
     /// Example:
     ///
     ///     let string = "hello world"
-    ///     print(string.slug())
+    ///     print(string.snakeCased())
     ///     // Prints "hello_world"
     ///
     /// - Returns: The slug copy of the string.
@@ -156,7 +156,7 @@ public extension String {
     /// Example:
     ///
     ///     let string = "Hello World"
-    ///     print(string.swapcased())
+    ///     print(string.swapCased())
     ///     // Prints "hELLO wORLD"
     ///
     /// - Returns: The swap cased copy of the string.
@@ -198,7 +198,7 @@ public extension String {
     /// - Returns: The last character of the string.
     @discardableResult
     func last() -> String {
-        return String(describing: self[endIndex])
+        return reversed().first()
     }
 
     /// Retuns the reversed version of the string.
@@ -206,12 +206,12 @@ public extension String {
     /// Example:
     ///
     ///     let string = "Hello World"
-    ///     print(string.reverse())
+    ///     print(string.reversedreversed())
     ///     // Prints "dlroW olleH"
     ///
     /// - Returns: The reversed copy of the string.
     @discardableResult
-    func reverse() -> String {
+    func reversed() -> String {
         return String(characters.reversed())
     }
 }
