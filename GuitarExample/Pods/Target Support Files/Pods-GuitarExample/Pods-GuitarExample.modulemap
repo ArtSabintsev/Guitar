@@ -1,6 +1,0 @@
-framework module Pods_GuitarExample {
-  umbrella header "Pods-GuitarExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

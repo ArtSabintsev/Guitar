@@ -1,7 +1,7 @@
 # Guitar
 ### A Cross-Platform String Library Written in Swift.
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/) [![Platform](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)](http://cocoadocs.org/docsets/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitarn.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master)  [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/) [![Platform](https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat)](http://cocoadocs.org/docsets/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitarn.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar) 
 
 ## Project Status
 
@@ -16,10 +16,10 @@
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
-- [ ] Regular Expressions / Regex (Pure Swift Implementation) 
+- [ ] Regular Expressions / Regex (Pure Swift Implementation)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
 
-### Documentation 
+### Documentation
 - [x] Inline Function Documentation
 - [x] Jazzy Documentation (http://sabintsev.com/Guitar)
 - [ ] README Documentation
@@ -37,9 +37,9 @@
 
 ### Sample Apps
 - [x] iOS
-- [ ] macOS
-- [ ] tvOS
-- [ ] watchOS
+- [x] macOS
+- [x] tvOS
+- [x] watchOS
 - [ ] Server Side
 
 ## Installation Instructions

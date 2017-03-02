@@ -1,11 +1,26 @@
-platform :ios, '10.0'
 use_frameworks!
 inhibit_all_warnings!
 
-target 'GuitarExample' do
-  pod 'Guitar', path: '../'
+abstract_target 'GuitarTarget' do
+    pod 'Guitar', path: '../'
 
-  target 'GuitarExampleTests' do
-    inherit! :complete
-  end
+    target 'GuitarExample-iOS' do
+      platform :ios, '9.0'
+      target 'GuitarExampleTests' do
+      end
+    end
+
+    target 'GuitarExample-Mac' do
+      platform :osx, '10.11'
+    end
+
+    target 'GuitarExample-TV' do
+      platform :tvos, '9.0'
+    end
+
+    target 'GuitarExample-Watch' do
+      platform :watchos, '3.0'
+      target 'GuitarExample-Watch Extension' do
+      end
+    end
 end
