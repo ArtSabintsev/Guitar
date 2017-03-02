@@ -10,19 +10,38 @@ This a project is currently a work in progress. Contributions by the community a
 ## Documentation
 [Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at http://www.sabintsev.com/Guitar/
 
-### Roadmap to 1.0.0 (Alphabetical Order)
+### Roadmap
+#### Functions
+- [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
+- [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
+- [x] Character Functions (`first`, `last`, `length`, etc.)
+- [ ] HTML Manipulation Functions
+- [x] Padding Functions (`padLeft`, `padRight`, `pad`)
+- [ ] Regex (Pure Swift Implementation) 
+- [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
+
+#### Documentation 
+- [x] Inline Function Documentation
+- [x] Jazzy Documentation (http://sabintsev.com/Guitar)
+- [ ] README Documentation
+
+#### Dependency Management
 - [x] Carthage Support
 - [x] CocoaPods Support
-- [x] Continuous Integration (Buddy Build)
-- [x] Function Documentation
-- [ ] HTML String Manipulation Support
-- [x] Jazzy Docs
-- [ ] Performance Tests
-- [ ] Regex Support (Pure Swift Implementation)
-- [ ] Stable API
 - [x] Swift Package Manager
+
+#### Testing
+- [x] Continuous Integration with Buddy Build
+- [ ] Performance Tests
 - [x] SwiftLint Integration
 - [x] Unit Tests
+
+#### Sample Apps
+- [x] iOS
+- [ ] macOS
+- [ ] tvOS
+- [ ] watchOS
+- [ ] Server Side
 
 ## Installation Instructions
 ### CocoaPods
