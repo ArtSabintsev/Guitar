@@ -5,7 +5,7 @@
 
 ## Project Status
 
-This project is currently a work in progress. Contributions by the community are highly encouraged.
+This a project is currently a work in progress. Contributions by the community are highly encouraged.
 
 ### Roadmap to 1.0.0 (Alphabetical Order)
 - [x] Carthage Support
@@ -16,6 +16,7 @@ This project is currently a work in progress. Contributions by the community are
 - [x] Jazzy Docs
 - [ ] Performance Tests
 - [ ] Regex Support (Pure Swift Implementation)
+- [ ] Stable API
 - [x] Swift Package Manager
 - [x] SwiftLint Integration
 - [ ] Unit Tests (In Progress)
