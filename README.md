@@ -5,9 +5,9 @@
 
 ## Project Status
 
-- Release: Alpha (until v0.1.0)
-- Status: Active Development (as of March 1, 2017)
-- Contributions are highly encouraged.
+- **Release**: Alpha (until v0.1.0)
+- **Status**: Active Development (as of March 1, 2017)
+- **Contributions are highly encouraged.**
 
 ## Roadmap
 ### Functions
