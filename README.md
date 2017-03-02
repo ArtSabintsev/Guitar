@@ -16,10 +16,10 @@
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
-- [ ] Regular Expressions / Regex (Pure Swift Implementation) 
+- [ ] Regular Expressions / Regex (Pure Swift Implementation)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
 
-### Documentation 
+### Documentation
 - [x] Inline Function Documentation
 - [x] Jazzy Documentation (http://sabintsev.com/Guitar)
 - [ ] README Documentation
@@ -37,9 +37,9 @@
 
 ### Sample Apps
 - [x] iOS
-- [ ] macOS
-- [ ] tvOS
-- [ ] watchOS
+- [x] macOS
+- [x] tvOS
+- [x] watchOS
 - [ ] Server Side
 
 ## Installation Instructions
