@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26966BA037612E84F8EE938B /* Pods_GuitarTarget_GuitarExample_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB6DBDC703B62F108B69EF9 /* Pods_GuitarTarget_GuitarExample_TV.framework */; };
-		3913C74C524B00A8910775E6 /* Pods_GuitarTarget_GuitarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93766EDDFC75F28D9E1A2DCD /* Pods_GuitarTarget_GuitarExample.framework */; };
-		3AB5DC6709779A38D0EDD4AF /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DAA2A56A4086C98D6D193CE /* Pods_GuitarTarget_GuitarExample_Watch.framework */; };
-		3CD8DCFCB99F17C6CEF90DED /* Pods_GuitarTarget_GuitarExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274CF07B91842593264ECF4F /* Pods_GuitarTarget_GuitarExampleTests.framework */; };
-		549C9D63A49CAEE45AACFFAC /* Pods_GuitarExample_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27601D36D3BBF593A1E72A1 /* Pods_GuitarExample_TV.framework */; };
+		458F7AD49E33F90C0A55B166 /* Pods_GuitarTarget_GuitarExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E537F6149149FA100645BC /* Pods_GuitarTarget_GuitarExampleTests.framework */; };
+		49704E4F22BEDD98630A6FD9 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A827E7C2FD090237DD8A68 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework */; };
+		51C08738394A2D4507E37827 /* Pods_GuitarTarget_GuitarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3254FFCF3FD1761FB643D9 /* Pods_GuitarTarget_GuitarExample.framework */; };
 		554046B31E67BDAB009B317A /* GuitarCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B21E67BDAB009B317A /* GuitarCaseTests.swift */; };
 		554046B71E67D925009B317A /* GuitarCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B61E67D925009B317A /* GuitarCharacterTests.swift */; };
 		554046B91E67E6F2009B317A /* GuitarPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */; };
@@ -22,7 +20,9 @@
 		55FA6A941E66919E00806B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A931E66919E00806B9C /* Assets.xcassets */; };
 		55FA6A991E6691DB00806B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A971E6691DB00806B9C /* Main.storyboard */; };
 		55FA6A9C1E6691E900806B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */; };
-		6C840F333BC95EDF31B27DC8 /* Pods_GuitarExample_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B88D61D24584EC16DB5F8E /* Pods_GuitarExample_Watch.framework */; };
+		7A39CC8F1E7514AB2920FB3D /* Pods_GuitarTarget_GuitarExample_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C15CE06C9571354EECCC42E /* Pods_GuitarTarget_GuitarExample_Mac.framework */; };
+		7F112442166A70288D04D423 /* Pods_GuitarTarget_GuitarExample_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C815894A8764F461067BDB57 /* Pods_GuitarTarget_GuitarExample_TV.framework */; };
+		845472219E86C5A7259E27CB /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F354647129BD67DD97FFEE40 /* Pods_GuitarTarget_GuitarExample_Watch.framework */; };
 		8EA424641E6863E2002E82A8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424621E6863E2002E82A8 /* Interface.storyboard */; };
 		8EA424661E6863E2002E82A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424651E6863E2002E82A8 /* Assets.xcassets */; };
 		8EA4246D1E6863E2002E82A8 /* GuitarExample-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8EA4246C1E6863E2002E82A8 /* GuitarExample-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -39,9 +39,6 @@
 		8EA424A31E686438002E82A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA424A21E686438002E82A8 /* ViewController.swift */; };
 		8EA424A51E686438002E82A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424A41E686438002E82A8 /* Assets.xcassets */; };
 		8EA424A81E686438002E82A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424A61E686438002E82A8 /* Main.storyboard */; };
-		AB564DC1B0C75F7FC6C32213 /* Pods_GuitarTarget_GuitarExample_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E875B2A609423524ACDFB7 /* Pods_GuitarTarget_GuitarExample_Mac.framework */; };
-		B6DD9E6457D4014D74CC8A2D /* Pods_GuitarExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179B697BF44576D5EA2D3F16 /* Pods_GuitarExample.framework */; };
-		B7944A4E2153A26CAF75D80E /* Pods_GuitarExample_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312582D0FEE9EFFBB6E92FEA /* Pods_GuitarExample_Mac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,18 +91,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		031926A74CD9A57B4896A8A0 /* Pods-GuitarExample-TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-TV/Pods-GuitarExample-TV.release.xcconfig"; sourceTree = "<group>"; };
-		07B88D61D24584EC16DB5F8E /* Pods_GuitarExample_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		179B697BF44576D5EA2D3F16 /* Pods_GuitarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21856404C48898F3BC47AB68 /* Pods-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
-		274CF07B91842593264ECF4F /* Pods_GuitarTarget_GuitarExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BB6DBDC703B62F108B69EF9 /* Pods_GuitarTarget_GuitarExample_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BC024458B07EBF5AB45AD56 /* Pods-GuitarExample-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-Watch/Pods-GuitarExample-Watch.release.xcconfig"; sourceTree = "<group>"; };
-		2D919BAC2C9A0B8AD2BD8C6A /* Pods-GuitarExample-TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-TV/Pods-GuitarExample-TV.debug.xcconfig"; sourceTree = "<group>"; };
-		312582D0FEE9EFFBB6E92FEA /* Pods_GuitarExample_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4826B002D1B0C37A382E5B89 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
-		4B16992F3719E0523B23328F /* Pods-GuitarTarget-GuitarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.release.xcconfig"; sourceTree = "<group>"; };
-		52421C87496B723DF2DB8603 /* Pods-GuitarExample-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-Watch/Pods-GuitarExample-Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		0A3254FFCF3FD1761FB643D9 /* Pods_GuitarTarget_GuitarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10C56FD7728510DB084771E8 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		2BAFB9A74BA50938DF8D9EC4 /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		3276317CCAF862E8DCBF515B /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		49298A416BC66E6D2109CB8E /* Pods-GuitarTarget-GuitarExample-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		554046B21E67BDAB009B317A /* GuitarCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCaseTests.swift; sourceTree = "<group>"; };
 		554046B61E67D925009B317A /* GuitarCharacterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCharacterTests.swift; sourceTree = "<group>"; };
 		554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarPaddingTests.swift; sourceTree = "<group>"; };
@@ -119,11 +109,9 @@
 		55FA6A951E6691A400806B9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuitarExample/Info.plist; sourceTree = SOURCE_ROOT; };
 		55FA6A981E6691DB00806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		55FA6A9B1E6691E900806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		591FAFF53F60F3C91BF8031A /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig"; sourceTree = "<group>"; };
-		6DAA2A56A4086C98D6D193CE /* Pods_GuitarTarget_GuitarExample_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB7D5EE04309A84D74A6BB1 /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		83224692819DF079F08AC447 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; sourceTree = "<group>"; };
-		8C028D89CB222CB5CF10EAB9 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		63EB38CAFEA528134C8EF438 /* Pods-GuitarTarget-GuitarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.release.xcconfig"; sourceTree = "<group>"; };
+		6B9DE84DEFA41E8D34FC40B0 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8C15CE06C9571354EECCC42E /* Pods_GuitarTarget_GuitarExample_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA424601E6863E2002E82A8 /* GuitarExample-Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuitarExample-Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA424631E6863E2002E82A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8EA424651E6863E2002E82A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,16 +136,16 @@
 		8EA424A71E686438002E82A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EA424A91E686438002E82A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EDB77C11E0A516B00B13A61 /* GuitarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92BF0E99429B6271BAB99364 /* Pods-GuitarExample-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-Mac/Pods-GuitarExample-Mac.release.xcconfig"; sourceTree = "<group>"; };
-		93766EDDFC75F28D9E1A2DCD /* Pods_GuitarTarget_GuitarExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		982EAF833310DA112B28D12B /* Pods-GuitarExample-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample-Mac/Pods-GuitarExample-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		9C30832FF150DBE440B1BD2A /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9FBC14AB1848EA140391BD2F /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig"; sourceTree = "<group>"; };
-		A4E875B2A609423524ACDFB7 /* Pods_GuitarTarget_GuitarExample_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE195044CC660D668DFEEFD3 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig"; sourceTree = "<group>"; };
-		BDB216DD4102CC98FE44E23C /* Pods-GuitarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarExample/Pods-GuitarExample.release.xcconfig"; sourceTree = "<group>"; };
-		E27601D36D3BBF593A1E72A1 /* Pods_GuitarExample_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarExample_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F50AA53B381E267219578EA2 /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		95A827E7C2FD090237DD8A68 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C398E222C41C43E373A972 /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C1D781C44A4CC24F09830AE6 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; sourceTree = "<group>"; };
+		C2260CA12862C5A9AD405E00 /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig"; sourceTree = "<group>"; };
+		C815894A8764F461067BDB57 /* Pods_GuitarTarget_GuitarExample_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_TV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9322E3295D10E7FC2842609 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		F354647129BD67DD97FFEE40 /* Pods_GuitarTarget_GuitarExample_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C9496C29DA43EE64706D2A /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F9E537F6149149FA100645BC /* Pods_GuitarTarget_GuitarExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2B201668CE1EFFE954C65E /* Pods-GuitarTarget-GuitarExample-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CD8DCFCB99F17C6CEF90DED /* Pods_GuitarTarget_GuitarExampleTests.framework in Frameworks */,
+				458F7AD49E33F90C0A55B166 /* Pods_GuitarTarget_GuitarExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C840F333BC95EDF31B27DC8 /* Pods_GuitarExample_Watch.framework in Frameworks */,
-				3AB5DC6709779A38D0EDD4AF /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */,
+				845472219E86C5A7259E27CB /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49704E4F22BEDD98630A6FD9 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				549C9D63A49CAEE45AACFFAC /* Pods_GuitarExample_TV.framework in Frameworks */,
-				26966BA037612E84F8EE938B /* Pods_GuitarTarget_GuitarExample_TV.framework in Frameworks */,
+				7F112442166A70288D04D423 /* Pods_GuitarTarget_GuitarExample_TV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7944A4E2153A26CAF75D80E /* Pods_GuitarExample_Mac.framework in Frameworks */,
-				AB564DC1B0C75F7FC6C32213 /* Pods_GuitarTarget_GuitarExample_Mac.framework in Frameworks */,
+				7A39CC8F1E7514AB2920FB3D /* Pods_GuitarTarget_GuitarExample_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,39 +193,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DD9E6457D4014D74CC8A2D /* Pods_GuitarExample.framework in Frameworks */,
-				3913C74C524B00A8910775E6 /* Pods_GuitarTarget_GuitarExample.framework in Frameworks */,
+				51C08738394A2D4507E37827 /* Pods_GuitarTarget_GuitarExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4310E072836B82DE3F1F44F5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				21856404C48898F3BC47AB68 /* Pods-GuitarExample.debug.xcconfig */,
-				BDB216DD4102CC98FE44E23C /* Pods-GuitarExample.release.xcconfig */,
-				982EAF833310DA112B28D12B /* Pods-GuitarExample-Mac.debug.xcconfig */,
-				92BF0E99429B6271BAB99364 /* Pods-GuitarExample-Mac.release.xcconfig */,
-				2D919BAC2C9A0B8AD2BD8C6A /* Pods-GuitarExample-TV.debug.xcconfig */,
-				031926A74CD9A57B4896A8A0 /* Pods-GuitarExample-TV.release.xcconfig */,
-				52421C87496B723DF2DB8603 /* Pods-GuitarExample-Watch.debug.xcconfig */,
-				2BC024458B07EBF5AB45AD56 /* Pods-GuitarExample-Watch.release.xcconfig */,
-				9C30832FF150DBE440B1BD2A /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */,
-				F50AA53B381E267219578EA2 /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */,
-				4826B002D1B0C37A382E5B89 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */,
-				4B16992F3719E0523B23328F /* Pods-GuitarTarget-GuitarExample.release.xcconfig */,
-				6EB7D5EE04309A84D74A6BB1 /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */,
-				591FAFF53F60F3C91BF8031A /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */,
-				9FBC14AB1848EA140391BD2F /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */,
-				83224692819DF079F08AC447 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */,
-				8C028D89CB222CB5CF10EAB9 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */,
-				AE195044CC660D668DFEEFD3 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		55DA07581E66AF2200080633 /* GuitarExampleTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,22 +211,6 @@
 				55DA075B1E66AF2200080633 /* Info.plist */,
 			);
 			path = GuitarExampleTests;
-			sourceTree = "<group>";
-		};
-		61C2C8D4FED869BCE995EFDF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				179B697BF44576D5EA2D3F16 /* Pods_GuitarExample.framework */,
-				312582D0FEE9EFFBB6E92FEA /* Pods_GuitarExample_Mac.framework */,
-				E27601D36D3BBF593A1E72A1 /* Pods_GuitarExample_TV.framework */,
-				07B88D61D24584EC16DB5F8E /* Pods_GuitarExample_Watch.framework */,
-				274CF07B91842593264ECF4F /* Pods_GuitarTarget_GuitarExampleTests.framework */,
-				93766EDDFC75F28D9E1A2DCD /* Pods_GuitarTarget_GuitarExample.framework */,
-				A4E875B2A609423524ACDFB7 /* Pods_GuitarTarget_GuitarExample_Mac.framework */,
-				2BB6DBDC703B62F108B69EF9 /* Pods_GuitarTarget_GuitarExample_TV.framework */,
-				6DAA2A56A4086C98D6D193CE /* Pods_GuitarTarget_GuitarExample_Watch.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8EA424611E6863E2002E82A8 /* GuitarExample-Watch */ = {
@@ -324,18 +268,31 @@
 			path = "GuitarExample-Mac";
 			sourceTree = "<group>";
 		};
+		8EBA7D58D400867BBE407DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A3254FFCF3FD1761FB643D9 /* Pods_GuitarTarget_GuitarExample.framework */,
+				8C15CE06C9571354EECCC42E /* Pods_GuitarTarget_GuitarExample_Mac.framework */,
+				C815894A8764F461067BDB57 /* Pods_GuitarTarget_GuitarExample_TV.framework */,
+				F354647129BD67DD97FFEE40 /* Pods_GuitarTarget_GuitarExample_Watch.framework */,
+				95A827E7C2FD090237DD8A68 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework */,
+				F9E537F6149149FA100645BC /* Pods_GuitarTarget_GuitarExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EDB77B81E0A516B00B13A61 = {
 			isa = PBXGroup;
 			children = (
-				8EDB77C31E0A516B00B13A61 /* GuitarExample */,
 				55DA07581E66AF2200080633 /* GuitarExampleTests */,
+				8EDB77C31E0A516B00B13A61 /* GuitarExample */,
 				8EA4249F1E686438002E82A8 /* GuitarExample-Mac */,
 				8EA4248C1E68640E002E82A8 /* GuitarExample-TV */,
 				8EA424611E6863E2002E82A8 /* GuitarExample-Watch */,
 				8EA424701E6863E2002E82A8 /* GuitarExample-Watch Extension */,
 				8EDB77C21E0A516B00B13A61 /* Products */,
-				4310E072836B82DE3F1F44F5 /* Pods */,
-				61C2C8D4FED869BCE995EFDF /* Frameworks */,
+				C668E0BFB155E0BBBB942019 /* Pods */,
+				8EBA7D58D400867BBE407DD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -366,6 +323,25 @@
 			path = GuitarSample;
 			sourceTree = "<group>";
 		};
+		C668E0BFB155E0BBBB942019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B9DE84DEFA41E8D34FC40B0 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */,
+				63EB38CAFEA528134C8EF438 /* Pods-GuitarTarget-GuitarExample.release.xcconfig */,
+				3276317CCAF862E8DCBF515B /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */,
+				2BAFB9A74BA50938DF8D9EC4 /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */,
+				C2260CA12862C5A9AD405E00 /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */,
+				C1D781C44A4CC24F09830AE6 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */,
+				10C56FD7728510DB084771E8 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */,
+				E9322E3295D10E7FC2842609 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */,
+				FA2B201668CE1EFFE954C65E /* Pods-GuitarTarget-GuitarExample-Watch Extension.debug.xcconfig */,
+				49298A416BC66E6D2109CB8E /* Pods-GuitarTarget-GuitarExample-Watch Extension.release.xcconfig */,
+				B7C398E222C41C43E373A972 /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */,
+				F4C9496C29DA43EE64706D2A /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,12 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55DA075E1E66AF2200080633 /* Build configuration list for PBXNativeTarget "GuitarExampleTests" */;
 			buildPhases = (
-				81ACE33F8C6C159FB58EF958 /* [CP] Check Pods Manifest.lock */,
+				866873522DABCA5473801FFF /* [CP] Check Pods Manifest.lock */,
 				55DA07531E66AF2200080633 /* Sources */,
 				55DA07541E66AF2200080633 /* Frameworks */,
 				55DA07551E66AF2200080633 /* Resources */,
-				ED9038588CA50763F85D5D7C /* [CP] Embed Pods Frameworks */,
-				B41FED1C9660EADE1C270EC3 /* [CP] Copy Pods Resources */,
+				305745B3512FD20A115FCDC6 /* [CP] Embed Pods Frameworks */,
+				6153DF3EB63422B702AC5110 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,11 +370,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA424851E6863E2002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-Watch" */;
 			buildPhases = (
-				395921517846459C439ECF54 /* [CP] Check Pods Manifest.lock */,
+				4D343F940F22DC4F0930852E /* [CP] Check Pods Manifest.lock */,
 				8EA4245E1E6863E2002E82A8 /* Resources */,
 				8EA424841E6863E2002E82A8 /* Embed App Extensions */,
 				735982CAD05CDF9041FCDB20 /* Frameworks */,
-				768FAB0DE54171D5DCA9EF20 /* [CP] Copy Pods Resources */,
+				612F1211E3907E4BD666729D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -414,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA424831E6863E2002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-Watch Extension" */;
 			buildPhases = (
+				732F47599A736A5C2B364F16 /* [CP] Check Pods Manifest.lock */,
 				8EA424681E6863E2002E82A8 /* Sources */,
 				8EA424691E6863E2002E82A8 /* Frameworks */,
 				8EA4246A1E6863E2002E82A8 /* Resources */,
+				4146528FCF562D8B23665C7F /* [CP] Embed Pods Frameworks */,
+				B78BF7F398B2298502AD60FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,12 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA424971E68640E002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-TV" */;
 			buildPhases = (
-				B462FA2926AB2F70ABF7A3AF /* [CP] Check Pods Manifest.lock */,
+				E9306915907F5227A085DDAA /* [CP] Check Pods Manifest.lock */,
 				8EA424871E68640E002E82A8 /* Sources */,
 				8EA424881E68640E002E82A8 /* Frameworks */,
 				8EA424891E68640E002E82A8 /* Resources */,
-				C7B39C3FFC390E71ACA59DC9 /* [CP] Embed Pods Frameworks */,
-				BBD2C51B5D7FB77BA82C78D1 /* [CP] Copy Pods Resources */,
+				67BBA91B7EFE72069B0235FF /* [CP] Embed Pods Frameworks */,
+				69039F28F2510D0DC34DBF58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,12 +430,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA424AA1E686438002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-Mac" */;
 			buildPhases = (
-				DEB9362594245DA5FE3D4337 /* [CP] Check Pods Manifest.lock */,
+				BBAF8CD268F5CCBD761C844D /* [CP] Check Pods Manifest.lock */,
 				8EA4249A1E686437002E82A8 /* Sources */,
 				8EA4249B1E686437002E82A8 /* Frameworks */,
 				8EA4249C1E686437002E82A8 /* Resources */,
-				953193393427EDC740BCF788 /* [CP] Embed Pods Frameworks */,
-				D501B75548A2AE290E820E11 /* [CP] Copy Pods Resources */,
+				4AC630ED60CBB172C136FE94 /* [CP] Embed Pods Frameworks */,
+				5678AC80481C52A102C94200 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -471,14 +450,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */;
 			buildPhases = (
-				3CDBCA82A442D1519C1F6040 /* [CP] Check Pods Manifest.lock */,
+				5D76F3E0E4022A399E6B34DB /* [CP] Check Pods Manifest.lock */,
 				8EDB77BD1E0A516B00B13A61 /* Sources */,
 				8EDB77BE1E0A516B00B13A61 /* Frameworks */,
 				8EDB77BF1E0A516B00B13A61 /* Resources */,
 				55FA6A9D1E6698C000806B9C /* SwiftLint */,
 				8EA424861E6863E2002E82A8 /* Embed Watch Content */,
-				3F6690C91157A9D7068E81BB /* [CP] Embed Pods Frameworks */,
-				223AAF75E80AFDE88F890556 /* [CP] Copy Pods Resources */,
+				A5C7D9B1598DD306ED9E02CD /* [CP] Embed Pods Frameworks */,
+				8E5551E009A791F78A7697FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -612,52 +591,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		223AAF75E80AFDE88F890556 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		395921517846459C439ECF54 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3CDBCA82A442D1519C1F6040 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3F6690C91157A9D7068E81BB /* [CP] Embed Pods Frameworks */ = {
+		305745B3512FD20A115FCDC6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -669,7 +603,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4146528FCF562D8B23665C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AC630ED60CBB172C136FE94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D343F940F22DC4F0930852E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		55FA6A9D1E6698C000806B9C /* SwiftLint */ = {
@@ -686,112 +665,7 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config ../.swiftlint.yml\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		768FAB0DE54171D5DCA9EF20 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81ACE33F8C6C159FB58EF958 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		953193393427EDC740BCF788 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B41FED1C9660EADE1C270EC3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B462FA2926AB2F70ABF7A3AF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BBD2C51B5D7FB77BA82C78D1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7B39C3FFC390E71ACA59DC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D501B75548A2AE290E820E11 /* [CP] Copy Pods Resources */ = {
+		5678AC80481C52A102C94200 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -806,7 +680,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Mac/Pods-GuitarTarget-GuitarExample-Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DEB9362594245DA5FE3D4337 /* [CP] Check Pods Manifest.lock */ = {
+		5D76F3E0E4022A399E6B34DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -821,7 +695,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		ED9038588CA50763F85D5D7C /* [CP] Embed Pods Frameworks */ = {
+		612F1211E3907E4BD666729D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6153DF3EB63422B702AC5110 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67BBA91B7EFE72069B0235FF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -833,7 +737,127 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69039F28F2510D0DC34DBF58 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		732F47599A736A5C2B364F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		866873522DABCA5473801FFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E5551E009A791F78A7697FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C7D9B1598DD306ED9E02CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B78BF7F398B2298502AD60FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBAF8CD268F5CCBD761C844D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9306915907F5227A085DDAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -954,7 +978,7 @@
 /* Begin XCBuildConfiguration section */
 		55DA075F1E66AF2200080633 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C30832FF150DBE440B1BD2A /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */;
+			baseConfigurationReference = B7C398E222C41C43E373A972 /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -969,7 +993,7 @@
 		};
 		55DA07601E66AF2200080633 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F50AA53B381E267219578EA2 /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */;
+			baseConfigurationReference = F4C9496C29DA43EE64706D2A /* Pods-GuitarTarget-GuitarExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -984,7 +1008,7 @@
 		};
 		8EA4247F1E6863E2002E82A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C028D89CB222CB5CF10EAB9 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */;
+			baseConfigurationReference = 10C56FD7728510DB084771E8 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1003,7 +1027,7 @@
 		};
 		8EA424801E6863E2002E82A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE195044CC660D668DFEEFD3 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */;
+			baseConfigurationReference = E9322E3295D10E7FC2842609 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1022,6 +1046,7 @@
 		};
 		8EA424811E6863E2002E82A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2B201668CE1EFFE954C65E /* Pods-GuitarTarget-GuitarExample-Watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -1039,6 +1064,7 @@
 		};
 		8EA424821E6863E2002E82A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49298A416BC66E6D2109CB8E /* Pods-GuitarTarget-GuitarExample-Watch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -1056,7 +1082,7 @@
 		};
 		8EA424981E68640E002E82A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBC14AB1848EA140391BD2F /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */;
+			baseConfigurationReference = C2260CA12862C5A9AD405E00 /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1074,7 +1100,7 @@
 		};
 		8EA424991E68640E002E82A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83224692819DF079F08AC447 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */;
+			baseConfigurationReference = C1D781C44A4CC24F09830AE6 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1092,7 +1118,7 @@
 		};
 		8EA424AB1E686438002E82A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EB7D5EE04309A84D74A6BB1 /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */;
+			baseConfigurationReference = 3276317CCAF862E8DCBF515B /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
@@ -1110,7 +1136,7 @@
 		};
 		8EA424AC1E686438002E82A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 591FAFF53F60F3C91BF8031A /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */;
+			baseConfigurationReference = 2BAFB9A74BA50938DF8D9EC4 /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
@@ -1221,7 +1247,7 @@
 		};
 		8EDB77D41E0A516B00B13A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4826B002D1B0C37A382E5B89 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */;
+			baseConfigurationReference = 6B9DE84DEFA41E8D34FC40B0 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -1235,7 +1261,7 @@
 		};
 		8EDB77D51E0A516B00B13A61 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B16992F3719E0523B23328F /* Pods-GuitarTarget-GuitarExample.release.xcconfig */;
+			baseConfigurationReference = 63EB38CAFEA528134C8EF438 /* Pods-GuitarTarget-GuitarExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -1266,6 +1292,7 @@
 				8EA424821E6863E2002E82A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA424851E6863E2002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-Watch" */ = {
 			isa = XCConfigurationList;
@@ -1274,6 +1301,7 @@
 				8EA424801E6863E2002E82A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA424971E68640E002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-TV" */ = {
 			isa = XCConfigurationList;
@@ -1282,6 +1310,7 @@
 				8EA424991E68640E002E82A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA424AA1E686438002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-Mac" */ = {
 			isa = XCConfigurationList;
@@ -1290,6 +1319,7 @@
 				8EA424AC1E686438002E82A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EDB77BC1E0A516B00B13A61 /* Build configuration list for PBXProject "GuitarExample" */ = {
 			isa = XCConfigurationList;

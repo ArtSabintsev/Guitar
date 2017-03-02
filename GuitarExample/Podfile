@@ -16,6 +16,9 @@ abstract_target 'GuitarTarget' do
     target 'GuitarExample-Watch' do
     end
 
+    target 'GuitarExample-Watch Extension' do
+    end
+
     target 'GuitarExampleTests' do
     end
 
