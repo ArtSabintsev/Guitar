@@ -7,13 +7,11 @@
 //
 
 import WatchKit
-import Guitar
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
-        // Testing Guitar with one sample function.
-        "Hello World".camelCased()
+        // Perform any final initialization of your application.
     }
 
     func applicationDidBecomeActive() {
