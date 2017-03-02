@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1ABE772726E8AF60A3B47153 /* Pods_GuitarTarget_GuitarExample_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D4D179786C822D4EE25EDB /* Pods_GuitarTarget_GuitarExample_iOS.framework */; };
 		225681D496E584A726BE5D94 /* Pods_GuitarTarget_GuitarExample_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DACC258CFF12E913763E8C /* Pods_GuitarTarget_GuitarExample_Mac.framework */; };
+		44C18ED3BFA6C4C0B1FD2EA3 /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E29FA885BBF96BA5A8C7714 /* Pods_GuitarTarget_GuitarExample_Watch.framework */; };
 		554046B31E67BDAB009B317A /* GuitarCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B21E67BDAB009B317A /* GuitarCaseTests.swift */; };
 		554046B71E67D925009B317A /* GuitarCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B61E67D925009B317A /* GuitarCharacterTests.swift */; };
 		554046B91E67E6F2009B317A /* GuitarPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */; };
@@ -35,6 +36,7 @@
 		8EA424A31E686438002E82A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA424A21E686438002E82A8 /* ViewController.swift */; };
 		8EA424A51E686438002E82A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424A41E686438002E82A8 /* Assets.xcassets */; };
 		8EA424A81E686438002E82A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA424A61E686438002E82A8 /* Main.storyboard */; };
+		AF43253A80FB5372A8749592 /* Pods_GuitarTarget_GuitarExample_Watch_GuitarExample_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD0C706E6AF072DCBC1DE46 /* Pods_GuitarTarget_GuitarExample_Watch_GuitarExample_Watch_Extension.framework */; };
 		C518E60C5580DAE8FBAB3EEE /* Pods_GuitarTarget_GuitarExample_TV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C0B51C9DCD7F4F2FBDACAD /* Pods_GuitarTarget_GuitarExample_TV.framework */; };
 		C71AD7AC86ADEFA4629E4458 /* Pods_GuitarTarget_GuitarExample_iOS_GuitarExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4A8C8CE313BB549A74CDAA /* Pods_GuitarTarget_GuitarExample_iOS_GuitarExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -154,6 +156,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E153372998D3D3F10D6AE27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C18ED3BFA6C4C0B1FD2EA3 /* Pods_GuitarTarget_GuitarExample_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55DA07541E66AF2200080633 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF43253A80FB5372A8749592 /* Pods_GuitarTarget_GuitarExample_Watch_GuitarExample_Watch_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +377,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA391D51E68919E0099B25E /* Build configuration list for PBXNativeTarget "GuitarExample-Watch" */;
 			buildPhases = (
+				79BBEF4325B9599CA4E1BAA8 /* [CP] Check Pods Manifest.lock */,
 				8EA391B01E68919E0099B25E /* Resources */,
 				8EA391D41E68919E0099B25E /* Embed App Extensions */,
+				0E153372998D3D3F10D6AE27 /* Frameworks */,
+				CCF5369A51216BE5F801CF61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,9 +397,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA391D11E68919E0099B25E /* Build configuration list for PBXNativeTarget "GuitarExample-Watch Extension" */;
 			buildPhases = (
+				EB3BD53966C4F6021BF86DD9 /* [CP] Check Pods Manifest.lock */,
 				8EA391BA1E68919E0099B25E /* Sources */,
 				8EA391BB1E68919E0099B25E /* Frameworks */,
 				8EA391BC1E68919E0099B25E /* Resources */,
+				805F55AED9297C4AEDE4F4D5 /* [CP] Embed Pods Frameworks */,
+				803D8E795DA98A3F451DA1FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -685,6 +702,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		79BBEF4325B9599CA4E1BAA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		803D8E795DA98A3F451DA1FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		805F55AED9297C4AEDE4F4D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension/Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E9D5A922290C1DA9C8FED5F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -745,7 +807,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-iOS/Pods-GuitarTarget-GuitarExample-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CCF5369A51216BE5F801CF61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-Watch/Pods-GuitarTarget-GuitarExample-Watch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E3D56B6BFA970394EF4371B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3BD53966C4F6021BF86DD9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -936,6 +1028,7 @@
 		};
 		8EA391D21E68919E0099B25E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F6C0760585D2397102691E /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -953,6 +1046,7 @@
 		};
 		8EA391D31E68919E0099B25E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23BC29D833A6F4E509EDF2DA /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				DEVELOPMENT_TEAM = HT94948NDD;
@@ -970,6 +1064,7 @@
 		};
 		8EA391D61E68919E0099B25E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B95AA84288FDC375C49D5CF /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -988,6 +1083,7 @@
 		};
 		8EA391D71E68919E0099B25E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A96660CEDDE5A320C90202 /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
