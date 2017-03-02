@@ -106,7 +106,7 @@ public extension String {
     /// - Returns: The kebab cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
-        return "-" + slug() + "-"
+        return "-" + slugCased() + "-"
     }
 
     /// Returns a pascal cased version of the string.
@@ -114,13 +114,13 @@ public extension String {
     /// Example:
     ///
     ///     let string = "HELLO WORLD"
-    ///     print(string.pascalcased())
+    ///     print(string.pascalCased())
     ///     // Prints "HelloWorld"
     ///
     /// - Returns: A pascal cased copy of the string.
     @discardableResult
     func pascalCased() -> String {
-        return (-self).components(separatedBy: " ").map({ $0.capitalized }).joined()
+        return (-self).components(separatedBy: .whitespaces).joined()
     }
 
     /// Returns the slug version of the string.
@@ -128,12 +128,12 @@ public extension String {
     /// Example:
     ///
     ///     let string = "Hello World"
-    ///     print(string.slug())
+    ///     print(string.slugCased())
     ///     // Prints "Hello-World"
     ///
     /// - Returns: The slug copy of the string.
     @discardableResult
-    func slug() -> String {
+    func slugCased() -> String {
         return (-self).replacingOccurrences(of: " ", with: "-").lowercased()
     }
 
