@@ -4,66 +4,42 @@
     <title>String Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
-    <script src="../js/lunr.min.js" defer></script>
-    <script src="../js/typeahead.jquery.js" defer></script>
-    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-
     <a name="//apple_ref/swift/Extension/String" class="dashAnchor"></a>
-
     <a title="String Extension Reference"></a>
-
-    <header class="header">
-      <p class="header-col header-col--primary">
-        <a class="header-link" href="../index.html">
-          Guitar Docs
-        </a>
-         (100% documented)
-      </p>
-    
-      <p class="header-col--secondary">
-        <form role="search" action="../search.json">
-          <input type="text" placeholder="Search documentation" data-typeahead>
-        </form>
-      </p>
-    
-        <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/artsabintsev/guitar">
-            <img class="header-icon" src="../img/gh.png"/>
-            View on GitHub
-          </a>
-        </p>
-    
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Guitar Docs</a> (100% documented)</p>
+      </div>
     </header>
-
-    <p class="breadcrumbs">
-      <a class="breadcrumb" href="../index.html">Guitar Reference</a>
-      <img class="carat" src="../img/carat.png" />
-      String Extension Reference
-    </p>
-
     <div class="content-wrapper">
-      <nav class="navigation">
+      <p id="breadcrumbs">
+        <a href="../index.html">Guitar Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        String Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
+                <a href="../Extensions/String.html">String</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-
-        <section class="section">
-          <div class="section-content">
+        <section>
+          <section class="section">
             <h1>String</h1>
               <div class="declaration">
                 <div class="language">
@@ -72,13 +48,10 @@
                 </div>
               </div>
             
-          </div>
-        </section>
-
-        <section class="section">
-          <div class="section-content">
+          </section>
+          <section class="section task-group-section">
             <div class="task-group">
-              <ul class="item-container">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -306,7 +279,7 @@
               </ul>
             </div>
             <div class="task-group">
-              <ul class="item-container">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -442,7 +415,7 @@ print(string.kebabCased())
 <p>Example:</p>
 
 <pre class="highlight plaintext"><code>let string = "HELLO WORLD"
-print(string.pascalcased())
+print(string.pascalCased())
 // Prints "HelloWorld"
 </code></pre>
 
@@ -466,9 +439,9 @@ print(string.pascalcased())
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE6GuitarSS4slugFT_SS"></a>
-                    <a name="//apple_ref/swift/Method/slug()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE6GuitarSS4slugFT_SS">slug()</a>
+                    <a name="/s:FE6GuitarSS9slugCasedFT_SS"></a>
+                    <a name="//apple_ref/swift/Method/slugCased()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6GuitarSS9slugCasedFT_SS">slugCased()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -481,7 +454,7 @@ print(string.pascalcased())
 <p>Example:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.slug())
+print(string.slugCased())
 // Prints "Hello-World"
 </code></pre>
 
@@ -490,7 +463,7 @@ print(string.slug())
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">slug</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">slugCased</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -583,7 +556,7 @@ print(string.swapcased())
               </ul>
             </div>
             <div class="task-group">
-              <ul class="item-container">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -704,7 +677,7 @@ print(string.reverse())
               </ul>
             </div>
             <div class="task-group">
-              <ul class="item-container">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -945,7 +918,7 @@ print(string.padRight(token: "*", length: 13))
               </ul>
             </div>
             <div class="task-group">
-              <ul class="item-container">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1243,15 +1216,14 @@ print(string.truncate(length: 8))
                 </li>
               </ul>
             </div>
-          </div>
+          </section>
         </section>
-
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://github.com/ArtSabintsev/Guitar" target="_blank" rel="external">Arthur Ariel Sabintsev</a>. All rights reserved. (Last updated: 2017-03-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
       </article>
     </div>
-    <section class="footer">
-      <p>© 2016-2017 <a class="link" href="http://www.sabintsev.com" target="_blank" rel="external">Arthur Ariel Sabintsev</a></p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-    </section>
   </body>
 </div>
 </html>
