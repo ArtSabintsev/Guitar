@@ -201,6 +201,13 @@ public extension String {
         return reversed().first()
     }
 
+    /// Returns the character count of the string.
+    ///
+    /// - Returns: The character count of the string.
+    func length() -> Int {
+        return characters.count
+    }
+
     /// Retuns the reversed version of the string.
     ///
     /// Example:
@@ -231,27 +238,17 @@ public extension String {
     /// Example 2:
     ///
     ///     let string = "Hello World"
-    ///     print(string.pad(token: "*", length: 13))
+    ///     print(string.pad(length: 13, withToken: "*"))
     ///     // Prints "*Hello World*"
     ///
     /// - Parameters:
-    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
     ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned. If the the sum-total of characters added is odd, the left side of the string will have one less instance of the token.
-    /// - Returns: The left-padded copy of the string.
-    func pad(token: String = " ", length: Int) -> String {
+    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
+    /// - Returns: The padded copy of the string.
+    func pad(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
-
-        var s = self
-        repeat {
-            s.padLeft(token: token, length: length)
-            s.padRight(token: token, length: length)
-        } while s.characters.count < length
-
-        if s.characters.count == length {
-            s.trimLeft(length: 1)
-        }
-
-        return s
+        let delta = Int(ceil(Double(length-self.length())/2))
+        return padLeft(length: length-delta, withToken: token).padRight(length: length, withToken: token)
     }
 
     /// Returns the left-padded version of the string.
@@ -265,15 +262,16 @@ public extension String {
     /// Example 2:
     ///
     ///     let string = "Hello World"
-    ///     print(string.padLeft(token: "*", length: 13))
+    ///     print(string.padLeft(length: 13, withToken: "*"))
     ///     // Prints "Hello World**"
     ///
     /// - Parameters:
-    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
+    ///
     ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.
+    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
     /// - Returns: The left-padded copy of the string.
     @discardableResult
-    func padLeft(token: String = " ", length: Int) -> String {
+    func padLeft(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
 
         var s = self
@@ -292,15 +290,15 @@ public extension String {
     /// Example 2:
     ///
     ///     let string = "Hello World"
-    ///     print(string.padRight(token: "*", length: 13))
+    ///     print(string.padRight(length: 13, withToken: "*", ))
     ///     // Prints "  Hello World"
     ///
     /// - Parameters:
-    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
     ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.
+    ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
     /// - Returns: The right-padded copy of the string.
     @discardableResult
-    func padRight(token: String = " ", length: Int) -> String {
+    func padRight(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
 
         var s = self

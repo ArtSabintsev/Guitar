@@ -638,6 +638,38 @@ print(string.last())
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:FE6GuitarSS6lengthFT_Si"></a>
+                    <a name="//apple_ref/swift/Method/length()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6GuitarSS6lengthFT_Si">length()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the character count of the string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">length</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The character count of the string.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:FE6GuitarSS8reversedFT_SS"></a>
                     <a name="//apple_ref/swift/Method/reversed()" class="dashAnchor"></a>
                     <a class="token" href="#/s:FE6GuitarSS8reversedFT_SS">reversed()</a>
@@ -681,9 +713,9 @@ print(string.reversedreversed())
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE6GuitarSS3padFT5tokenSS6lengthSi_SS"></a>
-                    <a name="//apple_ref/swift/Method/pad(token:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE6GuitarSS3padFT5tokenSS6lengthSi_SS">pad(token:length:)</a>
+                    <a name="/s:FE6GuitarSS3padFT6lengthSi9withTokenSS_SS"></a>
+                    <a name="//apple_ref/swift/Method/pad(length:withToken:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6GuitarSS3padFT6lengthSi9withTokenSS_SS">pad(length:withToken:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -703,7 +735,7 @@ print(string.pad(length: 13))
 <p>Example 2:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.pad(token: "*", length: 13))
+print(string.pad(length: 13, withToken: "*"))
 // Prints "*Hello World*"
 </code></pre>
 
@@ -712,7 +744,7 @@ print(string.pad(token: "*", length: 13))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pad</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -720,19 +752,6 @@ print(string.pad(token: "*", length: 13))
                         <h4>Parameters</h4>
                         <table class="graybox">
                           <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>token</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
-
-                                </div>
-                              </td>
-                            </tr>
                             <tr>
                               <td>
                                 <code>
@@ -746,12 +765,25 @@ print(string.pad(token: "*", length: 13))
                                 </div>
                               </td>
                             </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>token</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
+
+                                </div>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The left-padded copy of the string.</p>
+                        <p>The padded copy of the string.</p>
 
                       </div>
                     </section>
@@ -760,9 +792,9 @@ print(string.pad(token: "*", length: 13))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE6GuitarSS7padLeftFT5tokenSS6lengthSi_SS"></a>
-                    <a name="//apple_ref/swift/Method/padLeft(token:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE6GuitarSS7padLeftFT5tokenSS6lengthSi_SS">padLeft(token:length:)</a>
+                    <a name="/s:FE6GuitarSS7padLeftFT6lengthSi9withTokenSS_SS"></a>
+                    <a name="//apple_ref/swift/Method/padLeft(length:withToken:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6GuitarSS7padLeftFT6lengthSi9withTokenSS_SS">padLeft(length:withToken:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -782,7 +814,7 @@ print(string.padLeft(length: 13))
 <p>Example 2:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.padLeft(token: "*", length: 13))
+print(string.padLeft(length: 13, withToken: "*"))
 // Prints "Hello World**"
 </code></pre>
 
@@ -791,7 +823,7 @@ print(string.padLeft(token: "*", length: 13))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">padLeft</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">padLeft</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -802,12 +834,12 @@ print(string.padLeft(token: "*", length: 13))
                             <tr>
                               <td>
                                 <code>
-                                <em>token</em>
+                                <em>length</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
+                                  <p>The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.</p>
 
                                 </div>
                               </td>
@@ -815,12 +847,12 @@ print(string.padLeft(token: "*", length: 13))
                             <tr>
                               <td>
                                 <code>
-                                <em>length</em>
+                                <em>token</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.</p>
+                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
 
                                 </div>
                               </td>
@@ -839,9 +871,9 @@ print(string.padLeft(token: "*", length: 13))
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE6GuitarSS8padRightFT5tokenSS6lengthSi_SS"></a>
-                    <a name="//apple_ref/swift/Method/padRight(token:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE6GuitarSS8padRightFT5tokenSS6lengthSi_SS">padRight(token:length:)</a>
+                    <a name="/s:FE6GuitarSS8padRightFT6lengthSi9withTokenSS_SS"></a>
+                    <a name="//apple_ref/swift/Method/padRight(length:withToken:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FE6GuitarSS8padRightFT6lengthSi9withTokenSS_SS">padRight(length:withToken:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -861,7 +893,7 @@ print(string.padRight(length: 13))
 <p>Example 2:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.padRight(token: "*", length: 13))
+print(string.padRight(length: 13, withToken: "*", ))
 // Prints "  Hello World"
 </code></pre>
 
@@ -870,7 +902,7 @@ print(string.padRight(token: "*", length: 13))
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">padRight</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">,</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">padRight</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">withToken</span> <span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -881,12 +913,12 @@ print(string.padRight(token: "*", length: 13))
                             <tr>
                               <td>
                                 <code>
-                                <em>token</em>
+                                <em>length</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
+                                  <p>The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.</p>
 
                                 </div>
                               </td>
@@ -894,12 +926,12 @@ print(string.padRight(token: "*", length: 13))
                             <tr>
                               <td>
                                 <code>
-                                <em>length</em>
+                                <em>token</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.</p>
+                                  <p>The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.</p>
 
                                 </div>
                               </td>
@@ -1219,7 +1251,7 @@ print(string.truncate(length: 8))
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/ArtSabintsev/Guitar" target="_blank" rel="external">Arthur Ariel Sabintsev</a>. All rights reserved. (Last updated: 2017-03-01)</p>
+          <p>&copy; 2017 <a class="link" href="https://github.com/ArtSabintsev/Guitar" target="_blank" rel="external">Arthur Ariel Sabintsev</a>. All rights reserved. (Last updated: 2017-03-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

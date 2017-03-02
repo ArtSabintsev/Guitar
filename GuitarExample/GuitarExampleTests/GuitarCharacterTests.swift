@@ -23,6 +23,12 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("-Hello_World-".last(), "-")
     }
 
+    func testlength() {
+        XCTAssertEqual("Hello World".length(), 11)
+        XCTAssertEqual("Hello_World".length(), 11)
+        XCTAssertEqual("  Hello World  ".length(), 15)
+    }
+
     func testReversed() {
         XCTAssertEqual("Hello World".reversed(), "dlroW olleH")
         XCTAssertEqual("4ello Worl6".reversed(), "6lroW olle4")

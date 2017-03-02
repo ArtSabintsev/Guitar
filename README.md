@@ -21,7 +21,6 @@ This a project is currently a work in progress. Contributions by the community a
 - [x] SwiftLint Integration
 - [ ] Unit Tests (In Progress)
 
-### Installation
 
 ## Installation Instructions
 
@@ -29,19 +28,17 @@ This a project is currently a work in progress. Contributions by the community a
 ```ruby
 pod 'Guitar'
 ```
-
 ### Carthage
 ``` swift
 github "ArtSabintsev/Guitar"
 ```
-
 ### Swift Package Manager
 ```swift
 .Package(url: "https://github.com/ArtSabintsev/Guitar.git")
 ```
 
 ## Documentation
-[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at http://sabintsev.com/Guitar/.
+[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at .
 
 ## Implemented Functions
 - **Boolean Operations**
