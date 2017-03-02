@@ -11,7 +11,7 @@ This a project is currently a work in progress. Contributions by the community a
 #### Functions
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
-- [x] Character Functions (`first`, `last`, `length`, etc.)
+- [x] Character Functions (`first`, `length`, `reverse`, etc.)
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [ ] Regex (Pure Swift Implementation) 
