@@ -9,8 +9,8 @@
 - Status: Active Development (as of March 1, 2017)
 - Contributions are highly encouraged.
 
-### Roadmap
-#### Functions
+## Roadmap
+### Functions
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
@@ -19,23 +19,23 @@
 - [ ] Regex (Pure Swift Implementation) 
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
 
-#### Documentation 
+### Documentation 
 - [x] Inline Function Documentation
 - [x] Jazzy Documentation (http://sabintsev.com/Guitar)
 - [ ] README Documentation
 
-#### Dependency Management
+### Dependency Management
 - [x] Carthage Support
 - [x] CocoaPods Support
 - [x] Swift Package Manager
 
-#### Testing
+### Testing
 - [x] Continuous Integration with Buddy Build
 - [ ] Performance Tests
 - [x] SwiftLint Integration
 - [x] Unit Tests
 
-#### Sample Apps
+### Sample Apps
 - [x] iOS
 - [ ] macOS
 - [ ] tvOS
