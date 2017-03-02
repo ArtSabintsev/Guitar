@@ -998,7 +998,7 @@
 			baseConfigurationReference = 9E22B976DB98E786247E6043 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = GuitarExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1014,7 +1014,7 @@
 			baseConfigurationReference = 5391D73EE9946D8C3FAA7B1C /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = GuitarExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1031,6 +1031,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				IBSC_MODULE = GuitarExample_Watch_Extension;
 				INFOPLIST_FILE = "GuitarExample-Watch/Info.plist";
@@ -1050,6 +1051,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				IBSC_MODULE = GuitarExample_Watch_Extension;
 				INFOPLIST_FILE = "GuitarExample-Watch/Info.plist";
@@ -1068,6 +1070,7 @@
 			baseConfigurationReference = 84F6C0760585D2397102691E /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1086,6 +1089,7 @@
 			baseConfigurationReference = 23BC29D833A6F4E509EDF2DA /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1105,7 +1109,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1124,7 +1129,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1142,7 +1148,7 @@
 			baseConfigurationReference = 0E52376DCF30B53F72A71E72 /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-Mac/Info.plist";
@@ -1160,7 +1166,7 @@
 			baseConfigurationReference = 5AD386DCA86287E0411423D5 /* Pods-GuitarTarget-GuitarExample-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "GuitarExample-Mac/Info.plist";
@@ -1273,7 +1279,7 @@
 			baseConfigurationReference = D347C6AD5FC269C3D664DDFE /* Pods-GuitarTarget-GuitarExample-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1289,7 +1295,7 @@
 			baseConfigurationReference = 265A9B87CD9DF26FCFDF7923 /* Pods-GuitarTarget-GuitarExample-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEVELOPMENT_TEAM = HT94948NDD;
 				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
