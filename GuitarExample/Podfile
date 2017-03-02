@@ -4,7 +4,9 @@ inhibit_all_warnings!
 abstract_target 'GuitarTarget' do
     pod 'Guitar', path: '../'
 
-    target 'GuitarExample' do
+    target 'GuitarExample-iOS' do
+        target 'GuitarExampleTests' do
+        end
     end
 
     target 'GuitarExample-Mac' do
@@ -14,12 +16,7 @@ abstract_target 'GuitarTarget' do
     end
 
     target 'GuitarExample-Watch' do
+        target 'GuitarExample-Watch Extension' do
+        end
     end
-
-    target 'GuitarExample-Watch Extension' do
-    end
-
-    target 'GuitarExampleTests' do
-    end
-
 end
