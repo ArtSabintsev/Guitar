@@ -103,12 +103,12 @@
 		55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarBooleanTests.swift; sourceTree = "<group>"; };
 		55DA075B1E66AF2200080633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55FA6A8F1E66919100806B9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = GuitarExample/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		55FA6A911E66919600806B9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GuitarExample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		55FA6A931E66919E00806B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = GuitarExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		55FA6A951E6691A400806B9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GuitarExample/Info.plist; sourceTree = SOURCE_ROOT; };
-		55FA6A981E6691DB00806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		55FA6A9B1E6691E900806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = GuitarExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		55FA6A8F1E66919100806B9C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55FA6A911E66919600806B9C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55FA6A931E66919E00806B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55FA6A951E6691A400806B9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FA6A981E6691DB00806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55FA6A9B1E6691E900806B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EB38CAFEA528134C8EF438 /* Pods-GuitarTarget-GuitarExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.release.xcconfig"; sourceTree = "<group>"; };
 		6B9DE84DEFA41E8D34FC40B0 /* Pods-GuitarTarget-GuitarExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample/Pods-GuitarTarget-GuitarExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8C15CE06C9571354EECCC42E /* Pods_GuitarTarget_GuitarExample_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +135,7 @@
 		8EA424A41E686438002E82A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA424A71E686438002E82A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EA424A91E686438002E82A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EDB77C11E0A516B00B13A61 /* GuitarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDB77C11E0A516B00B13A61 /* GuitarExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuitarExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A827E7C2FD090237DD8A68 /* Pods_GuitarTarget_GuitarExample_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTarget_GuitarExample_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C398E222C41C43E373A972 /* Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExampleTests/Pods-GuitarTarget-GuitarExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1D781C44A4CC24F09830AE6 /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuitarTarget-GuitarExample-TV/Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,9 +216,9 @@
 		8EA424611E6863E2002E82A8 /* GuitarExample-Watch */ = {
 			isa = PBXGroup;
 			children = (
-				8EA424621E6863E2002E82A8 /* Interface.storyboard */,
 				8EA424651E6863E2002E82A8 /* Assets.xcassets */,
 				8EA424671E6863E2002E82A8 /* Info.plist */,
+				8EA424621E6863E2002E82A8 /* Interface.storyboard */,
 			);
 			path = "GuitarExample-Watch";
 			sourceTree = "<group>";
@@ -226,12 +226,12 @@
 		8EA424701E6863E2002E82A8 /* GuitarExample-Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8EA424731E6863E2002E82A8 /* InterfaceController.swift */,
-				8EA424751E6863E2002E82A8 /* ExtensionDelegate.swift */,
-				8EA424771E6863E2002E82A8 /* NotificationController.swift */,
-				8EA424791E6863E2002E82A8 /* Assets.xcassets */,
-				8EA4247B1E6863E2002E82A8 /* Info.plist */,
 				8EA424711E6863E2002E82A8 /* Supporting Files */,
+				8EA424791E6863E2002E82A8 /* Assets.xcassets */,
+				8EA424751E6863E2002E82A8 /* ExtensionDelegate.swift */,
+				8EA4247B1E6863E2002E82A8 /* Info.plist */,
+				8EA424731E6863E2002E82A8 /* InterfaceController.swift */,
+				8EA424771E6863E2002E82A8 /* NotificationController.swift */,
 			);
 			path = "GuitarExample-Watch Extension";
 			sourceTree = "<group>";
@@ -241,17 +241,17 @@
 			children = (
 				8EA424721E6863E2002E82A8 /* PushNotificationPayload.apns */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8EA4248C1E68640E002E82A8 /* GuitarExample-TV */ = {
 			isa = PBXGroup;
 			children = (
 				8EA4248D1E68640E002E82A8 /* AppDelegate.swift */,
-				8EA4248F1E68640E002E82A8 /* ViewController.swift */,
-				8EA424911E68640E002E82A8 /* Main.storyboard */,
 				8EA424941E68640E002E82A8 /* Assets.xcassets */,
 				8EA424961E68640E002E82A8 /* Info.plist */,
+				8EA424911E68640E002E82A8 /* Main.storyboard */,
+				8EA4248F1E68640E002E82A8 /* ViewController.swift */,
 			);
 			path = "GuitarExample-TV";
 			sourceTree = "<group>";
@@ -260,10 +260,10 @@
 			isa = PBXGroup;
 			children = (
 				8EA424A01E686438002E82A8 /* AppDelegate.swift */,
-				8EA424A21E686438002E82A8 /* ViewController.swift */,
 				8EA424A41E686438002E82A8 /* Assets.xcassets */,
-				8EA424A61E686438002E82A8 /* Main.storyboard */,
 				8EA424A91E686438002E82A8 /* Info.plist */,
+				8EA424A61E686438002E82A8 /* Main.storyboard */,
+				8EA424A21E686438002E82A8 /* ViewController.swift */,
 			);
 			path = "GuitarExample-Mac";
 			sourceTree = "<group>";
@@ -285,21 +285,21 @@
 			isa = PBXGroup;
 			children = (
 				55DA07581E66AF2200080633 /* GuitarExampleTests */,
-				8EDB77C31E0A516B00B13A61 /* GuitarExample */,
+				8EDB77C31E0A516B00B13A61 /* GuitarExample-iOS */,
 				8EA4249F1E686438002E82A8 /* GuitarExample-Mac */,
 				8EA4248C1E68640E002E82A8 /* GuitarExample-TV */,
 				8EA424611E6863E2002E82A8 /* GuitarExample-Watch */,
 				8EA424701E6863E2002E82A8 /* GuitarExample-Watch Extension */,
-				8EDB77C21E0A516B00B13A61 /* Products */,
-				C668E0BFB155E0BBBB942019 /* Pods */,
 				8EBA7D58D400867BBE407DD7 /* Frameworks */,
+				C668E0BFB155E0BBBB942019 /* Pods */,
+				8EDB77C21E0A516B00B13A61 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
 		8EDB77C21E0A516B00B13A61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EDB77C11E0A516B00B13A61 /* GuitarExample.app */,
+				8EDB77C11E0A516B00B13A61 /* GuitarExample-iOS.app */,
 				55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */,
 				8EA424601E6863E2002E82A8 /* GuitarExample-Watch.app */,
 				8EA4246C1E6863E2002E82A8 /* GuitarExample-Watch Extension.appex */,
@@ -309,18 +309,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EDB77C31E0A516B00B13A61 /* GuitarExample */ = {
+		8EDB77C31E0A516B00B13A61 /* GuitarExample-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				55FA6A911E66919600806B9C /* AppDelegate.swift */,
-				55FA6A8F1E66919100806B9C /* ViewController.swift */,
 				55FA6A931E66919E00806B9C /* Assets.xcassets */,
-				55FA6A971E6691DB00806B9C /* Main.storyboard */,
-				55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */,
 				55FA6A951E6691A400806B9C /* Info.plist */,
+				55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */,
+				55FA6A971E6691DB00806B9C /* Main.storyboard */,
+				55FA6A8F1E66919100806B9C /* ViewController.swift */,
 			);
-			name = GuitarExample;
-			path = GuitarSample;
+			path = "GuitarExample-iOS";
 			sourceTree = "<group>";
 		};
 		C668E0BFB155E0BBBB942019 /* Pods */ = {
@@ -446,9 +445,9 @@
 			productReference = 8EA4249E1E686437002E82A8 /* GuitarExample-Mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8EDB77C01E0A516B00B13A61 /* GuitarExample */ = {
+		8EDB77C01E0A516B00B13A61 /* GuitarExample-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */;
+			buildConfigurationList = 8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample-iOS" */;
 			buildPhases = (
 				5D76F3E0E4022A399E6B34DB /* [CP] Check Pods Manifest.lock */,
 				8EDB77BD1E0A516B00B13A61 /* Sources */,
@@ -464,9 +463,9 @@
 			dependencies = (
 				8EA4247D1E6863E2002E82A8 /* PBXTargetDependency */,
 			);
-			name = GuitarExample;
+			name = "GuitarExample-iOS";
 			productName = GuitarSample;
-			productReference = 8EDB77C11E0A516B00B13A61 /* GuitarExample.app */;
+			productReference = 8EDB77C11E0A516B00B13A61 /* GuitarExample-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -525,7 +524,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8EDB77C01E0A516B00B13A61 /* GuitarExample */,
+				8EDB77C01E0A516B00B13A61 /* GuitarExample-iOS */,
 				8EA4249D1E686437002E82A8 /* GuitarExample-Mac */,
 				8EA4248A1E68640E002E82A8 /* GuitarExample-TV */,
 				8EA4245F1E6863E2002E82A8 /* GuitarExample-Watch */,
@@ -917,7 +916,7 @@
 /* Begin PBXTargetDependency section */
 		55DA075D1E66AF2200080633 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8EDB77C01E0A516B00B13A61 /* GuitarExample */;
+			target = 8EDB77C01E0A516B00B13A61 /* GuitarExample-iOS */;
 			targetProxy = 55DA075C1E66AF2200080633 /* PBXContainerItemProxy */;
 		};
 		8EA4246F1E6863E2002E82A8 /* PBXTargetDependency */ = {
@@ -939,6 +938,7 @@
 				55FA6A981E6691DB00806B9C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		55FA6A9A1E6691E900806B9C /* LaunchScreen.storyboard */ = {
@@ -947,6 +947,7 @@
 				55FA6A9B1E6691E900806B9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8EA424621E6863E2002E82A8 /* Interface.storyboard */ = {
@@ -955,6 +956,7 @@
 				8EA424631E6863E2002E82A8 /* Base */,
 			);
 			name = Interface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8EA424911E68640E002E82A8 /* Main.storyboard */ = {
@@ -963,6 +965,7 @@
 				8EA424921E68640E002E82A8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		8EA424A61E686438002E82A8 /* Main.storyboard */ = {
@@ -971,6 +974,7 @@
 				8EA424A71E686438002E82A8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1251,7 +1255,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
-				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1265,7 +1269,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HT94948NDD;
-				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GuitarExample-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1330,7 +1334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample" */ = {
+		8EDB77D31E0A516B00B13A61 /* Build configuration list for PBXNativeTarget "GuitarExample-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8EDB77D41E0A516B00B13A61 /* Debug */,

@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-               BuildableName = "GuitarExample.app"
-               BlueprintName = "GuitarExample"
+               BuildableName = "GuitarExample-iOS.app"
+               BlueprintName = "GuitarExample-iOS"
                ReferencedContainer = "container:GuitarExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -66,7 +66,7 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "GuitarExample-Watch Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "GuitarExample-Watch Extension/Supporting Files/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"
@@ -98,7 +98,7 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
-      notificationPayloadFile = "GuitarExample-Watch Extension/PushNotificationPayload.apns">
+      notificationPayloadFile = "GuitarExample-Watch Extension/Supporting Files/PushNotificationPayload.apns">
       <RemoteRunnable
          runnableDebuggingMode = "2"
          BundleIdentifier = "com.apple.carousel"

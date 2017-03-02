@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-               BuildableName = "GuitarExample.app"
-               BlueprintName = "GuitarExample"
+               BuildableName = "GuitarExample-iOS.app"
+               BlueprintName = "GuitarExample-iOS"
                ReferencedContainer = "container:GuitarExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarExample.app"
-            BlueprintName = "GuitarExample"
+            BuildableName = "GuitarExample-iOS.app"
+            BlueprintName = "GuitarExample-iOS"
             ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarExample.app"
-            BlueprintName = "GuitarExample"
+            BuildableName = "GuitarExample-iOS.app"
+            BlueprintName = "GuitarExample-iOS"
             ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8EDB77C01E0A516B00B13A61"
-            BuildableName = "GuitarExample.app"
-            BlueprintName = "GuitarExample"
+            BuildableName = "GuitarExample-iOS.app"
+            BlueprintName = "GuitarExample-iOS"
             ReferencedContainer = "container:GuitarExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
