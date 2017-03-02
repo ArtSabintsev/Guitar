@@ -41,10 +41,10 @@ class GuitarPaddingTests: XCTestCase {
         XCTAssertEqual(" -H3Llo W0rld_ ".pad(length: 20), "   -H3Llo W0rld_    ")
         XCTAssertEqual("Hello World".pad(length: 5), "Hello World")
 
-//        XCTAssertEqual("Hello World".padRight(length: 15, with: "*"), "Hello World****")
-//        XCTAssertEqual("-Hello_World-".padRight(length: 15, with: "*"), "-Hello_World-**")
-//        XCTAssertEqual(" -H3Llo W0rld_ ".padRight(length: 20, with: "*"), " -H3Llo W0rld_ *****")
-//        XCTAssertEqual("Hello World".padRight(length: 5, with: "*"), "Hello World")
+        XCTAssertEqual("Hello World".pad(length: 15, withToken: "*"), "**Hello World**")
+        XCTAssertEqual("-Hello_World-".pad(length: 15, withToken: "*"), "*-Hello_World-*")
+        XCTAssertEqual(" -H3Llo W0rld_ ".pad(length: 20, withToken: "*"), "** -H3Llo W0rld_ ***")
+        XCTAssertEqual("Hello World".pad(length: 5, withToken: "*"), "Hello World")
     }
     
 }
