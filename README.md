@@ -16,7 +16,7 @@
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
-- [ ] Regex (Pure Swift Implementation) 
+- [ ] Regular Expressions / Regex (Pure Swift Implementation) 
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
 
 ### Documentation 
