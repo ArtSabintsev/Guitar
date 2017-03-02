@@ -7,6 +7,9 @@
 
 This a project is currently a work in progress. Contributions by the community are highly encouraged.
 
+## Documentation
+[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at http://www.sabintsev.com/Guitar/
+
 ### Roadmap to 1.0.0 (Alphabetical Order)
 - [x] Carthage Support
 - [x] CocoaPods Support
@@ -21,9 +24,7 @@ This a project is currently a work in progress. Contributions by the community a
 - [x] SwiftLint Integration
 - [ ] Unit Tests (In Progress)
 
-
 ## Installation Instructions
-
 ### CocoaPods
 ```ruby
 pod 'Guitar'
@@ -36,9 +37,6 @@ github "ArtSabintsev/Guitar"
 ```swift
 .Package(url: "https://github.com/ArtSabintsev/Guitar.git")
 ```
-
-## Documentation
-[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at .
 
 ## Implemented Functions
 - **Boolean Operations**
@@ -60,6 +58,7 @@ github "ArtSabintsev/Guitar"
 - **Character Operations**
  - first()
  - last()
+ - length()
  - reverse()
 - **Padding Operations**
  - pad()
