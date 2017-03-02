@@ -7,9 +7,6 @@
 
 This a project is currently a work in progress. Contributions by the community are highly encouraged.
 
-## Documentation
-[Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at http://www.sabintsev.com/Guitar/
-
 ### Roadmap
 #### Functions
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
@@ -58,6 +55,9 @@ github "ArtSabintsev/Guitar"
 ```
 
 ## Implemented Functions
+
+The full documentation can be found at http://www.sabintsev.com/Guitar/.
+
 - **Boolean Operations**
   - isAlpha()
   - isAlphanumeric()
