@@ -1,0 +1,6 @@
+framework module Guitar {
+  umbrella header "Guitar-OSX-umbrella.h"
+
+  export *
+  module * { export * }
+}
