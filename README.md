@@ -43,7 +43,7 @@ github "ArtSabintsev/Guitar"
 ## Documentation
 [Jazzy](http://github.com/realm/jazzy/)-generated documentation can be found at http://sabintsev.com/Guitar/.
 
-## Implemented Functionality
+## Implemented Functions
 - **Boolean Operations**
   - isAlpha()
   - isAlphanumeric()
@@ -57,7 +57,7 @@ github "ArtSabintsev/Guitar"
   - decapitalized()
   - kebabCased()
   - pascalCased()
-  - slug()
+  - slugCased()
   - snakeCased()
   - swapCased()
 - **Character Operations**
