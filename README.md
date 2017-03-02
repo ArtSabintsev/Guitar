@@ -22,7 +22,7 @@ This a project is currently a work in progress. Contributions by the community a
 - [ ] Stable API
 - [x] Swift Package Manager
 - [x] SwiftLint Integration
-- [ ] Unit Tests (In Progress)
+- [x] Unit Tests
 
 ## Installation Instructions
 ### CocoaPods
@@ -69,7 +69,7 @@ github "ArtSabintsev/Guitar"
  - suffixed()
  - trimLeft()
  - trimRight()
- - truncate()
+ - truncated()
 
 ## Inspiration
 This project was inspired by [Voca](https://vocajs.com/).

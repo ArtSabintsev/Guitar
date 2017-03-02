@@ -379,18 +379,28 @@ public extension String {
     /// Example:
     ///
     ///     let string = "Hello World"
-    ///     print(string.truncate(length: 8))
+    ///     print(string.truncated(length: 8))
     ///     // Prints "Hello..."
     ///
     /// - Parameter length: The final length of the string, which includes the ellipsis: `...`).
     /// - Returns: The truncated copy of the string.
     @discardableResult
-    func truncate(length: Int) -> String {
-        guard (length-3) > characters.count else {
+    func truncated(length: Int) -> String {
+        let ellipsis = "..."
+
+        let delta = self.length() - length
+
+        guard delta > 0 else {
             return self
         }
 
-        return trimRight(length: length) + "..."
+        let lengthWithoutEllipsis = length-ellipsis.length()
+
+        guard lengthWithoutEllipsis > 0 else {
+            return self
+        }
+
+        return prefixed(length: lengthWithoutEllipsis) + ellipsis
     }
 }
 
