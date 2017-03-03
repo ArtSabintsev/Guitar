@@ -23,12 +23,6 @@ class GuitarCaseTests: XCTestCase {
         // TODO: Decapitalized needs to be fixed to work with multiple words.
     }
 
-    func testPascalCased() {
-        XCTAssertEqual("Hello World".pascalCased(), "HelloWorld")
-        XCTAssertEqual("HelloWorld".pascalCased(), "HelloWorld")
-        XCTAssertEqual("-Hello_World-".pascalCased(), "HelloWorld")
-        XCTAssertEqual("Hell0W0rld".pascalCased(), "Hell0W0rld")
-    }
 
     func testKebabCased() {
         XCTAssertEqual("Hello World".kebabCased(), "-hello-world-")
@@ -37,6 +31,13 @@ class GuitarCaseTests: XCTestCase {
 
         // TODO: This should return -hello-world- in the future.
         XCTAssertEqual("HelloWorld".kebabCased(), "-helloworld-")
+    }
+
+    func testPascalCased() {
+        XCTAssertEqual("Hello World".pascalCased(), "HelloWorld")
+        XCTAssertEqual("HelloWorld".pascalCased(), "HelloWorld")
+        XCTAssertEqual("-Hello_World-".pascalCased(), "HelloWorld")
+        XCTAssertEqual("Hell0W0rld".pascalCased(), "Hell0W0rld")
     }
 
     func testSlugCased() {
