@@ -12,8 +12,8 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
 ## Project Status
 
-- **Release**: Alpha (until v0.1.0)
-- **Status**: Active Development (as of March 1, 2017)
+- **Release Stage**: Alpha (until v0.1.0)
+- **Development Status**: Active Development (as of March 1, 2017)
 - **Contributions are highly encouraged.**
 
 ## Roadmap
