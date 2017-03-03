@@ -70,46 +70,46 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 #### isAlpha()
 ```swift
 let string = "HelloWorld"
-string.isAlpha() // returns True
+string.isAlpha() // True
 
 let string = "Hell0World"
-string.isAlpha() // returns False
+string.isAlpha() // False
 ```
 
 #### isAlphanumeric()
 ```swift
 let string = "HelloWorld"
-string.isAlphanumeric() // returns True
+string.isAlphanumeric() // True
 
 let string = "Hell0World"
-string.isAlphanumeric() // returns True
+string.isAlphanumeric() // True
 
 let string = "Hell0 World"
-string.isAlphanumeric() // returns False
+string.isAlphanumeric() // False
 ```
 
 #### isCapitalized()
 ```swift
 let string = "Hello World"
-string.isCapitalized() // returns True
+string.isCapitalized() // True
 
 let string = "hello World"
-string.isCapitalized() // returns False
+string.isCapitalized() // False
 
 let string = "Hello-World"
-string.isCapitalized() // returns True
+string.isCapitalized() // True
 ```
 
 #### isDecapitalized()
 ```swift
 let string = "hello World"
-string.isDecapitalized() // returns True
+string.isDecapitalized() // True
 
 let string = "Hello World"
-string.isDecapitalized() // returns False
+string.isDecapitalized() // False
 
 let string = "hello-World"
-string.isDecapitalized() // returns True
+string.isDecapitalized() // True
 ```
 
 #### isLowercased()
@@ -117,25 +117,25 @@ string.isDecapitalized() // returns True
 // Note, Swift treats non-alphabetical characters as Uppercased.
 
 let string = "helloworld"
-string.isLowercased() // returns True
+string.isLowercased() // True
 
 let string = "hello world"
-string.isLowercased() // returns False
+string.isLowercased() // False
 
 let string = "hello-world"
-string.isLowercased() // returns False
+string.isLowercased() // False
 ```
 
 #### isNumeric()
 ```swift
 let string = "73110"
-string.isNumeric() // returns True
+string.isNumeric() // True
 
 let string = "73110 1337"
-string.isNumeric() // returns False
+string.isNumeric() // False
 
 let string = "73110World"
-string.isNumeric() // returns False
+string.isNumeric() // False
 ```
 
 #### isUpppercased()
@@ -144,16 +144,16 @@ string.isNumeric() // returns False
 // Note, Swift treats non-alphabetical characters as Uppercased.
 
 let string = "HELLOWORLD"
-string.isUpppercased() // returns True
+string.isUpppercased() // True
 
 let string = "HELLO WORLD"
-string.isUpppercased() // returns True
+string.isUpppercased() // True
 
 let string = "HELLO-W0RLD"
-string.isUpppercased() // returns True
+string.isUpppercased() // True
 
 let string = "HeLLoW0RLD"
-string.isUpppercased() // returns False
+string.isUpppercased() // False
 ```
 
 ### Padding Operations
@@ -204,6 +204,38 @@ let string = "Hello World" // 11 Characters
 string.padRight(length: 16) // "**Hello World***"
 ```
 
+### Trimming Operations
+
+### prefixed()
+```swift
+let string = "Hello World"
+string.prefixed(length: 7) // "Hello W"
+```
+
+### suffixed()
+```swift
+let string = "Hello World"
+string.suffixed(length: 7) // "o World"
+```
+
+### trimLeft()
+```swift
+let string = "Hello World"
+string.prefixed(length: 7) // "orld"
+```
+
+### trimRight()
+```swift
+let string = "Hello World"
+string.prefixed(length: 7) // "Hell"
+```
+
+### truncated()
+```swift
+let string = "Hello World"
+string.prefixed(length: 7) // "Hell..." // Appends an ellipsis, ..., to the end of the string.
+```
+
 - **Case Operations**
   - camelCased()
   - decapitalized()
@@ -217,12 +249,6 @@ string.padRight(length: 16) // "**Hello World***"
  - last()
  - length()
  - reverse()
-- **Trimming Operations**
- - prefixed()
- - suffixed()
- - trimLeft()
- - trimRight()
- - truncated()
 
 ## Inspiration
 This project was inspired by [Voca](https://vocajs.com/).
