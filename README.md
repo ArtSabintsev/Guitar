@@ -277,31 +277,31 @@ string.pad(length: 16) // "**Hello World***"
 
 ### Trimming Operations
 
-### prefixed()
+#### prefixed()
 ```swift
 let string = "Hello World"
 string.prefixed(length: 7) // "Hello W"
 ```
 
-### suffixed()
+#### suffixed()
 ```swift
 let string = "Hello World"
 string.suffixed(length: 7) // "o World"
 ```
 
-### trimLeft()
+#### trimLeft()
 ```swift
 let string = "Hello World"
 string.trimLeft(length: 7) // "orld"
 ```
 
-### trimRight()
+#### trimRight()
 ```swift
 let string = "Hello World"
 string.trimRight(length: 7) // "Hell"
 ```
 
-### truncated()
+#### truncated()
 ```swift
 let string = "Hello World"
 string.truncated(length: 7) // "Hell..." (Appends an ellipsis, ..., to the end of the string.)
