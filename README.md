@@ -29,8 +29,8 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
 ### Documentation
 - [x] Inline Function Documentation
-- [x] Jazzy Documentation (http://sabintsev.com/Guitar)
-- [x] README Documentation
+- [x] Jazzy Function Documentation (http://sabintsev.com/Guitar)
+- [x] README Function Documentation
 
 ### Dependency Management
 - [x] Carthage Support
@@ -40,8 +40,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 ### Testing
 - [x] Continuous Integration with Buddy Build
 - [x] SwiftLint Integration
-- [x] Unit Tests for Public Functions
-- [ ] Unit Tests for Private Functions
+- [x] Unit Tests
 
 ## Installation Instructions
 ### CocoaPods
