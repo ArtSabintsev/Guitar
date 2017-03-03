@@ -155,10 +155,10 @@ string.isUpppercased() // False
 #### camelCased()
 ```swift
 let string = "Hello World"
-string.kebabCased() // "helloWorld"
+string.camelCased() // "helloWorld"
 
 let string = "hello_world"
-string.kebabCased() // "helloWorld"
+string.camelCased() // "helloWorld"
 ```
 
 #### decapitalized()
@@ -224,7 +224,7 @@ string.length() // "11"
 #### reversed()
 ```swift
 let string = "Hello World"
-string.last() // "dlroW olleH"
+string.reversed() // "dlroW olleH"
 ```
 
 ### Padding Operations
@@ -256,23 +256,23 @@ string.padRight(length: 5) // Returns the original string, "Hello World"
 #### pad()
 ```swift
 let string = "Hello World" // 11 Characters
-string.padRight(length: 15) // "  Hello World  "
+string.pad(length: 15) // "  Hello World  "
 
 let string = "Hello World" // 11 Characters
-string.padRight(length: 5) // Returns the original string, "Hello World"
+string.pad(length: 5) // Returns the original string, "Hello World"
 
 let string = "Hello World" // 11 Characters
-string.padRight(length: 15, withToken: "*") // "**Hello World**"
+string.pad(length: 15, withToken: "*") // "**Hello World**"
 
 /* Note: If the difference between the final length
  and number of characters in the original string is odd,
  the string is padded extra on the right side.
  */
 let string = "Hello World" // 11 Characters
-string.padRight(length: 16) // "  Hello World   "
+string.pad(length: 16) // "  Hello World   "
 
 let string = "Hello World" // 11 Characters
-string.padRight(length: 16) // "**Hello World***"
+string.pad(length: 16) // "**Hello World***"
 ```
 
 ### Trimming Operations
@@ -292,19 +292,19 @@ string.suffixed(length: 7) // "o World"
 ### trimLeft()
 ```swift
 let string = "Hello World"
-string.prefixed(length: 7) // "orld"
+string.trimLeft(length: 7) // "orld"
 ```
 
 ### trimRight()
 ```swift
 let string = "Hello World"
-string.prefixed(length: 7) // "Hell"
+string.trimRight(length: 7) // "Hell"
 ```
 
 ### truncated()
 ```swift
 let string = "Hello World"
-string.prefixed(length: 7) // "Hell..." (Appends an ellipsis, ..., to the end of the string.)
+string.truncated(length: 7) // "Hell..." (Appends an ellipsis, ..., to the end of the string.)
 ```
 
 ## Inspiration
