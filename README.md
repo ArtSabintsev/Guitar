@@ -19,6 +19,7 @@ This library seeks to add common string manipulation functions that are needed i
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
+- [ ] Latinization Functions
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [ ] Regular Expressions / Regex (Pure Swift Implementation)
@@ -27,7 +28,7 @@ This library seeks to add common string manipulation functions that are needed i
 ### Documentation
 - [x] Inline Function Documentation
 - [x] Jazzy Documentation (http://sabintsev.com/Guitar)
-- [ ] README Documentation
+- [x] README Documentation
 
 ### Dependency Management
 - [x] Carthage Support
@@ -36,16 +37,9 @@ This library seeks to add common string manipulation functions that are needed i
 
 ### Testing
 - [x] Continuous Integration with Buddy Build
-- [ ] Performance Tests
 - [x] SwiftLint Integration
-- [x] Unit Tests
-
-### Sample Apps
-- [x] iOS
-- [x] macOS
-- [x] tvOS
-- [x] watchOS
-- [ ] Server Side
+- [x] Unit Tests for Public Functions
+- [ ] Unit Tests for Private Functions
 
 ## Installation Instructions
 ### CocoaPods
@@ -156,6 +150,83 @@ let string = "HeLLoW0RLD"
 string.isUpppercased() // False
 ```
 
+### Case Operations
+
+#### camelCased()
+```swift
+let string = "Hello World"
+string.kebabCased() // "helloWorld"
+
+let string = "hello_world"
+string.kebabCased() // "helloWorld"
+```
+
+#### decapitalized()
+```swift
+// Implementation is currently broken.
+```
+
+#### kebabCased()
+```swift
+let string = "Hello World"
+string.kebabCased() // "-Hello-World-"
+
+let string = "hello_world"
+string.kebabCased() // "-hello-world-"
+```
+
+#### pascalCased()
+```swift
+let string = "Hello World"
+string.pascalCased() // "HelloWorld"
+
+let string = "hello_world"
+string.pascalCased() // "HelloWorld"
+```
+
+#### slugCased()
+```swift
+let string = "Hello World"
+string.slugCased() // "Hello-World"
+```
+
+#### snakeCased()
+```swift
+let string = "Hello World"
+string.snakeCased() // "Hello_World"
+```
+#### swapCased()
+```swift
+let string = "Hello World"
+string.swapCased() // "hELLO wORLD"
+```
+
+### Character Operations
+
+#### first()
+```swift
+let string = "Hello World"
+string.first() // "H"
+```
+
+#### last()
+```swift
+let string = "Hello World"
+string.last() // "d"
+```
+
+#### length()
+```swift
+let string = "Hello World"
+string.length() // "11"
+```
+
+#### reversed()
+```swift
+let string = "Hello World"
+string.last() // "dlroW olleH"
+```
+
 ### Padding Operations
 
 #### padLeft()
@@ -233,22 +304,8 @@ string.prefixed(length: 7) // "Hell"
 ### truncated()
 ```swift
 let string = "Hello World"
-string.prefixed(length: 7) // "Hell..." // Appends an ellipsis, ..., to the end of the string.
+string.prefixed(length: 7) // "Hell..." (Appends an ellipsis, ..., to the end of the string.)
 ```
-
-- **Case Operations**
-  - camelCased()
-  - decapitalized()
-  - kebabCased()
-  - pascalCased()
-  - slugCased()
-  - snakeCased()
-  - swapCased()
-- **Character Operations**
- - first()
- - last()
- - length()
- - reverse()
 
 ## Inspiration
 This project was inspired by [Voca](https://vocajs.com/).
