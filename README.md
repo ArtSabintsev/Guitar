@@ -154,6 +154,55 @@ string.isUpppercased() // returns True
 
 let string = "HeLLoW0RLD"
 string.isUpppercased() // returns False
+```
+
+### Padding Operations
+
+#### padLeft()
+```swift
+let string = "Hello World" // 11 Characters
+string.padLeft(length: 15) // "    Hello World"
+
+let string = "Hello World" // 11 Characters
+string.padLeft(length: 15, withToken: "*") // "****Hello World"
+
+let string = "Hello World" // 11 Characters
+string.padLeft(length: 5) // Returns the original string, "Hello World"
+```
+
+#### padRight()
+```swift
+let string = "Hello World" // 11 Characters
+string.padRight(length: 15) // "Hello World    "
+
+let string = "Hello World" // 11 Characters
+string.padRight(length: 15, withToken: "*") // "Hello World****"
+
+let string = "Hello World" // 11 Characters
+string.padRight(length: 5) // Returns the original string, "Hello World"
+```
+
+#### pad()
+```swift
+let string = "Hello World" // 11 Characters
+string.padRight(length: 15) // "  Hello World  "
+
+let string = "Hello World" // 11 Characters
+string.padRight(length: 5) // Returns the original string, "Hello World"
+
+let string = "Hello World" // 11 Characters
+string.padRight(length: 15, withToken: "*") // "**Hello World**"
+
+/* Note: If the difference between the final length
+ and number of characters in the original string is odd,
+ the string is padded extra on the right side.
+ */
+let string = "Hello World" // 11 Characters
+string.padRight(length: 16) // "  Hello World   "
+
+let string = "Hello World" // 11 Characters
+string.padRight(length: 16) // "**Hello World***"
+```
 
 - **Case Operations**
   - camelCased()
@@ -168,10 +217,6 @@ string.isUpppercased() // returns False
  - last()
  - length()
  - reverse()
-- **Padding Operations**
- - pad()
- - padLeft()
- - padRight()
 - **Trimming Operations**
  - prefixed()
  - suffixed()
