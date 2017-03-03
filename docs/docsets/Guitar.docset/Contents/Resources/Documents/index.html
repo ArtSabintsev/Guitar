@@ -4,56 +4,82 @@
     <title>Guitar  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
+
+
     <a title="Guitar  Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="index.html">Guitar Docs</a> (100% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html">Guitar Reference</a>
-        <img id="carat" src="img/carat.png" />
-        Guitar  Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          Guitar Docs
+        </a>
+         (100% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/artsabintsev/guitar">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">Guitar Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Guitar  Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/String.html">String</a>
+                <a class="nav-group-task-link" href="Extensions/String.html">String</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content">
             
             <a href='#guitar' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='guitar'>Guitar</h1>
 <a href='#a-cross-platform-string-library-written-in-swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-cross-platform-string-library-written-in-swift'>A Cross-Platform String Library Written in Swift.</h3>
 
-<p><a href="https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master"><img src="https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest" alt="BuddyBuild"></a> <a href="http://cocoadocs.org/docsets/Guitar"><img src="https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat" alt="Platform"></a> <a href="http://sabintsev.com/Guitar/"><img src="https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg" alt="Documentation"></a></p>
+<p><a href="https://travis-ci.org/ArtSabintsev/Guitar"><img src="https://travis-ci.org/ArtSabintsev/Guitar.svg?branch=master" alt="Build Status"></a> <a href="http://sabintsev.com/Guitar/"><img src="https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg" alt="Documentation"></a> <a href="http://cocoadocs.org/docsets/Guitar"><img src="https://img.shields.io/cocoapods/p/Alamofire.svg?style=flat" alt="Platform"></a> </p>
 
-<p><a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/v/Guitar.svg" alt="CocoaPods"></a>  <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg" alt="SwiftPM Compatible"></a>  <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dt/Guitarn.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dm/Guitar.svg" alt="CocoaPods"></a> </p>
+<p><a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/v/Guitar.svg" alt="CocoaPods"></a>  <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg" alt="SwiftPM Compatible"></a>  <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dt/Guitarn.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dm/Guitar.svg" alt="CocoaPods"></a></p>
 <a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
 
 <p>This library seeks to add common string manipulation functions that are needed in both mobile and server-side development, but are missing in Swift&rsquo;s Foundation library.</p>
+
+<p>The full documentation can be found at <a href="http://www.sabintsev.com/Guitar/">http://www.sabintsev.com/Guitar/</a>.</p>
 <a href='#project-status' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='project-status'>Project Status</h2>
 
 <ul>
-<li><strong>Release</strong>: Alpha (until v0.1.0)</li>
-<li><strong>Status</strong>: Active Development (as of March 1, 2017)</li>
+<li><strong>Release Stage</strong>: Alpha (until v0.1.0)</li>
+<li><strong>Development Status</strong>: Active Development (as of March 1, 2017)</li>
 <li><strong>Contributions are highly encouraged.</strong></li>
 </ul>
 <a href='#roadmap' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='roadmap'>Roadmap</h2>
@@ -63,6 +89,7 @@
 <li>[x] Boolean Functions (<code>isAlpha</code>, <code>isNumeric</code>, <code>isUppercase</code>, etc.)</li>
 <li>[x] Case Functions (<code>camelCased</code>, <code>pascalCased</code>, <code>kebabCased</code>, etc.)</li>
 <li>[x] Character Functions (<code>first</code>, <code>length</code>, <code>reverse</code>, etc.)</li>
+<li>[ ] Latinization Functions</li>
 <li>[ ] HTML Manipulation Functions</li>
 <li>[x] Padding Functions (<code>padLeft</code>, <code>padRight</code>, <code>pad</code>)</li>
 <li>[ ] Regular Expressions / Regex (Pure Swift Implementation)</li>
@@ -72,8 +99,8 @@
 
 <ul>
 <li>[x] Inline Function Documentation</li>
-<li>[x] Jazzy Documentation (<a href="http://sabintsev.com/Guitar">http://sabintsev.com/Guitar</a>)</li>
-<li>[ ] README Documentation</li>
+<li>[x] Jazzy Function Documentation (<a href="http://sabintsev.com/Guitar">http://sabintsev.com/Guitar</a>)</li>
+<li>[x] README Function Documentation</li>
 </ul>
 <a href='#dependency-management' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='dependency-management'>Dependency Management</h3>
 
@@ -86,18 +113,8 @@
 
 <ul>
 <li>[x] Continuous Integration with Buddy Build</li>
-<li>[ ] Performance Tests</li>
 <li>[x] SwiftLint Integration</li>
 <li>[x] Unit Tests</li>
-</ul>
-<a href='#sample-apps' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='sample-apps'>Sample Apps</h3>
-
-<ul>
-<li>[x] iOS</li>
-<li>[x] macOS</li>
-<li>[x] tvOS</li>
-<li>[x] watchOS</li>
-<li>[ ] Server Side</li>
 </ul>
 <a href='#installation-instructions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation-instructions'>Installation Instructions</h2>
 <a href='#cocoapods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='cocoapods'>CocoaPods</h3>
@@ -110,57 +127,198 @@
 <pre class="highlight swift"><code><span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/ArtSabintsev/Guitar.git"</span><span class="p">)</span>
 </code></pre>
 <a href='#implemented-functions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='implemented-functions'>Implemented Functions</h2>
+<a href='#boolean-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='boolean-operations'>Boolean Operations</h3>
+<a href='#isalpha' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='isalpha'>isAlpha()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HelloWorld"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isAlpha</span><span class="p">()</span> <span class="c1">// True</span>
 
-<p>The full documentation can be found at <a href="http://www.sabintsev.com/Guitar/">http://www.sabintsev.com/Guitar/</a>.</p>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hell0World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isAlpha</span><span class="p">()</span> <span class="c1">// False</span>
+</code></pre>
+<a href='#isalphanumeric' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='isalphanumeric'>isAlphanumeric()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HelloWorld"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isAlphanumeric</span><span class="p">()</span> <span class="c1">// True</span>
 
-<ul>
-<li><strong>Boolean Operations</strong>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hell0World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isAlphanumeric</span><span class="p">()</span> <span class="c1">// True</span>
 
-<ul>
-<li>isAlpha()</li>
-<li>isAlphanumeric()</li>
-<li>isCapitalized()</li>
-<li>isDecapitalized()</li>
-<li>isLowercased()</li>
-<li>isNumeric()</li>
-<li>isUppercased()</li>
-</ul></li>
-<li><strong>Case Operations</strong>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hell0 World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isAlphanumeric</span><span class="p">()</span> <span class="c1">// False</span>
+</code></pre>
+<a href='#iscapitalized' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='iscapitalized'>isCapitalized()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isCapitalized</span><span class="p">()</span> <span class="c1">// True</span>
 
-<ul>
-<li>camelCased()</li>
-<li>decapitalized()</li>
-<li>kebabCased()</li>
-<li>pascalCased()</li>
-<li>slugCased()</li>
-<li>snakeCased()</li>
-<li>swapCased()</li>
-</ul></li>
-<li><strong>Character Operations</strong>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isCapitalized</span><span class="p">()</span> <span class="c1">// False</span>
 
-<ul>
-<li>first()</li>
-<li>last()</li>
-<li>length()</li>
-<li>reverse()</li>
-</ul></li>
-<li><strong>Padding Operations</strong>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello-World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isCapitalized</span><span class="p">()</span> <span class="c1">// True</span>
+</code></pre>
+<a href='#isdecapitalized' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='isdecapitalized'>isDecapitalized()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isDecapitalized</span><span class="p">()</span> <span class="c1">// True</span>
 
-<ul>
-<li>pad()</li>
-<li>padLeft()</li>
-<li>padRight()</li>
-</ul></li>
-<li><strong>Trimming Operations</strong>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isDecapitalized</span><span class="p">()</span> <span class="c1">// False</span>
 
-<ul>
-<li>prefixed()</li>
-<li>suffixed()</li>
-<li>trimLeft()</li>
-<li>trimRight()</li>
-<li>truncated()</li>
-</ul></li>
-</ul>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello-World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isDecapitalized</span><span class="p">()</span> <span class="c1">// True</span>
+</code></pre>
+<a href='#islowercased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='islowercased'>isLowercased()</h4>
+<pre class="highlight swift"><code><span class="c1">// Note, Swift treats non-alphabetical characters as Uppercased.</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"helloworld"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isLowercased</span><span class="p">()</span> <span class="c1">// True</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello world"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isLowercased</span><span class="p">()</span> <span class="c1">// False</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello-world"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isLowercased</span><span class="p">()</span> <span class="c1">// False</span>
+</code></pre>
+<a href='#isnumeric' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='isnumeric'>isNumeric()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"73110"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isNumeric</span><span class="p">()</span> <span class="c1">// True</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"73110 1337"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isNumeric</span><span class="p">()</span> <span class="c1">// False</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"73110World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isNumeric</span><span class="p">()</span> <span class="c1">// False</span>
+</code></pre>
+<a href='#isupppercased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='isupppercased'>isUpppercased()</h4>
+<pre class="highlight swift"><code>
+<span class="c1">// Note, Swift treats non-alphabetical characters as Uppercased.</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HELLOWORLD"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isUpppercased</span><span class="p">()</span> <span class="c1">// True</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HELLO WORLD"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isUpppercased</span><span class="p">()</span> <span class="c1">// True</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HELLO-W0RLD"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isUpppercased</span><span class="p">()</span> <span class="c1">// True</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"HeLLoW0RLD"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">isUpppercased</span><span class="p">()</span> <span class="c1">// False</span>
+</code></pre>
+<a href='#case-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='case-operations'>Case Operations</h3>
+<a href='#camelcased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='camelcased'>camelCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">camelCased</span><span class="p">()</span> <span class="c1">// "helloWorld"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello_world"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">camelCased</span><span class="p">()</span> <span class="c1">// "helloWorld"</span>
+</code></pre>
+<a href='#decapitalized' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='decapitalized'>decapitalized()</h4>
+<pre class="highlight swift"><code><span class="c1">// Implementation is currently broken.</span>
+</code></pre>
+<a href='#kebabcased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='kebabcased'>kebabCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">kebabCased</span><span class="p">()</span> <span class="c1">// "-Hello-World-"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello_world"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">kebabCased</span><span class="p">()</span> <span class="c1">// "-hello-world-"</span>
+</code></pre>
+<a href='#pascalcased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='pascalcased'>pascalCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pascalCased</span><span class="p">()</span> <span class="c1">// "HelloWorld"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"hello_world"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pascalCased</span><span class="p">()</span> <span class="c1">// "HelloWorld"</span>
+</code></pre>
+<a href='#slugcased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='slugcased'>slugCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">slugCased</span><span class="p">()</span> <span class="c1">// "Hello-World"</span>
+</code></pre>
+<a href='#snakecased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='snakecased'>snakeCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">snakeCased</span><span class="p">()</span> <span class="c1">// "Hello_World"</span>
+</code></pre>
+<a href='#swapcased' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='swapcased'>swapCased()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">swapCased</span><span class="p">()</span> <span class="c1">// "hELLO wORLD"</span>
+</code></pre>
+<a href='#character-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='character-operations'>Character Operations</h3>
+<a href='#first' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='first'>first()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">first</span><span class="p">()</span> <span class="c1">// "H"</span>
+</code></pre>
+<a href='#last' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='last'>last()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">last</span><span class="p">()</span> <span class="c1">// "d"</span>
+</code></pre>
+<a href='#length' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='length'>length()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">length</span><span class="p">()</span> <span class="c1">// "11"</span>
+</code></pre>
+<a href='#reversed' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='reversed'>reversed()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">reversed</span><span class="p">()</span> <span class="c1">// "dlroW olleH"</span>
+</code></pre>
+<a href='#padding-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='padding-operations'>Padding Operations</h3>
+<a href='#padleft' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='padleft'>padLeft()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padLeft</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span> <span class="c1">// "    Hello World"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padLeft</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="nv">withToken</span><span class="p">:</span> <span class="s">"*"</span><span class="p">)</span> <span class="c1">// "****Hello World"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padLeft</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">// Returns the original string, "Hello World"</span>
+</code></pre>
+<a href='#padright' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='padright'>padRight()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padRight</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span> <span class="c1">// "Hello World    "</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padRight</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="nv">withToken</span><span class="p">:</span> <span class="s">"*"</span><span class="p">)</span> <span class="c1">// "Hello World****"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">padRight</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">// Returns the original string, "Hello World"</span>
+</code></pre>
+<a href='#pad' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='pad'>pad()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">)</span> <span class="c1">// "  Hello World  "</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">// Returns the original string, "Hello World"</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="nv">withToken</span><span class="p">:</span> <span class="s">"*"</span><span class="p">)</span> <span class="c1">// "**Hello World**"</span>
+
+<span class="cm">/* Note: If the difference between the final length
+ and number of characters in the original string is odd,
+ the string is padded extra on the right side.
+ */</span>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">16</span><span class="p">)</span> <span class="c1">// "  Hello World   "</span>
+
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span> <span class="c1">// 11 Characters</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">pad</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">16</span><span class="p">)</span> <span class="c1">// "**Hello World***"</span>
+</code></pre>
+<a href='#trimming-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='trimming-operations'>Trimming Operations</h3>
+<a href='#prefixed' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='prefixed'>prefixed()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">prefixed</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">7</span><span class="p">)</span> <span class="c1">// "Hello W"</span>
+</code></pre>
+<a href='#suffixed' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='suffixed'>suffixed()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">suffixed</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">7</span><span class="p">)</span> <span class="c1">// "o World"</span>
+</code></pre>
+<a href='#trimleft' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='trimleft'>trimLeft()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">trimLeft</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">7</span><span class="p">)</span> <span class="c1">// "orld"</span>
+</code></pre>
+<a href='#trimright' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='trimright'>trimRight()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">trimRight</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">7</span><span class="p">)</span> <span class="c1">// "Hell"</span>
+</code></pre>
+<a href='#truncated' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='truncated'>truncated()</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+<span class="n">string</span><span class="o">.</span><span class="nf">truncated</span><span class="p">(</span><span class="nv">length</span><span class="p">:</span> <span class="mi">7</span><span class="p">)</span> <span class="c1">// "Hell..." (Appends an ellipsis, ..., to the end of the string.)</span>
+</code></pre>
 <a href='#inspiration' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='inspiration'>Inspiration</h2>
 
 <p>This project was inspired by <a href="https://vocajs.com/">Voca</a>.</p>
@@ -168,14 +326,16 @@
 
 <p><a href="http://www.sabintsev.com/">Arthur Ariel Sabintsev</a></p>
 
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://github.com/ArtSabintsev/Guitar" target="_blank" rel="external">Arthur Ariel Sabintsev</a>. All rights reserved. (Last updated: 2017-03-02)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
+
       </article>
     </div>
+    <section class="footer">
+      <p>© 2016-2017 <a class="link" href="http://www.sabintsev.com" target="_blank" rel="external">Arthur Ariel Sabintsev</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>
