@@ -8,6 +8,8 @@
 ## About
 This library seeks to add common string manipulation functions that are needed in both mobile and server-side development, but are missing in Swift's Foundation library.
 
+The full documentation can be found at http://www.sabintsev.com/Guitar/.
+
 ## Project Status
 
 - **Release**: Alpha (until v0.1.0)
@@ -56,8 +58,6 @@ github "ArtSabintsev/Guitar"
 ```
 
 ## Implemented Functions
-
-The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
 ### Boolean Operations
 
