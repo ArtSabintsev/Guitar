@@ -49,13 +49,6 @@
 			remoteGlobalIDString = 8EDB77C01E0A516B00B13A61;
 			remoteInfo = Guitar;
 		};
-		8E9F01491E687C6900634943 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8EDB77B91E0A516B00B13A61 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8EA4249D1E686437002E82A8;
-			remoteInfo = "GuitarExample-Mac";
-		};
 		8EA391C01E68919E0099B25E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8EDB77B91E0A516B00B13A61 /* Project object */;
@@ -366,7 +359,6 @@
 			);
 			dependencies = (
 				55DA075D1E66AF2200080633 /* PBXTargetDependency */,
-				8E9F014A1E687C6900634943 /* PBXTargetDependency */,
 			);
 			name = GuitarExampleTests;
 			productName = GuitarExampleTests;
@@ -927,11 +919,6 @@
 			target = 8EDB77C01E0A516B00B13A61 /* GuitarExample-iOS */;
 			targetProxy = 55DA075C1E66AF2200080633 /* PBXContainerItemProxy */;
 		};
-		8E9F014A1E687C6900634943 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8EA4249D1E686437002E82A8 /* GuitarExample-Mac */;
-			targetProxy = 8E9F01491E687C6900634943 /* PBXContainerItemProxy */;
-		};
 		8EA391C11E68919E0099B25E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8EA391BD1E68919E0099B25E /* GuitarExample-Watch Extension */;
@@ -1324,6 +1311,7 @@
 				8EA391D31E68919E0099B25E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA391D51E68919E0099B25E /* Build configuration list for PBXNativeTarget "GuitarExample-Watch" */ = {
 			isa = XCConfigurationList;
@@ -1332,6 +1320,7 @@
 				8EA391D71E68919E0099B25E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EA424971E68640E002E82A8 /* Build configuration list for PBXNativeTarget "GuitarExample-TV" */ = {
 			isa = XCConfigurationList;
