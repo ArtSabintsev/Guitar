@@ -8,40 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		00C7BEEB47939E158BF920AD54CAA127 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD91A20E9EA6140E95CE0584092A818 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0214EAB2C75A07D02DB4DC1F1F1FECB2 /* Guitar-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A588EFD2ED1023BF14F30FD5A0C17CBA /* Guitar-OSX-dummy.m */; };
+		0214EAB2C75A07D02DB4DC1F1F1FECB2 /* Guitar-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C6EFF345373F59FCA182D05F76C874 /* Guitar-OSX-dummy.m */; };
 		1035FE0407F8E4A6C40B1D8F854FC809 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
-		237F9256A8AEA8BE0E16A4977012B6FA /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		237F9256A8AEA8BE0E16A4977012B6FA /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		277540D5C8AFA13188CBF80B74818E26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
-		2D480E009DBA0834B2A6880DC85F4CE9 /* Guitar-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4DF5B017852E64F555C644D26F37FF /* Guitar-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3061F22B11DEDCA9A237DBE5A7FFDF91 /* Guitar-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96DBCBAA5B3A827CEE58B3DD83BE3FE1 /* Guitar-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D480E009DBA0834B2A6880DC85F4CE9 /* Guitar-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B32212DB5A7B850BBE58FC5D867E5C9 /* Guitar-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3061F22B11DEDCA9A237DBE5A7FFDF91 /* Guitar-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BBE8AD84157FA8EF9083B1AB087B4A5 /* Guitar-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37A488315AF1CAFA54282CED35B5C14B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */; };
-		3CB6795AC5BF2A0ED9C874E2CDD78A47 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3CFB69673BCA59E6376ED41A9C04C1FB /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3CB6795AC5BF2A0ED9C874E2CDD78A47 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3CFB69673BCA59E6376ED41A9C04C1FB /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		41DFFCFE9F3E9AB4DC9E1673666837EA /* Pods-GuitarTarget-GuitarExample-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F762F78BBD43614A51E490A020879EA6 /* Pods-GuitarTarget-GuitarExample-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		504B2AB78AE208948561FD2A742A6E21 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
 		58E66D9AC2661E6584523D3F66FF2763 /* Pods-GuitarTarget-GuitarExample-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E12185895013D2302F1F09D277ED673 /* Pods-GuitarTarget-GuitarExample-Mac-dummy.m */; };
-		592FF8ECE96450A9FFBF6B5F9917AAF8 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		592FF8ECE96450A9FFBF6B5F9917AAF8 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5D4EF2B31AE1CF166CAE7E545D71CD3E /* Pods-GuitarTarget-GuitarExample-TV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CBD23E13724BA2D478FBB8FAA315FDF /* Pods-GuitarTarget-GuitarExample-TV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		612590FC195C1476B78B257B266C32A4 /* Pods-GuitarTarget-GuitarExample-Mac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A568B614B4A3343DF76AAAAEE498C874 /* Pods-GuitarTarget-GuitarExample-Mac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FB25C5AE7562FD6AA425D2E4DBC6B9A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */; };
-		70F7E622C226E4059EBE2AEEC3D421B9 /* Guitar-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25228D9E30D36A6BA73439477EC186B0 /* Guitar-watchOS-dummy.m */; };
+		70F7E622C226E4059EBE2AEEC3D421B9 /* Guitar-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483163442A57F056417F080585E2CA2C /* Guitar-watchOS-dummy.m */; };
 		72873F6B4E2209563375196E9D922EF3 /* Pods-GuitarTarget-GuitarExample-TV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DA5F63C88539FCB53646D6A8DC45BC /* Pods-GuitarTarget-GuitarExample-TV-dummy.m */; };
 		77C937CE8E6C7802381BB8B86A4AD373 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
 		7B806E30BD4CD6341C15BA8C6589F9F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
 		8207CB69B9C3B54BF980DAD1B3EAED81 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5F61761D125CEEB3088E09511E288B /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-dummy.m */; };
-		8629B98246E2B7A5EC7D49F520F9457D /* Guitar-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD5E11261BD4D0334A6F5E70F8400F7 /* Guitar-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8629B98246E2B7A5EC7D49F520F9457D /* Guitar-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A12A1577774F961CA72B847714C7ABC /* Guitar-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F13D83915CBBB61DC65A0C577BE22F /* Pods-GuitarTarget-GuitarExample-Watch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A6396BD68699BC6B0A48E6C8329209 /* Pods-GuitarTarget-GuitarExample-Watch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ABCB988195264E03A13989A1C9A81A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
 		A2148C24D55EA44B83A0F9068D242A1B /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 794D340326CF2343DB7A69DC4DD9F775 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB98E1AB587F884C1F1487050D62999D /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC50679D95D9C533A395BD9F8FDAF6CE /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-dummy.m */; };
-		AFC40CC8ED2BA7D55E64174E2418272B /* Guitar-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75B3C26B2E039CB9AE51E7094E7EDC2F /* Guitar-iOS-dummy.m */; };
-		B560128CBC85C2C086B228BDB8637DDD /* Guitar-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22287170260BF837850255D9080685D0 /* Guitar-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFC40CC8ED2BA7D55E64174E2418272B /* Guitar-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DDFCC49A650BD87931369860A113F /* Guitar-iOS-dummy.m */; };
+		B560128CBC85C2C086B228BDB8637DDD /* Guitar-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FFBA69857CE6F3A9E154847203155F /* Guitar-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAEF797698ED74B506EB8EEC9DECBBCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */; };
 		BC65DAFC9F8908143F396BD8836A9719 /* Pods-GuitarTarget-GuitarExample-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89C6BECB33BF79A98EC97F0801AE09 /* Pods-GuitarTarget-GuitarExample-iOS-dummy.m */; };
 		CC092395A4D0E82E331290ED36281480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */; };
 		DF4393140B22324BB382063F566EE7B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */; };
 		F440FCA79384CAC8D0112C5BB10467D9 /* Pods-GuitarTarget-GuitarExample-Watch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B164E304BFCA3059FDCF6005BE5079 /* Pods-GuitarTarget-GuitarExample-Watch-dummy.m */; };
-		F9B11EBA831EEC8ABAB86C9369EBA798 /* Guitar-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5D8189F3C0FDE189053C089102553B /* Guitar-tvOS-dummy.m */; };
+		F9B11EBA831EEC8ABAB86C9369EBA798 /* Guitar-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B269D2304DC343050223ECDBBC7AA53 /* Guitar-tvOS-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,39 +90,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0299754CFFE90D13377C2E465DB415F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-iOS/Info.plist"; sourceTree = "<group>"; };
 		02F0D289D833DA2E68EB726A254929F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		05238E2E4DC865D8230A21327D2D8798 /* Guitar-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Guitar-OSX.xcconfig"; sourceTree = "<group>"; };
+		06C6EFF345373F59FCA182D05F76C874 /* Guitar-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Guitar-OSX-dummy.m"; sourceTree = "<group>"; };
 		06F716F6E4556E881701A86F00F2EA56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF09FEAAF8FF7E850505867D8797869 /* Guitar-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-tvOS.xcconfig"; path = "../Guitar-tvOS/Guitar-tvOS.xcconfig"; sourceTree = "<group>"; };
 		0D224FA2A3216A790B4BBB7534AAE538 /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Guitar.framework; path = "Guitar-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F89C6BECB33BF79A98EC97F0801AE09 /* Pods-GuitarTarget-GuitarExample-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-iOS-dummy.m"; sourceTree = "<group>"; };
+		0FCA91379E3BB7A2109BB3334C03A38E /* Guitar-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-tvOS-prefix.pch"; path = "../Guitar-tvOS/Guitar-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		101D64B5A0639CDC3CA1EB58787461F4 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		1325A09471AB3D6940C24DA31E79CCCE /* Guitar-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-watchOS.modulemap"; path = "../Guitar-watchOS/Guitar-watchOS.modulemap"; sourceTree = "<group>"; };
-		13C5AA110DF958B085EC3CC3B7F2293D /* Guitar-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-iOS.modulemap"; path = "../Guitar-iOS/Guitar-iOS.modulemap"; sourceTree = "<group>"; };
+		13BB377C91731E3A1362E541438758A5 /* Guitar-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-OSX-prefix.pch"; sourceTree = "<group>"; };
 		141B00E7AB8B47EA9BF59164B8FF7C11 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		18269BD21D41AF862B2B24A0C7E7C088 /* Pods-GuitarTarget-GuitarExample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		19D804193B4E90ACB55C307DB443180C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5640E07C19D717F0C5D1EA2B38D436 /* Pods-GuitarTarget-GuitarExample-Watch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Watch-resources.sh"; sourceTree = "<group>"; };
 		1AAB148697D8E64DDBB781B16B4DC19A /* Pods-GuitarTarget-GuitarExample-TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-TV.release.xcconfig"; sourceTree = "<group>"; };
+		1B269D2304DC343050223ECDBBC7AA53 /* Guitar-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-tvOS-dummy.m"; path = "../Guitar-tvOS/Guitar-tvOS-dummy.m"; sourceTree = "<group>"; };
 		1CBD23E13724BA2D478FBB8FAA315FDF /* Pods-GuitarTarget-GuitarExample-TV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-TV-umbrella.h"; sourceTree = "<group>"; };
-		1D0D1E3FC8593DA338D718683E3122C7 /* Guitar-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-tvOS.modulemap"; path = "../Guitar-tvOS/Guitar-tvOS.modulemap"; sourceTree = "<group>"; };
 		1D36D057AB33B6A67A608C362D60DB52 /* Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		1D94055908280C98278A24016B252703 /* Pods-GuitarTarget-GuitarExample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1F270889900364C6EA434E6ED39233C7 /* Pods-GuitarTarget-GuitarExample-Mac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-Mac.modulemap"; sourceTree = "<group>"; };
 		1F2EBEBA8AF61F894944C099D745FCCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		215C1F74F52D4FB93EDD9E39A645EE09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
-		22287170260BF837850255D9080685D0 /* Guitar-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-OSX-umbrella.h"; sourceTree = "<group>"; };
 		241F7EEC8CFD4F226259792833E81A62 /* Pods-GuitarTarget-GuitarExample-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
-		25228D9E30D36A6BA73439477EC186B0 /* Guitar-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-watchOS-dummy.m"; path = "../Guitar-watchOS/Guitar-watchOS-dummy.m"; sourceTree = "<group>"; };
 		2EFA848A563416E8CE89F0019B0DAA4B /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3215928DF233D31D42869270A6746387 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38D8CF8B4900445C6C8B7B5E2C6B881B /* Guitar-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-OSX-prefix.pch"; sourceTree = "<group>"; };
-		3EAC8C78F928F1C1612DF5649A6B3555 /* Guitar-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-tvOS.xcconfig"; path = "../Guitar-tvOS/Guitar-tvOS.xcconfig"; sourceTree = "<group>"; };
+		31CB2929FDF06A5D358A2ABE0C2AF289 /* Guitar-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-watchOS-prefix.pch"; path = "../Guitar-watchOS/Guitar-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		3B32212DB5A7B850BBE58FC5D867E5C9 /* Guitar-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-iOS-umbrella.h"; path = "../Guitar-iOS/Guitar-iOS-umbrella.h"; sourceTree = "<group>"; };
+		3E0E1AD15EA3D2078FF4F38FEEC27E12 /* Guitar-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Guitar-OSX.modulemap"; sourceTree = "<group>"; };
 		41A6396BD68699BC6B0A48E6C8329209 /* Pods-GuitarTarget-GuitarExample-Watch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-Watch-umbrella.h"; sourceTree = "<group>"; };
+		42FFBA69857CE6F3A9E154847203155F /* Guitar-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-OSX-umbrella.h"; sourceTree = "<group>"; };
 		4529BA516A564CFAD7E9F201D62F611E /* Pods-GuitarTarget-GuitarExample-TV-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-TV-acknowledgements.plist"; sourceTree = "<group>"; };
+		483163442A57F056417F080585E2CA2C /* Guitar-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-watchOS-dummy.m"; path = "../Guitar-watchOS/Guitar-watchOS-dummy.m"; sourceTree = "<group>"; };
+		48A1B9C38C41E879A52B064FA34B4CBC /* Guitar-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-tvOS.modulemap"; path = "../Guitar-tvOS/Guitar-tvOS.modulemap"; sourceTree = "<group>"; };
+		4A12A1577774F961CA72B847714C7ABC /* Guitar-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-watchOS-umbrella.h"; path = "../Guitar-watchOS/Guitar-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		4D1DDFCC49A650BD87931369860A113F /* Guitar-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-iOS-dummy.m"; path = "../Guitar-iOS/Guitar-iOS-dummy.m"; sourceTree = "<group>"; };
 		4DB2356A28DD847F4A5FB7CA283AD3B4 /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Guitar.framework; path = "Guitar-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53526BC9E5057242E0EFE5606D84BB47 /* Pods_GuitarTarget_GuitarExample_iOS_GuitarExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_iOS_GuitarExampleTests.framework; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5356A4F13D23BD68B14A252E4EDA4C7A /* Pods-GuitarTarget-GuitarExample-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		58D9C93BBAC24B311393FFF367FFF341 /* Pods-GuitarTarget-GuitarExample-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		595B444D76E109D85270A80B15C11C7A /* Guitar-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-watchOS.modulemap"; path = "../Guitar-watchOS/Guitar-watchOS.modulemap"; sourceTree = "<group>"; };
 		5C1A6058EDA5FAB466719672E59FB99B /* Pods_GuitarTarget_GuitarExample_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_Mac.framework; path = "Pods-GuitarTarget-GuitarExample-Mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5F61761D125CEEB3088E09511E288B /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-dummy.m"; sourceTree = "<group>"; };
 		5E48C8BBC96DCD22B95D95FE74BEFFA0 /* Pods-GuitarTarget-GuitarExample-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-iOS-resources.sh"; sourceTree = "<group>"; };
@@ -130,65 +136,59 @@
 		64B164E304BFCA3059FDCF6005BE5079 /* Pods-GuitarTarget-GuitarExample-Watch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-Watch-dummy.m"; sourceTree = "<group>"; };
 		672079D69395CAC3023FE46D99FCFDCC /* Pods-GuitarTarget-GuitarExample-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-iOS-frameworks.sh"; sourceTree = "<group>"; };
 		672E53E449F9CB6E5A0B78DC5419C607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		6E1CF164BD3D2A9AEFE88542AC6511A0 /* Guitar-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-iOS-prefix.pch"; path = "../Guitar-iOS/Guitar-iOS-prefix.pch"; sourceTree = "<group>"; };
 		73F3E70F3C7FFC58F5AD8B1AA1438045 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7551784309B6581DD846430FFE7A3B35 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.modulemap"; sourceTree = "<group>"; };
-		75B3C26B2E039CB9AE51E7094E7EDC2F /* Guitar-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-iOS-dummy.m"; path = "../Guitar-iOS/Guitar-iOS-dummy.m"; sourceTree = "<group>"; };
 		794D340326CF2343DB7A69DC4DD9F775 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-umbrella.h"; sourceTree = "<group>"; };
 		799ABCF6EE41F574D66983999F9C5998 /* Pods_GuitarTarget_GuitarExample_Watch_GuitarExample_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_Watch_GuitarExample_Watch_Extension.framework; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C2497AACE289826598F73304EB15F7 /* Pods-GuitarTarget-GuitarExample-TV-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-TV-resources.sh"; sourceTree = "<group>"; };
 		7B93352CFE671702146860B5F9031937 /* Pods_GuitarTarget_GuitarExample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_iOS.framework; path = "Pods-GuitarTarget-GuitarExample-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBE8AD84157FA8EF9083B1AB087B4A5 /* Guitar-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-tvOS-umbrella.h"; path = "../Guitar-tvOS/Guitar-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		7C68FB1C2881B3376FE928E8A64F01F9 /* Pods-GuitarTarget-GuitarExample-Watch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Watch-frameworks.sh"; sourceTree = "<group>"; };
 		7DA6869086257B6331FA2016F16B3D1E /* Pods-GuitarTarget-GuitarExample-Watch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-Watch-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E12185895013D2302F1F09D277ED673 /* Pods-GuitarTarget-GuitarExample-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-Mac-dummy.m"; sourceTree = "<group>"; };
 		80BB6C60C6E799EF1FDB3B1C82F173D8 /* Pods-GuitarTarget-GuitarExample-TV-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-TV-frameworks.sh"; sourceTree = "<group>"; };
-		80C8EFA559046057C3D69D68628EC7B5 /* Guitar-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Guitar-OSX.modulemap"; sourceTree = "<group>"; };
 		8478A5742D0DD17CDDBF0F11BD7C933B /* Pods-GuitarTarget-GuitarExample-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-iOS.modulemap"; sourceTree = "<group>"; };
+		863E365037F93056E28778B940D33CE5 /* Guitar-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "Guitar-iOS.modulemap"; path = "../Guitar-iOS/Guitar-iOS.modulemap"; sourceTree = "<group>"; };
 		8692EF1E5F74A0D861F9E393EDC1EB98 /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Guitar.framework; path = "Guitar-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
 		8D451097E29CC5C97831C6A6107ECFFC /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-resources.sh"; sourceTree = "<group>"; };
 		8D49E0E518FA9BCF660B33E71BB6B4AB /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
 		9068D8647198135B683A126814CE887C /* Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-Watch.release.xcconfig"; sourceTree = "<group>"; };
-		9115FCA350E7CF63846098B78BD117EF /* Guitar-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-tvOS-prefix.pch"; path = "../Guitar-tvOS/Guitar-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		92341D46A965C156A850A183AEA852E9 /* Pods_GuitarTarget_GuitarExample_TV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_TV.framework; path = "Pods-GuitarTarget-GuitarExample-TV.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9544018F8F528C197776BC24000068D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95973B956F9AE7B6268186430340120C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96DBCBAA5B3A827CEE58B3DD83BE3FE1 /* Guitar-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-tvOS-umbrella.h"; path = "../Guitar-tvOS/Guitar-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		9FE219BD47518826FE083E4A19D08C99 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-resources.sh"; sourceTree = "<group>"; };
 		A1462382EB2BB0F589ED8AABA2344532 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-frameworks.sh"; sourceTree = "<group>"; };
 		A233B7198BAFAC1064A16FCBDDA81B16 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A4FDAF0646D5243EBE2BFF0ECF64AA7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-watchOS/Info.plist"; sourceTree = "<group>"; };
+		A539FCA4708A06443F98E37351DAAEC0 /* Guitar-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-watchOS.xcconfig"; path = "../Guitar-watchOS/Guitar-watchOS.xcconfig"; sourceTree = "<group>"; };
 		A568B614B4A3343DF76AAAAEE498C874 /* Pods-GuitarTarget-GuitarExample-Mac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-Mac-umbrella.h"; sourceTree = "<group>"; };
-		A588EFD2ED1023BF14F30FD5A0C17CBA /* Guitar-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Guitar-OSX-dummy.m"; sourceTree = "<group>"; };
-		A5A6D9C3E240F9DB94EFF48C811823AB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-tvOS/Info.plist"; sourceTree = "<group>"; };
 		AA089432FE461F41C36A016DD2C74914 /* Pods-GuitarTarget-GuitarExample-Mac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Mac-resources.sh"; sourceTree = "<group>"; };
 		AAD91A20E9EA6140E95CE0584092A818 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-umbrella.h"; sourceTree = "<group>"; };
-		ACD5E11261BD4D0334A6F5E70F8400F7 /* Guitar-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-watchOS-umbrella.h"; path = "../Guitar-watchOS/Guitar-watchOS-umbrella.h"; sourceTree = "<group>"; };
 		AE9F2CC7A1D99CE6D73E262FF9DC9A34 /* Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-TV.debug.xcconfig"; sourceTree = "<group>"; };
+		AF619C8F4E6BD3662418FD6DEFF40CF4 /* Guitar-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-iOS.xcconfig"; path = "../Guitar-iOS/Guitar-iOS.xcconfig"; sourceTree = "<group>"; };
 		B313D6D16618D591262260FE9337547C /* Pods-GuitarTarget-GuitarExample-Watch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-Watch-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3964EA59F5C934D6E89C6F95275A630 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-frameworks.sh"; sourceTree = "<group>"; };
-		B43677D0D92FCDBE1C86AB4485704E60 /* Guitar-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-iOS.xcconfig"; path = "../Guitar-iOS/Guitar-iOS.xcconfig"; sourceTree = "<group>"; };
 		B57D34729CB8810A501DFCF5C1B3A4EB /* Pods-GuitarTarget-GuitarExample-TV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-TV.modulemap"; sourceTree = "<group>"; };
 		B5DA5F63C88539FCB53646D6A8DC45BC /* Pods-GuitarTarget-GuitarExample-TV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-TV-dummy.m"; sourceTree = "<group>"; };
 		B630C9F585ED284C510A735D5A8A89C0 /* Pods-GuitarTarget-GuitarExample-Watch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-Watch.modulemap"; sourceTree = "<group>"; };
 		C3A3975E22C2FC69D1343F26C78B6E0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B08969E3C80889C177E54343AFDB75 /* Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		CA4DF5B017852E64F555C644D26F37FF /* Guitar-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-iOS-umbrella.h"; path = "../Guitar-iOS/Guitar-iOS-umbrella.h"; sourceTree = "<group>"; };
-		CC5D8189F3C0FDE189053C089102553B /* Guitar-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Guitar-tvOS-dummy.m"; path = "../Guitar-tvOS/Guitar-tvOS-dummy.m"; sourceTree = "<group>"; };
 		CDB4B4AB829267DACE1772ECA57FFF2D /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Guitar.framework; path = "Guitar-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AD83767ECBF8E8341C8CED26520A51 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.modulemap"; sourceTree = "<group>"; };
-		D188B084CB2FB0EDE8AAFA623AF21810 /* Guitar-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Guitar-OSX.xcconfig"; sourceTree = "<group>"; };
 		DAC568FB59591D04DDB21C938E4703E8 /* Pods-GuitarTarget-GuitarExample-Mac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuitarTarget-GuitarExample-Mac-frameworks.sh"; sourceTree = "<group>"; };
 		DB8665E48A685ED7B1A1084ECBEDC898 /* Pods_GuitarTarget_GuitarExample_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuitarTarget_GuitarExample_Watch.framework; path = "Pods-GuitarTarget-GuitarExample-Watch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC1EE7D20B0D39256C87819A3FEC0F4 /* Pods-GuitarTarget-GuitarExample-Mac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-Mac-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E11AB589A175420CFC16ACD9606770F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E16442B3ECCEE40B1F3F40982BB3CD41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-iOS/Info.plist"; sourceTree = "<group>"; };
+		E16CF72A1C7A00BEA72758B0BDC9BBF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-watchOS/Info.plist"; sourceTree = "<group>"; };
+		E45A88C521A4B2101117B7DB31AB497D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Guitar-tvOS/Info.plist"; sourceTree = "<group>"; };
 		E47E07CD48B0E3701B69D9609F306464 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		E6A14DF626AD0A73DC7802D2F5DEE049 /* Guitar-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-watchOS-prefix.pch"; path = "../Guitar-watchOS/Guitar-watchOS-prefix.pch"; sourceTree = "<group>"; };
-		E6C75CFD8B158E9E9A20A2E5CE6BF77E /* Guitar-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Guitar-iOS-prefix.pch"; path = "../Guitar-iOS/Guitar-iOS-prefix.pch"; sourceTree = "<group>"; };
 		EFC6D24BFEC26E791B86A60B5F48E336 /* Pods-GuitarTarget-GuitarExample-TV-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuitarTarget-GuitarExample-TV-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F0E31C33BCDA0A0719DF4DE4BF38D75D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F3AA181A534F25C71DFF7E45FE2FB1B5 /* Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuitarTarget-GuitarExample-Watch-GuitarExample-Watch Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		F762F78BBD43614A51E490A020879EA6 /* Pods-GuitarTarget-GuitarExample-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuitarTarget-GuitarExample-iOS-umbrella.h"; sourceTree = "<group>"; };
-		F7AC8E73CF216C1B66C254A85D2D5B4D /* Guitar-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Guitar-watchOS.xcconfig"; path = "../Guitar-watchOS/Guitar-watchOS.xcconfig"; sourceTree = "<group>"; };
 		F7B3B126BC6B05C40F1426209130B0E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC50679D95D9C533A395BD9F8FDAF6CE /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,38 +278,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		064B465F998ABB60A537B7E3B7F1E4E4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				13C5AA110DF958B085EC3CC3B7F2293D /* Guitar-iOS.modulemap */,
-				B43677D0D92FCDBE1C86AB4485704E60 /* Guitar-iOS.xcconfig */,
-				75B3C26B2E039CB9AE51E7094E7EDC2F /* Guitar-iOS-dummy.m */,
-				E6C75CFD8B158E9E9A20A2E5CE6BF77E /* Guitar-iOS-prefix.pch */,
-				CA4DF5B017852E64F555C644D26F37FF /* Guitar-iOS-umbrella.h */,
-				80C8EFA559046057C3D69D68628EC7B5 /* Guitar-OSX.modulemap */,
-				D188B084CB2FB0EDE8AAFA623AF21810 /* Guitar-OSX.xcconfig */,
-				A588EFD2ED1023BF14F30FD5A0C17CBA /* Guitar-OSX-dummy.m */,
-				38D8CF8B4900445C6C8B7B5E2C6B881B /* Guitar-OSX-prefix.pch */,
-				22287170260BF837850255D9080685D0 /* Guitar-OSX-umbrella.h */,
-				1D0D1E3FC8593DA338D718683E3122C7 /* Guitar-tvOS.modulemap */,
-				3EAC8C78F928F1C1612DF5649A6B3555 /* Guitar-tvOS.xcconfig */,
-				CC5D8189F3C0FDE189053C089102553B /* Guitar-tvOS-dummy.m */,
-				9115FCA350E7CF63846098B78BD117EF /* Guitar-tvOS-prefix.pch */,
-				96DBCBAA5B3A827CEE58B3DD83BE3FE1 /* Guitar-tvOS-umbrella.h */,
-				1325A09471AB3D6940C24DA31E79CCCE /* Guitar-watchOS.modulemap */,
-				F7AC8E73CF216C1B66C254A85D2D5B4D /* Guitar-watchOS.xcconfig */,
-				25228D9E30D36A6BA73439477EC186B0 /* Guitar-watchOS-dummy.m */,
-				E6A14DF626AD0A73DC7802D2F5DEE049 /* Guitar-watchOS-prefix.pch */,
-				ACD5E11261BD4D0334A6F5E70F8400F7 /* Guitar-watchOS-umbrella.h */,
-				3215928DF233D31D42869270A6746387 /* Info.plist */,
-				A4FDAF0646D5243EBE2BFF0ECF64AA7A /* Info.plist */,
-				A5A6D9C3E240F9DB94EFF48C811823AB /* Info.plist */,
-				0299754CFFE90D13377C2E465DB415F0 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "GuitarExample/Pods/Target Support Files/Guitar-OSX";
-			sourceTree = "<group>";
-		};
 		090BC3AE2E51F2C97DFAE942A42D676C /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,14 +286,13 @@
 			name = tvOS;
 			sourceTree = "<group>";
 		};
-		16D08C5E045C45EB19B36C025FBA5694 /* Guitar */ = {
+		2C1DF54385F177ACE807BABC406C75B9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E37806BC41F8E4D7A0230AF45E758067 /* Guitar */,
-				064B465F998ABB60A537B7E3B7F1E4E4 /* Support Files */,
+				8786A4D65D9F4E818884A82D15DE266C /* Guitar.swift */,
 			);
-			name = Guitar;
-			path = ../..;
+			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		471FCCE286BB4CD0E419C93A905F5D11 /* Pods-GuitarTarget-GuitarExample-iOS-GuitarExampleTests */ = {
@@ -366,7 +333,7 @@
 		5CABC5940E959F8DD9447F8581A8C270 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				16D08C5E045C45EB19B36C025FBA5694 /* Guitar */,
+				90F6DAE910F10DC5EEBEAC398FAA3B42 /* Guitar */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -442,6 +409,16 @@
 			);
 			name = "Pods-GuitarTarget-GuitarExample-Mac";
 			path = "Target Support Files/Pods-GuitarTarget-GuitarExample-Mac";
+			sourceTree = "<group>";
+		};
+		90F6DAE910F10DC5EEBEAC398FAA3B42 /* Guitar */ = {
+			isa = PBXGroup;
+			children = (
+				2C1DF54385F177ACE807BABC406C75B9 /* Sources */,
+				F2DBD502E1FF2BC054F8A124520438A9 /* Support Files */,
+			);
+			name = Guitar;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		929AB83B841CB4CFD31B867B6A7465CF /* Pods-GuitarTarget-GuitarExample-Watch */ = {
@@ -521,13 +498,36 @@
 			path = "Target Support Files/Pods-GuitarTarget-GuitarExample-TV";
 			sourceTree = "<group>";
 		};
-		E37806BC41F8E4D7A0230AF45E758067 /* Guitar */ = {
+		F2DBD502E1FF2BC054F8A124520438A9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				21E1E0598FB1920A4E8BF70404157BEA /* Guitar.swift */,
+				863E365037F93056E28778B940D33CE5 /* Guitar-iOS.modulemap */,
+				AF619C8F4E6BD3662418FD6DEFF40CF4 /* Guitar-iOS.xcconfig */,
+				4D1DDFCC49A650BD87931369860A113F /* Guitar-iOS-dummy.m */,
+				6E1CF164BD3D2A9AEFE88542AC6511A0 /* Guitar-iOS-prefix.pch */,
+				3B32212DB5A7B850BBE58FC5D867E5C9 /* Guitar-iOS-umbrella.h */,
+				3E0E1AD15EA3D2078FF4F38FEEC27E12 /* Guitar-OSX.modulemap */,
+				05238E2E4DC865D8230A21327D2D8798 /* Guitar-OSX.xcconfig */,
+				06C6EFF345373F59FCA182D05F76C874 /* Guitar-OSX-dummy.m */,
+				13BB377C91731E3A1362E541438758A5 /* Guitar-OSX-prefix.pch */,
+				42FFBA69857CE6F3A9E154847203155F /* Guitar-OSX-umbrella.h */,
+				48A1B9C38C41E879A52B064FA34B4CBC /* Guitar-tvOS.modulemap */,
+				0BF09FEAAF8FF7E850505867D8797869 /* Guitar-tvOS.xcconfig */,
+				1B269D2304DC343050223ECDBBC7AA53 /* Guitar-tvOS-dummy.m */,
+				0FCA91379E3BB7A2109BB3334C03A38E /* Guitar-tvOS-prefix.pch */,
+				7BBE8AD84157FA8EF9083B1AB087B4A5 /* Guitar-tvOS-umbrella.h */,
+				595B444D76E109D85270A80B15C11C7A /* Guitar-watchOS.modulemap */,
+				A539FCA4708A06443F98E37351DAAEC0 /* Guitar-watchOS.xcconfig */,
+				483163442A57F056417F080585E2CA2C /* Guitar-watchOS-dummy.m */,
+				31CB2929FDF06A5D358A2ABE0C2AF289 /* Guitar-watchOS-prefix.pch */,
+				4A12A1577774F961CA72B847714C7ABC /* Guitar-watchOS-umbrella.h */,
+				19D804193B4E90ACB55C307DB443180C /* Info.plist */,
+				E16CF72A1C7A00BEA72758B0BDC9BBF2 /* Info.plist */,
+				E45A88C521A4B2101117B7DB31AB497D /* Info.plist */,
+				E16442B3ECCEE40B1F3F40982BB3CD41 /* Info.plist */,
 			);
-			name = Guitar;
-			path = Guitar;
+			name = "Support Files";
+			path = "GuitarExample/Pods/Target Support Files/Guitar-OSX";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -956,7 +956,7 @@
 /* Begin XCBuildConfiguration section */
 		0D14D9442CF604C32CF5792D239DE7C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EAC8C78F928F1C1612DF5649A6B3555 /* Guitar-tvOS.xcconfig */;
+			baseConfigurationReference = 0BF09FEAAF8FF7E850505867D8797869 /* Guitar-tvOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1186,7 +1186,7 @@
 		};
 		4EA341E67E4F2BA51153C6E1A2FD8C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B43677D0D92FCDBE1C86AB4485704E60 /* Guitar-iOS.xcconfig */;
+			baseConfigurationReference = AF619C8F4E6BD3662418FD6DEFF40CF4 /* Guitar-iOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1256,7 +1256,7 @@
 		};
 		5EFDD60ABD0B9F49C9A736807E20B0C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7AC8E73CF216C1B66C254A85D2D5B4D /* Guitar-watchOS.xcconfig */;
+			baseConfigurationReference = A539FCA4708A06443F98E37351DAAEC0 /* Guitar-watchOS.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1327,7 +1327,7 @@
 		};
 		742BEDFCCDC37AEA3486DA59E0EC72B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D188B084CB2FB0EDE8AAFA623AF21810 /* Guitar-OSX.xcconfig */;
+			baseConfigurationReference = 05238E2E4DC865D8230A21327D2D8798 /* Guitar-OSX.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1400,7 +1400,7 @@
 		};
 		7BF72EB0D11450274AF9DB7D6D0C9269 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B43677D0D92FCDBE1C86AB4485704E60 /* Guitar-iOS.xcconfig */;
+			baseConfigurationReference = AF619C8F4E6BD3662418FD6DEFF40CF4 /* Guitar-iOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1502,7 +1502,7 @@
 		};
 		B134BABCBDB7BE29095B453BCCA5C331 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EAC8C78F928F1C1612DF5649A6B3555 /* Guitar-tvOS.xcconfig */;
+			baseConfigurationReference = 0BF09FEAAF8FF7E850505867D8797869 /* Guitar-tvOS.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1643,7 +1643,7 @@
 		};
 		D42E6448464AB42B91B61D7488BEC2A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7AC8E73CF216C1B66C254A85D2D5B4D /* Guitar-watchOS.xcconfig */;
+			baseConfigurationReference = A539FCA4708A06443F98E37351DAAEC0 /* Guitar-watchOS.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1676,7 +1676,7 @@
 		};
 		F678B19FFF3EB73B4458F190D8721E23 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D188B084CB2FB0EDE8AAFA623AF21810 /* Guitar-OSX.xcconfig */;
+			baseConfigurationReference = 05238E2E4DC865D8230A21327D2D8798 /* Guitar-OSX.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

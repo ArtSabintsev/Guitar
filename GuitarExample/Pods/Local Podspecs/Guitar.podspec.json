@@ -1,6 +1,6 @@
 {
   "name": "Guitar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "A Cross-Platform String Library Written in Swift.",
   "platforms": {
     "ios": "9.0",
@@ -18,9 +18,9 @@
   },
   "source": {
     "git": "https://github.com/ArtSabintsev/Guitar.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "social_media_url": "https://twitter.com/artsabintsev",
   "frameworks": "Foundation",
-  "source_files": "Guitar/*.swift"
+  "source_files": "Sources/*.swift"
 }
