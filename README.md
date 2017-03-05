@@ -25,7 +25,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [ ] Regular Expressions / Regex (Pure Swift Implementation)
-- [x] Trimming Functions (`trimLeft`, `trimRight`, `prefixed`, etc.)
+- [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
 ### Documentation
 - [x] Inline Function Documentation
