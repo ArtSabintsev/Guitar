@@ -321,7 +321,7 @@ public extension String {
     /// - Parameter length: The length of the string that you'd like to return, starting at the beginning of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: A prefixed copy of the string.
     @discardableResult
-    func prefixed(length: Int) -> String {
+    func trimLeft(byKeeping length: Int) -> String {
         return String(characters.prefix(length))
     }
 
@@ -336,7 +336,7 @@ public extension String {
     /// - Parameter length: The length of the string that you'd like to return, starting at the end of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: A prefixed copy of the string.
     @discardableResult
-    func suffixed(length: Int) -> String {
+    func trimRight(byKeeping length: Int) -> String {
         return String(characters.suffix(length))
     }
 
@@ -351,9 +351,9 @@ public extension String {
     /// - Parameter length: The number of characters to trim from the beginning of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: The left-trimmed copy of the string.
     @discardableResult
-    func trimLeft(length: Int) -> String {
+    func trimLeft(byRemoving length: Int) -> String {
         guard characters.count - length > 0 else { return self }
-        return suffixed(length: characters.count - length)
+        return trimRight(byKeeping: characters.count - length)
     }
 
     /// Returns the right-trimmed version of the string.
@@ -367,9 +367,9 @@ public extension String {
     /// - Parameter length: The number of characters to trim from the end of the string. If the provided length is greater than the original string, the original string is returned.
     /// - Returns: The right-trimmed copy of the string.
     @discardableResult
-    func trimRight(length: Int) -> String {
+    func trimRight(byRemoving length: Int) -> String {
         guard characters.count - length > 0 else { return self }
-        return prefixed(length: characters.count - length)
+        return trimLeft(byKeeping: characters.count - length)
     }
 
     /// Returns the truncated string with an ellipsis.
@@ -398,7 +398,7 @@ public extension String {
             return self
         }
 
-        return prefixed(length: lengthWithoutEllipsis) + ellipsis
+        return trimLeft(byKeeping: lengthWithoutEllipsis) + ellipsis
     }
 }
 
