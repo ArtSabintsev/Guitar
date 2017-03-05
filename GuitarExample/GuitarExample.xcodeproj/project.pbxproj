@@ -409,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample-iOS.app/GuitarExample-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample.app/GuitarExample";
 			};
 			name = Debug;
 		};
@@ -426,7 +426,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sabintsev.GuitarExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample-iOS.app/GuitarExample-iOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarExample.app/GuitarExample";
 			};
 			name = Release;
 		};

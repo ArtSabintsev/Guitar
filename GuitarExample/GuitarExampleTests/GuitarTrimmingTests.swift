@@ -12,30 +12,30 @@ import XCTest
 class GuitarTrimmingTests: XCTestCase {
 
     func testPrefixed() {
-        XCTAssertEqual("Hello World".prefixed(length: 7), "Hello W")
-        XCTAssertEqual("Hello_World".prefixed(length: 8), "Hello_Wo")
-        XCTAssertEqual("HelloWorld".prefixed(length: 2), "He")
-        XCTAssertEqual("hello-world".prefixed(length: 20), "hello-world")
+        XCTAssertEqual("Hello World".trimLeft(byKeeping: 7), "Hello W")
+        XCTAssertEqual("Hello_World".trimLeft(byKeeping: 8), "Hello_Wo")
+        XCTAssertEqual("HelloWorld".trimLeft(byKeeping: 2), "He")
+        XCTAssertEqual("hello-world".trimLeft(byKeeping: 20), "hello-world")
     }
 
     func testSuffixed() {
-        XCTAssertEqual("Hello World".suffixed(length: 7), "o World")
-        XCTAssertEqual("Hello_World".suffixed(length: 8), "lo_World")
-        XCTAssertEqual("HelloWorld".suffixed(length: 2), "ld")
-        XCTAssertEqual("hello-world".suffixed(length: 20), "hello-world")
+        XCTAssertEqual("Hello World".trimRight(byKeeping: 7), "o World")
+        XCTAssertEqual("Hello_World".trimRight(byKeeping: 8), "lo_World")
+        XCTAssertEqual("HelloWorld".trimRight(byKeeping: 2), "ld")
+        XCTAssertEqual("hello-world".trimRight(byKeeping: 20), "hello-world")
     }
     func testTrimLeft() {
-        XCTAssertEqual("Hello World".trimLeft(length: 7), "orld")
-        XCTAssertEqual("Hello_World".trimLeft(length: 8), "rld")
-        XCTAssertEqual("HelloWorld".trimLeft(length: 2), "lloWorld")
-        XCTAssertEqual("hello-world".trimLeft(length: 20), "hello-world")
+        XCTAssertEqual("Hello World".trimLeft(byRemoving: 7), "orld")
+        XCTAssertEqual("Hello_World".trimLeft(byRemoving: 8), "rld")
+        XCTAssertEqual("HelloWorld".trimLeft(byRemoving: 2), "lloWorld")
+        XCTAssertEqual("hello-world".trimLeft(byRemoving: 20), "hello-world")
     }
 
     func testTrimRight() {
-        XCTAssertEqual("Hello World".trimRight(length: 7), "Hell")
-        XCTAssertEqual("Hello_World".trimRight(length: 8), "Hel")
-        XCTAssertEqual("HelloWorld".trimRight(length: 2), "HelloWor")
-        XCTAssertEqual("hello-world".trimRight(length: 20), "hello-world")
+        XCTAssertEqual("Hello World".trimRight(byRemoving: 7), "Hell")
+        XCTAssertEqual("Hello_World".trimRight(byRemoving: 8), "Hel")
+        XCTAssertEqual("HelloWorld".trimRight(byRemoving: 2), "HelloWor")
+        XCTAssertEqual("hello-world".trimRight(byRemoving: 20), "hello-world")
     }
 
     func testTruncated() {
