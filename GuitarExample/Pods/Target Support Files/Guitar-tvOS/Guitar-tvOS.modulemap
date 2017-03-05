@@ -1,6 +1,0 @@
-framework module Guitar {
-  umbrella header "Guitar-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
