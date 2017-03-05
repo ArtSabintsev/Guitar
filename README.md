@@ -1,7 +1,7 @@
 # Guitar
 ### A Cross-Platform String Library Written in Swift.
 
-[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/cocoapods/p/Guitar.svg?style=flat)](http://cocoadocs.org/docsets/Guitar) 
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/cocoapods/p/Guitar.svg?style=flat)](http://cocoadocs.org/docsets/Guitar)
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)  [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitarn.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar)
 
@@ -276,28 +276,28 @@ string.pad(length: 16) // "**Hello World***"
 
 ### Trimming Operations
 
-#### prefixed()
+#### trimLeft(byKeeping:)
 ```swift
 let string = "Hello World"
-string.prefixed(length: 7) // "Hello W"
+string.trimLeft(byKeeping: 7) // "Hello W"
 ```
 
-#### suffixed()
+#### trimRight(byKeeping:)
 ```swift
 let string = "Hello World"
-string.suffixed(length: 7) // "o World"
+string.trimRight(byKeeping: 7) // "o World"
 ```
 
-#### trimLeft()
+#### trimLeft(byRemoving:)
 ```swift
 let string = "Hello World"
-string.trimLeft(length: 7) // "orld"
+string.trimLeft(byRemoving: 7) // "orld"
 ```
 
-#### trimRight()
+#### trimRight(byRemoving:)
 ```swift
 let string = "Hello World"
-string.trimRight(length: 7) // "Hell"
+string.trimRight(byRemoving: 7) // "Hell"
 ```
 
 #### truncated()
