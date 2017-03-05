@@ -38,7 +38,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Swift Package Manager
 
 ### Testing
-- [x] Continuous Integration with BuddyBuild.com
+- [x] Continuous Integration with [BuddyBuild](BuddyBuild.com)
 - [x] SwiftLint Integration
 - [x] Unit Tests
 
