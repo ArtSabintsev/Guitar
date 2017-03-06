@@ -13,7 +13,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 ## Project Status
 
 - **Release Stage**: Alpha (until Beta at v0.1.0)
-- **API Statbility**: Unstable (until Release at v1.0.0
+- **API Statbility**: Unstable (until Release at v1.0.0)
 
 ## Features
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
