@@ -38,7 +38,7 @@ github "ArtSabintsev/Guitar"
 ```
 ### Swift Package Manager
 ```swift
-.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 1)
+.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 0)
 ```
 
 ## Implemented Functions
