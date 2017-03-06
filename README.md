@@ -16,7 +16,6 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - **API Statbility**: Unstable (until Release at v1.0.0
 
 ## Features
-### Functions
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
 - [x] Character Functions (`first`, `length`, `reverse`, etc.)
@@ -27,21 +26,6 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
 There's a lot more work in the pipeline, but community contributions are highly encouraged.
-
-### Documentation
-- [x] Inline Function Documentation
-- [x] Jazzy Function Documentation (http://sabintsev.com/Guitar)
-- [x] README Function Documentation
-
-### Dependency Management
-- [x] Carthage Support
-- [x] CocoaPods Support
-- [x] Swift Package Manager
-
-### Testing
-- [x] Continuous Integration with [BuddyBuild](BuddyBuild.com)
-- [x] SwiftLint Integration
-- [x] Unit Tests
 
 ## Installation Instructions
 ### CocoaPods
