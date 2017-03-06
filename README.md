@@ -12,11 +12,10 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
 ## Project Status
 
-- **Release Stage**: Alpha (until v0.1.0)
-- **Development Status**: Active Development (as of March 1, 2017)
-- **Contributions are highly encouraged.**
+- **Release Stage**: Alpha (until Beta at v0.1.0)
+- **API Statbility**: Unstable (until Release at v1.0.0
 
-## Roadmap
+## Features
 ### Functions
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
@@ -26,6 +25,8 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [ ] Regular Expressions / Regex (Pure Swift Implementation)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
+
+There's a lot more work in the pipeline, but community contributions are highly encouraged.
 
 ### Documentation
 - [x] Inline Function Documentation
@@ -53,7 +54,7 @@ github "ArtSabintsev/Guitar"
 ```
 ### Swift Package Manager
 ```swift
-.Package(url: "https://github.com/ArtSabintsev/Guitar.git")
+.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 1)
 ```
 
 ## Implemented Functions
