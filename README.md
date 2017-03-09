@@ -295,6 +295,15 @@ let string = "Hello World"
 string.truncated(length: 7) // "Hell..." (Appends an ellipsis, ..., to the end of the string.)
 ```
 
+### Regex Operations
+`GuitarRegex` is a syntactic-sugar struct built on top of NSRegularExpression. It also introduces the `GuitarPattern` struct which represents common Regex patterns.
+
+Example usage:
+```swift
+GuitarRegex(pattern: GuitarPattern.email).evaluate(string: "This string contains an email address, guitar@swift.org")
+// Returns an [Range<String.Index>] which is easily used to make substitutions/replacements in the String API found within Foundation.
+```
+
 ## Inspiration
 This project was inspired by [Voca](https://vocajs.com/).
 
