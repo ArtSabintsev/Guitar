@@ -59,7 +59,7 @@ public extension String {
     func isUppercased() -> Bool {
         return self == uppercased()
     }
-    
+
 }
 
 private extension String {

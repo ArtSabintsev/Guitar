@@ -127,5 +127,5 @@ public extension String {
             String($0).isLowercased() ? String($0).uppercased() : String($0).lowercased()
         }).joined()
     }
-    
+
 }

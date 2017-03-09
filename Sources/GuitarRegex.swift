@@ -14,6 +14,7 @@ infix operator =~
 
 /// Regular Expression Infix Operator Definition
 ///
+/// Evaluates if the string matches the pattern.
 /// - Parameters:
 ///     - string: The string that will be evaluated.
 ///     - pattern: The regular expression pattern to use to evaluate the string.
@@ -28,25 +29,34 @@ public func =~ (string: String, pattern: String) -> Bool {
 /// Encapsulates the regular expression operations performed by the `=~` infix operator.
 public struct GuitarRegex {
 
-    // The regular expression pattern that will be used to evaluate a specific string.
+    /// Regular expression pattern that will be used to evaluate a specific string.
     let pattern: String
 
-    /// Evaluates a string against with a regular expression pattern.
+    /// Evaluates a string for all instances of a regular expression pattern.
     ///
     /// - Parameters:
     ///     - string: The string that will be evaluated.
-    ///     - options: Regular Expression Options that are applied to the string during matching. Defaults to [].
+    ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
+    ///
+    /// - Returns: A list of matches.
+    func matches(string: String, options: NSRegularExpression.Options = []) -> [NSTextCheckingResult] {
+        let range = NSRange(location: 0, length: string.characters.count)
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
+            return []
+        }
+
+        return regex.matches(in: string, options: [], range: range)
+    }
+
+    /// Evaluates a string for all instances of a regular expression pattern.
+    ///
+    /// - Parameters:
+    ///     - string: The string that will be evaluated.
+    ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     /// 
     /// - Returns: `true` if string passes evaluation, otherwise, `false`.
     func evaluate(string: String, options: NSRegularExpression.Options = []) -> Bool {
-        let range = NSRange(location: 0, length: string.characters.count)
-
-        guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
-            return false
-        }
-
-        let matches = regex.matches(in: string, options: [], range: range)
-        return matches.count > 0
+        return matches(string: string, options: options).count > 0
     }
 }
 

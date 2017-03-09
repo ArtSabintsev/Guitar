@@ -89,7 +89,7 @@ public extension String {
         repeat { s.insert(token.characters[token.startIndex], at: endIndex) } while s.characters.count < length
         return s
     }
-    
+
 }
 
 private extension String {
@@ -111,5 +111,5 @@ private extension String {
 
         return true
     }
-    
+
 }
