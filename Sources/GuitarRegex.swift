@@ -84,7 +84,7 @@ public extension GuitarRegex {
     ///
     /// - Returns: `true` if `string` is a valid email address, otherwise `false`.
     static func isValidEmail(email: String) -> Bool {
-        return GuitarRegex(pattern: email).test(string: GuitarPattern.email)
+        return GuitarRegex(pattern: GuitarPattern.email).test(string: email)
     }
 }
 
