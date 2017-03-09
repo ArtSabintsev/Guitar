@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Guitar'
-  s.version          = '0.0.7'
+  s.version          = '0.0.8'
   s.summary          = 'A Cross-Platform String Library Written in Swift.'
 
 description      = <<-DESC
