@@ -11,11 +11,11 @@
 		554046B71E67D925009B317A /* GuitarCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B61E67D925009B317A /* GuitarCharacterTests.swift */; };
 		554046B91E67E6F2009B317A /* GuitarPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */; };
 		554046BB1E67FC78009B317A /* GuitarTrimmingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046BA1E67FC78009B317A /* GuitarTrimmingTests.swift */; };
-		55A36A071E711F3000DC6BBF /* GuitarPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A061E711F3000DC6BBF /* GuitarPadding.swift */; };
-		55A36A091E711F3800DC6BBF /* GuitarBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A081E711F3800DC6BBF /* GuitarBoolean.swift */; };
-		55A36A0B1E711F4200DC6BBF /* GuitarTrimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A0A1E711F4200DC6BBF /* GuitarTrimming.swift */; };
-		55A36A0D1E711F5100DC6BBF /* GuitarCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A0C1E711F5100DC6BBF /* GuitarCase.swift */; };
-		55A36A0F1E711F7000DC6BBF /* GuitarCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A0E1E711F7000DC6BBF /* GuitarCharacter.swift */; };
+		55A36A151E71228300DC6BBF /* GuitarBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A101E71228300DC6BBF /* GuitarBoolean.swift */; };
+		55A36A161E71228300DC6BBF /* GuitarCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A111E71228300DC6BBF /* GuitarCase.swift */; };
+		55A36A171E71228300DC6BBF /* GuitarCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A121E71228300DC6BBF /* GuitarCharacter.swift */; };
+		55A36A181E71228300DC6BBF /* GuitarPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A131E71228300DC6BBF /* GuitarPadding.swift */; };
+		55A36A191E71228300DC6BBF /* GuitarTrimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A141E71228300DC6BBF /* GuitarTrimming.swift */; };
 		55DA075A1E66AF2200080633 /* GuitarBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */; };
 		55EC366B1E6BBDAC00726F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC36631E6BBDAC00726F13 /* AppDelegate.swift */; };
 		55EC366C1E6BBDAC00726F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EC36641E6BBDAC00726F13 /* Assets.xcassets */; };
@@ -74,11 +74,11 @@
 		554046B61E67D925009B317A /* GuitarCharacterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCharacterTests.swift; sourceTree = "<group>"; };
 		554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarPaddingTests.swift; sourceTree = "<group>"; };
 		554046BA1E67FC78009B317A /* GuitarTrimmingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarTrimmingTests.swift; sourceTree = "<group>"; };
-		55A36A061E711F3000DC6BBF /* GuitarPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarPadding.swift; sourceTree = "<group>"; };
-		55A36A081E711F3800DC6BBF /* GuitarBoolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarBoolean.swift; sourceTree = "<group>"; };
-		55A36A0A1E711F4200DC6BBF /* GuitarTrimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarTrimming.swift; sourceTree = "<group>"; };
-		55A36A0C1E711F5100DC6BBF /* GuitarCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCase.swift; sourceTree = "<group>"; };
-		55A36A0E1E711F7000DC6BBF /* GuitarCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCharacter.swift; sourceTree = "<group>"; };
+		55A36A101E71228300DC6BBF /* GuitarBoolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarBoolean.swift; path = ../../Sources/GuitarBoolean.swift; sourceTree = "<group>"; };
+		55A36A111E71228300DC6BBF /* GuitarCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarCase.swift; path = ../../Sources/GuitarCase.swift; sourceTree = "<group>"; };
+		55A36A121E71228300DC6BBF /* GuitarCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarCharacter.swift; path = ../../Sources/GuitarCharacter.swift; sourceTree = "<group>"; };
+		55A36A131E71228300DC6BBF /* GuitarPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarPadding.swift; path = ../../Sources/GuitarPadding.swift; sourceTree = "<group>"; };
+		55A36A141E71228300DC6BBF /* GuitarTrimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarTrimming.swift; path = ../../Sources/GuitarTrimming.swift; sourceTree = "<group>"; };
 		55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarBooleanTests.swift; sourceTree = "<group>"; };
 		55DA075B1E66AF2200080633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -151,11 +151,11 @@
 			isa = PBXGroup;
 			children = (
 				55EC36831E6BBDDD00726F13 /* Guitar.swift */,
-				55A36A081E711F3800DC6BBF /* GuitarBoolean.swift */,
-				55A36A0C1E711F5100DC6BBF /* GuitarCase.swift */,
-				55A36A0E1E711F7000DC6BBF /* GuitarCharacter.swift */,
-				55A36A061E711F3000DC6BBF /* GuitarPadding.swift */,
-				55A36A0A1E711F4200DC6BBF /* GuitarTrimming.swift */,
+				55A36A101E71228300DC6BBF /* GuitarBoolean.swift */,
+				55A36A111E71228300DC6BBF /* GuitarCase.swift */,
+				55A36A121E71228300DC6BBF /* GuitarCharacter.swift */,
+				55A36A131E71228300DC6BBF /* GuitarPadding.swift */,
+				55A36A141E71228300DC6BBF /* GuitarTrimming.swift */,
 				55EC36781E6BBDD400726F13 /* Guitar.h */,
 				55EC36791E6BBDD400726F13 /* Info.plist */,
 			);
@@ -363,12 +363,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55A36A0D1E711F5100DC6BBF /* GuitarCase.swift in Sources */,
-				55A36A091E711F3800DC6BBF /* GuitarBoolean.swift in Sources */,
+				55A36A151E71228300DC6BBF /* GuitarBoolean.swift in Sources */,
+				55A36A161E71228300DC6BBF /* GuitarCase.swift in Sources */,
 				55EC36841E6BBDDD00726F13 /* Guitar.swift in Sources */,
-				55A36A0B1E711F4200DC6BBF /* GuitarTrimming.swift in Sources */,
-				55A36A071E711F3000DC6BBF /* GuitarPadding.swift in Sources */,
-				55A36A0F1E711F7000DC6BBF /* GuitarCharacter.swift in Sources */,
+				55A36A191E71228300DC6BBF /* GuitarTrimming.swift in Sources */,
+				55A36A181E71228300DC6BBF /* GuitarPadding.swift in Sources */,
+				55A36A171E71228300DC6BBF /* GuitarCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
