@@ -19,10 +19,13 @@ class GuitarCaseTests: XCTestCase {
         XCTAssertEqual("helloWorld".camelCased(), "helloWorld")
     }
 
+    func testCapitalized() {
+        // TODO: Capitalized is not yet implemented.
+    }
+
     func testDecapitalized() {
         // TODO: Decapitalized needs to be fixed to work with multiple words.
     }
-
 
     func testKebabCased() {
         XCTAssertEqual("Hello World".kebabCased(), "-hello-world-")
