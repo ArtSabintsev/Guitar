@@ -10,10 +10,9 @@ This library seeks to add common string manipulation functions that are needed i
 
 The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
-## Project Status
-
-- **Release Stage**: Alpha (until Beta at v0.1.0)
-- **API Statbility**: Unstable (until Release at v1.0.0)
+## Status
+- **Release Stage**: Alpha
+- **API Stability**: Unstable
 
 ## Features
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
@@ -22,7 +21,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [ ] Latinization Functions
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
-- [ ] Regular Expressions / Regex (Pure Swift Implementation)
+- [x] Regular Expressions
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
 There's a lot more work in the pipeline, but community contributions are highly encouraged.
@@ -143,6 +142,11 @@ string.camelCased() // "helloWorld"
 
 let string = "hello_world"
 string.camelCased() // "helloWorld"
+```
+
+#### capitalized()
+```swift
+// Implementation is currently broken.
 ```
 
 #### decapitalized()
