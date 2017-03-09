@@ -17,6 +17,7 @@
 		55A36A181E71228300DC6BBF /* GuitarPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A131E71228300DC6BBF /* GuitarPadding.swift */; };
 		55A36A191E71228300DC6BBF /* GuitarTrimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A141E71228300DC6BBF /* GuitarTrimming.swift */; };
 		55A36A1B1E7124E100DC6BBF /* GuitarRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A1A1E7124E100DC6BBF /* GuitarRegex.swift */; };
+		55A36A1D1E712B1300DC6BBF /* GuitarRegexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A36A1C1E712B1300DC6BBF /* GuitarRegexTests.swift */; };
 		55DA075A1E66AF2200080633 /* GuitarBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */; };
 		55EC366B1E6BBDAC00726F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EC36631E6BBDAC00726F13 /* AppDelegate.swift */; };
 		55EC366C1E6BBDAC00726F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55EC36641E6BBDAC00726F13 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		55A36A131E71228300DC6BBF /* GuitarPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarPadding.swift; path = ../../Sources/GuitarPadding.swift; sourceTree = "<group>"; };
 		55A36A141E71228300DC6BBF /* GuitarTrimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarTrimming.swift; path = ../../Sources/GuitarTrimming.swift; sourceTree = "<group>"; };
 		55A36A1A1E7124E100DC6BBF /* GuitarRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarRegex.swift; path = ../../Sources/GuitarRegex.swift; sourceTree = "<group>"; };
+		55A36A1C1E712B1300DC6BBF /* GuitarRegexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarRegexTests.swift; sourceTree = "<group>"; };
 		55DA07571E66AF2200080633 /* GuitarExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DA07591E66AF2200080633 /* GuitarBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarBooleanTests.swift; sourceTree = "<group>"; };
 		55DA075B1E66AF2200080633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				554046B21E67BDAB009B317A /* GuitarCaseTests.swift */,
 				554046B61E67D925009B317A /* GuitarCharacterTests.swift */,
 				554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */,
+				55A36A1C1E712B1300DC6BBF /* GuitarRegexTests.swift */,
 				554046BA1E67FC78009B317A /* GuitarTrimmingTests.swift */,
 				55DA075B1E66AF2200080633 /* Info.plist */,
 			);
@@ -359,6 +362,7 @@
 				554046B71E67D925009B317A /* GuitarCharacterTests.swift in Sources */,
 				554046B31E67BDAB009B317A /* GuitarCaseTests.swift in Sources */,
 				554046B91E67E6F2009B317A /* GuitarPaddingTests.swift in Sources */,
+				55A36A1D1E712B1300DC6BBF /* GuitarRegexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
