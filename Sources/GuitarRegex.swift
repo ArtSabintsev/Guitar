@@ -9,37 +9,42 @@
 
 import Foundation
 
-/// Regular Expression Infix Operator Declaration
-infix operator =~
+// MARK: - Regular Expression (Common Patterns)
 
-/// Regular Expression Infix Operator Definition
-///
-/// Evaluates if the string matches the pattern.
-/// - Parameters:
-///     - string: The string that will be evaluated.
-///     - pattern: The regular expression pattern to use to evaluate the string.
-///
-/// - Returns: `true` if string passes evaluation, otherwise, `false`.
-public func =~ (string: String, pattern: String) -> Bool {
-    return GuitarRegex(pattern: pattern).evaluate(string: string)
+/// Common Regular Expression Patterns
+public struct GuitarPatterns {
+    /// Pattern matches email addresses.
+    public static let email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+
+    /// Pattern matches non-Alphanumeric and non-Whitespace characters.
+    public static let nonAlphanumeric = "[^a-zA-Z\\d\\s]"
 }
 
 // MARK - GuitarRegex
 
-/// Encapsulates the regular expression operations performed by the `=~` infix operator.
 public struct GuitarRegex {
 
     /// Regular expression pattern that will be used to evaluate a specific string.
     let pattern: String
 
-    /// Evaluates a string for all instances of a regular expression pattern.
+    /// Designated Initializer for *GuitarRegex*
+    ///
+    /// - Parameters:
+    ///     - pattern: The pattern that will be used to perform the match.
+    ///
+    /// - Returns: A list of matches.
+    public init(pattern: String) {
+        self.pattern = pattern
+    }
+
+    /// Tests a string to see if it matches the regular expression pattern.
     ///
     /// - Parameters:
     ///     - string: The string that will be evaluated.
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     ///
     /// - Returns: A list of matches.
-    func matches(string: String, options: NSRegularExpression.Options = []) -> [NSTextCheckingResult] {
+    public func evaluate(string: String, options: NSRegularExpression.Options = []) -> [NSTextCheckingResult] {
         let range = NSRange(location: 0, length: string.characters.count)
         guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
             return []
@@ -55,12 +60,12 @@ public struct GuitarRegex {
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     /// 
     /// - Returns: `true` if string passes evaluation, otherwise, `false`.
-    func evaluate(string: String, options: NSRegularExpression.Options = []) -> Bool {
-        return matches(string: string, options: options).count > 0
+    public func test(string: String, options: NSRegularExpression.Options = []) -> Bool {
+        return evaluate(string: string, options: options).count > 0
     }
 }
 
-// MARK: - Regular Expressions (Common Evaluation)
+// MARK: - Regular Expressions (Common Evaluations)
 
 public extension GuitarRegex {
     /// Evaluates a string to check if it is a valid email address by using a regular expression.
@@ -70,6 +75,6 @@ public extension GuitarRegex {
     ///
     /// - Returns: `true` if `string` is a valid email address, otherwise `false`.
     static func isValidEmail(email: String) -> Bool {
-        return email =~ "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        return GuitarRegex(pattern: email).test(string: GuitarPatterns.email)
     }
 }

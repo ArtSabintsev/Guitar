@@ -16,8 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
 
-        // Testing Guitar on iOS with one sample function.
-        print("Hello World".camelCased())
     }
 
 }
