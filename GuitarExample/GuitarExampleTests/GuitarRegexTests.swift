@@ -15,6 +15,19 @@ class GuitarRegexTests: XCTestCase {
         XCTAssertEqual(GuitarRegex(pattern: GuitarPattern.email).evaluate(string: "This is one email addresses: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
     }
 
+    func testAlphanumericMatching() {
+        var string = "Hello World, and Hello Guitar Users! ^_^"
+        let ranges = GuitarRegex(pattern: GuitarPattern.nonAlphanumeric).evaluate(string: string)
+
+        XCTAssertEqual(ranges.count, 5)
+
+        for range in ranges {
+            string.replaceSubrange(range, with: "*")
+        }
+
+        XCTAssertEqual(string, "Hello World* and Hello Guitar Users* ***")
+    }
+
     func testIsValidEmail() {
         XCTAssertTrue(GuitarRegex.isValidEmail(email: "arthur@sabintsev.com"))
         XCTAssertTrue(GuitarRegex.isValidEmail(email: "arthur.sabintsev@example.com"))
