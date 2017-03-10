@@ -33,13 +33,12 @@ public extension String {
     ///
     ///     let string = "helloworld"
     ///     print(string.capitalized())
-    ///     // Prints "HELLOWORLD"
+    ///     // Prints "Helloworld"
     ///
     /// - Returns: A capitalized copy of the string.
-    @available(*, unavailable)
     @discardableResult
     func capitalized() -> String {
-        return ""
+        return first().uppercased() + String(characters.dropFirst())
     }
 
     /// Returns a decapitalized version of the string.
@@ -48,7 +47,7 @@ public extension String {
     ///
     ///     let string = "HELLOWORLD"
     ///     print(string.decapitalized())
-    ///     // Prints "helloworld"
+    ///     // Prints "hELLOWORLD"
     ///
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
@@ -81,7 +80,7 @@ public extension String {
     /// - Returns: A pascal cased copy of the string.
     @discardableResult
     func pascalCased() -> String {
-        return (-self).components(separatedBy: .whitespaces).joined()
+        return Guitar.sanitze(string: self).capitalized().components(separatedBy: .whitespaces).joined()
     }
 
     /// Returns the slug version of the string.
@@ -95,7 +94,7 @@ public extension String {
     /// - Returns: The slug copy of the string.
     @discardableResult
     func slugCased() -> String {
-        return (-self).replacingOccurrences(of: " ", with: "-").lowercased()
+        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "-").lowercased()
     }
 
     /// Returns the snake cased version of the string.
@@ -109,7 +108,7 @@ public extension String {
     /// - Returns: The slug copy of the string.
     @discardableResult
     func snakeCased() -> String {
-        return (-self).replacingOccurrences(of: " ", with: "_")
+        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_")
     }
 
     /// Returns the swap cased version of the string.
