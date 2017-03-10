@@ -19,6 +19,9 @@ public struct Guitar {
         /// Pattern matches email addresses.
         public static let email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
 
+        /// Pattern matches first letter of each word.
+        public static let firstLetter = "\\b\\w"
+
         /// Pattern matches non-Alphanumeric and non-Whitespace characters.
         public static let nonAlphanumeric = "[^a-zA-Z\\d\\s]"
     }

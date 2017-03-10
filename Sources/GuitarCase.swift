@@ -31,28 +31,47 @@ public extension String {
     ///
     /// Example:
     ///
-    ///     let string = "helloworld"
+    ///     let string = "hello World"
     ///     print(string.capitalized())
-    ///     // Prints "Helloworld"
+    ///     // Prints "Hello World"
     ///
     /// - Returns: A capitalized copy of the string.
     @discardableResult
     func capitalized() -> String {
-        return first().uppercased() + String(characters.dropFirst())
+        let ranges = Guitar(chord: Guitar.Chord.firstLetter).evaluate(string: self)
+
+        var newString = self
+        for range in ranges {
+            let character = self[range.lowerBound]
+            let uppercasedCharacter = String(character).uppercased()
+            newString = newString.replacingCharacters(in: range, with: uppercasedCharacter)
+        }
+
+        return newString
     }
 
     /// Returns a decapitalized version of the string.
     ///
     /// Example:
     ///
-    ///     let string = "HELLOWORLD"
+    ///     let string = "Hello World"
     ///     print(string.decapitalized())
-    ///     // Prints "hELLOWORLD"
+    ///     // Prints "hello world"
     ///
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
     func decapitalized() -> String {
-        return first().lowercased() + String(characters.dropFirst())
+        let ranges = Guitar(chord: Guitar.Chord.firstLetter).evaluate(string: self)
+
+        var newString = self
+        for range in ranges {
+            let character = self[range.lowerBound]
+            let lowercasedCharacter = String(character).lowercased()
+            newString = newString.replacingCharacters(in: range, with: lowercasedCharacter)
+        }
+
+        return newString
+
     }
 
     /// Returns the kebab cased version of the string.
@@ -83,7 +102,7 @@ public extension String {
         return Guitar.sanitze(string: self).capitalized().components(separatedBy: .whitespaces).joined()
     }
 
-    /// Returns the slug version of the string.
+    /// Returns the slug cased version of the string.
     ///
     /// Example:
     ///
@@ -91,7 +110,7 @@ public extension String {
     ///     print(string.slugCased())
     ///     // Prints "Hello-World"
     ///
-    /// - Returns: The slug copy of the string.
+    /// - Returns: The slug cased copy of the string.
     @discardableResult
     func slugCased() -> String {
         return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "-").lowercased()
@@ -105,7 +124,7 @@ public extension String {
     ///     print(string.snakeCased())
     ///     // Prints "hello_world"
     ///
-    /// - Returns: The slug copy of the string.
+    /// - Returns: The snaked cased copy of the string.
     @discardableResult
     func snakeCased() -> String {
         return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_")

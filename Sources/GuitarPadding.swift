@@ -31,6 +31,7 @@ public extension String {
     /// - Returns: The padded copy of the string.
     func pad(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+
         let delta = Int(ceil(Double(length-self.length())/2))
         return padLeft(length: length-delta, withToken: token).padRight(length: length, withToken: token)
     }
@@ -101,14 +102,7 @@ private extension String {
     ///   - length: The final length of the string.
     /// - Returns: True, if the string can be padded. Otherise, false.
     func padConditionsSatisfied(tokenCount: Int, length: Int) -> Bool {
-        guard length > characters.count else {
-            return false
-        }
-
-        guard tokenCount == 1 else {
-            return false
-        }
-
+        guard length > characters.count, tokenCount == 1 else { return false }
         return true
     }
 
