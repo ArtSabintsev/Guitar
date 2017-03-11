@@ -31,7 +31,7 @@ class GuitarTests: XCTestCase {
     func testSanitize() {
         let string = "Hello, World! This is Arthur. My email is arthur@sabintsev.com! Who misses Obj-C []?"
         let newString = Guitar.sanitze(string: string)
-        XCTAssertEqual(newString, "Hello  World  This is Arthur  My email is arthur sabintsev com  Who misses Obj C    ")
+        XCTAssertEqual(newString, "Hello  World  This is Arthur  My email is arthur sabintsev com  Who misses Obj C")
     }
 
 }

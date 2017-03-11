@@ -27,9 +27,9 @@ class GuitarBooleanTests: XCTestCase {
 
     func testIsCapitalized() {
         XCTAssertTrue("Helloworld".isCapitalized())
-        XCTAssertFalse("Hell0w0rld".isCapitalized())
-        XCTAssertFalse("hello-World".isCapitalized())
+        XCTAssertTrue("Hell0W0rld".isCapitalized())
         XCTAssertTrue("-Hello_World-".isCapitalized())
+        XCTAssertFalse("hello-World".isCapitalized())
     }
 
     func testIsDecapitalized() {
@@ -41,6 +41,7 @@ class GuitarBooleanTests: XCTestCase {
 
     func testIsLowercased() {
         XCTAssertTrue("helloworld".isLowercased())
+        XCTAssertTrue("hello world".isLowercased())
         XCTAssertFalse("Helloworld".isLowercased())
         XCTAssertFalse("Hell0w0rld".isLowercased())
         XCTAssertFalse("hello-World".isLowercased())

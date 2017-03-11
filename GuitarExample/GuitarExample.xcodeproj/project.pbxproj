@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		551626931E73C4B000EA41AC /* GuitarNSRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551626921E73C4B000EA41AC /* GuitarNSRangeExtension.swift */; };
+		551626951E73CD4C00EA41AC /* GuitarChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551626941E73CD4C00EA41AC /* GuitarChord.swift */; };
 		554046B31E67BDAB009B317A /* GuitarCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B21E67BDAB009B317A /* GuitarCaseTests.swift */; };
 		554046B71E67D925009B317A /* GuitarCharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B61E67D925009B317A /* GuitarCharacterTests.swift */; };
 		554046B91E67E6F2009B317A /* GuitarPaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		551626921E73C4B000EA41AC /* GuitarNSRangeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarNSRangeExtension.swift; path = ../../Sources/GuitarNSRangeExtension.swift; sourceTree = "<group>"; };
+		551626941E73CD4C00EA41AC /* GuitarChord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarChord.swift; path = ../../Sources/GuitarChord.swift; sourceTree = "<group>"; };
 		554046B21E67BDAB009B317A /* GuitarCaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCaseTests.swift; sourceTree = "<group>"; };
 		554046B61E67D925009B317A /* GuitarCharacterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarCharacterTests.swift; sourceTree = "<group>"; };
 		554046B81E67E6F2009B317A /* GuitarPaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarPaddingTests.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				55A36A101E71228300DC6BBF /* GuitarBoolean.swift */,
 				55A36A111E71228300DC6BBF /* GuitarCase.swift */,
 				55A36A121E71228300DC6BBF /* GuitarCharacter.swift */,
+				551626941E73CD4C00EA41AC /* GuitarChord.swift */,
 				551626921E73C4B000EA41AC /* GuitarNSRangeExtension.swift */,
 				55A36A131E71228300DC6BBF /* GuitarPadding.swift */,
 				55A36A141E71228300DC6BBF /* GuitarTrimming.swift */,
@@ -370,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551626951E73CD4C00EA41AC /* GuitarChord.swift in Sources */,
 				55A36A151E71228300DC6BBF /* GuitarBoolean.swift in Sources */,
 				55A36A161E71228300DC6BBF /* GuitarCase.swift in Sources */,
 				55A36A1B1E7124E100DC6BBF /* Guitar.swift in Sources */,

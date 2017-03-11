@@ -55,7 +55,7 @@ public extension String {
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
     func decapitalized() -> String {
-        let ranges = Guitar(chord: Guitar.Chord.firstCharacter).evaluate(string: self)
+        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
 
         var newString = self
         for range in ranges {
@@ -65,19 +65,18 @@ public extension String {
         }
 
         return newString
-
     }
 
     /// Returns the kebab cased version of the string.
     ///
     ///     let string = "Hello World"
     ///     print(string.kebabCased())
-    ///     // Prints "-Hellow-World-"
+    ///     // Prints "-hello-world-"
     ///
     /// - Returns: The kebab cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
-        return "-" + slugCased() + "-"
+        return "-" + Guitar.sanitze(string: self).slugCased() + "-"
     }
 
     /// Returns a pascal cased version of the string.
@@ -96,7 +95,7 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.slugCased())
-    ///     // Prints "Hello-World"
+    ///     // Prints "hello-world"
     ///
     /// - Returns: The slug cased copy of the string.
     @discardableResult
@@ -108,12 +107,12 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.snakeCased())
-    ///     // Prints "Hello_World"
+    ///     // Prints "hello_world"
     ///
     /// - Returns: The snaked cased copy of the string.
     @discardableResult
     func snakeCased() -> String {
-        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_")
+        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_").lowercased()
     }
 
     /// Returns the swap cased version of the string.
