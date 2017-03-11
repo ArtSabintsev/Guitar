@@ -13,10 +13,8 @@ public extension String {
 
     /// Returns a camel cased version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "HelloWorld"
-    ///     print(string.decapitalized())
+    ///     print(string.camelCased())
     ///     // Prints "helloWorld"
     ///
     /// - Returns: A camel cased copy of the string.
@@ -29,49 +27,59 @@ public extension String {
     ///
     /// - Warning: This method is a modified implementation of Swift stdlib's `capitalized` computer variabled.
     ///
-    /// Example:
-    ///
-    ///     let string = "helloworld"
+    ///     let string = "hello World"
     ///     print(string.capitalized())
-    ///     // Prints "Helloworld"
+    ///     // Prints "Hello World"
     ///
     /// - Returns: A capitalized copy of the string.
     @discardableResult
     func capitalized() -> String {
-        return first().uppercased() + String(characters.dropFirst())
+        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
+
+        var newString = self
+        for range in ranges {
+            let character = index(range.lowerBound, offsetBy: 0)
+            let uppercasedCharacter = String(self[character]).uppercased()
+            newString = newString.replacingCharacters(in: range, with: uppercasedCharacter)
+        }
+
+        return newString
     }
 
     /// Returns a decapitalized version of the string.
     ///
-    /// Example:
-    ///
-    ///     let string = "HELLOWORLD"
+    ///     let string = "Hello World"
     ///     print(string.decapitalized())
-    ///     // Prints "hELLOWORLD"
+    ///     // Prints "hello world"
     ///
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
     func decapitalized() -> String {
-        return first().lowercased() + String(characters.dropFirst())
+        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
+
+        var newString = self
+        for range in ranges {
+            let character = self[range.lowerBound]
+            let lowercasedCharacter = String(character).lowercased()
+            newString = newString.replacingCharacters(in: range, with: lowercasedCharacter)
+        }
+
+        return newString
     }
 
     /// Returns the kebab cased version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
     ///     print(string.kebabCased())
-    ///     // Prints "-Hellow-World-"
+    ///     // Prints "-hello-world-"
     ///
     /// - Returns: The kebab cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
-        return "-" + slugCased() + "-"
+        return "-" + Guitar.sanitze(string: self).slugCased() + "-"
     }
 
     /// Returns a pascal cased version of the string.
-    ///
-    /// Example:
     ///
     ///     let string = "HELLO WORLD"
     ///     print(string.pascalCased())
@@ -83,15 +91,13 @@ public extension String {
         return Guitar.sanitze(string: self).capitalized().components(separatedBy: .whitespaces).joined()
     }
 
-    /// Returns the slug version of the string.
-    ///
-    /// Example:
+    /// Returns the slug cased version of the string.
     ///
     ///     let string = "Hello World"
     ///     print(string.slugCased())
-    ///     // Prints "Hello-World"
+    ///     // Prints "hello-world"
     ///
-    /// - Returns: The slug copy of the string.
+    /// - Returns: The slug cased copy of the string.
     @discardableResult
     func slugCased() -> String {
         return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "-").lowercased()
@@ -99,21 +105,17 @@ public extension String {
 
     /// Returns the snake cased version of the string.
     ///
-    /// Example:
-    ///
-    ///     let string = "hello world"
+    ///     let string = "Hello World"
     ///     print(string.snakeCased())
     ///     // Prints "hello_world"
     ///
-    /// - Returns: The slug copy of the string.
+    /// - Returns: The snaked cased copy of the string.
     @discardableResult
     func snakeCased() -> String {
-        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_")
+        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_").lowercased()
     }
 
     /// Returns the swap cased version of the string.
-    ///
-    /// Example:
     ///
     ///     let string = "Hello World"
     ///     print(string.swapCased())

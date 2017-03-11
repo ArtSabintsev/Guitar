@@ -31,6 +31,7 @@ public extension String {
     /// - Returns: The padded copy of the string.
     func pad(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+
         let delta = Int(ceil(Double(length-self.length())/2))
         return padLeft(length: length-delta, withToken: token).padRight(length: length, withToken: token)
     }
@@ -41,13 +42,13 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.padLeft(length: 13))
-    ///     // Prints "Hello World  "
+    ///     // Prints "  Hello World"
     ///
     /// Example 2:
     ///
     ///     let string = "Hello World"
     ///     print(string.padLeft(length: 13, withToken: "*"))
-    ///     // Prints "Hello World**"
+    ///     // Prints "**Hello World"
     ///
     /// - Parameters:
     ///
@@ -69,13 +70,13 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.padRight(length: 13))
-    ///     // Prints "  Hello World"
+    ///     // Prints "Hello World  "
     ///
     /// Example 2:
     ///
     ///     let string = "Hello World"
     ///     print(string.padRight(length: 13, withToken: "*", ))
-    ///     // Prints "  Hello World"
+    ///     // Prints "Hello World**"
     ///
     /// - Parameters:
     ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.
@@ -101,14 +102,7 @@ private extension String {
     ///   - length: The final length of the string.
     /// - Returns: True, if the string can be padded. Otherise, false.
     func padConditionsSatisfied(tokenCount: Int, length: Int) -> Bool {
-        guard length > characters.count else {
-            return false
-        }
-
-        guard tokenCount == 1 else {
-            return false
-        }
-
+        guard length > characters.count, tokenCount == 1 else { return false }
         return true
     }
 

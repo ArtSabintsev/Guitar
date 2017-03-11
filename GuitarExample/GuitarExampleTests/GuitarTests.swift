@@ -12,12 +12,12 @@ import XCTest
 class GuitarTests: XCTestCase {
 
     func testEmailMatching() {
-        XCTAssertEqual(Guitar(chord: Guitar.Chord.email).evaluate(string: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
+        XCTAssertEqual(Guitar(chord: .email).evaluate(string: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
     }
 
-    func testAlphanumericMatching() {
+    func testAlphanumericSpaceMatching() {
         let string = "Hello World, and Hello Guitar Users! ^_^"
-        let newString = Guitar(chord: Guitar.Chord.nonAlphanumeric).replaceOccurences(in: string, with: "*")
+        let newString = Guitar(chord: .nonAlphanumericSpace).replaceOccurences(in: string, with: "*")
         XCTAssertEqual(newString, "Hello World* and Hello Guitar Users* ***")
     }
 
@@ -31,7 +31,7 @@ class GuitarTests: XCTestCase {
     func testSanitize() {
         let string = "Hello, World! This is Arthur. My email is arthur@sabintsev.com! Who misses Obj-C []?"
         let newString = Guitar.sanitze(string: string)
-        XCTAssertEqual(newString, "Hello  World  This is Arthur  My email is arthur sabintsev com  Who misses Obj C    ")
+        XCTAssertEqual(newString, "Hello  World  This is Arthur  My email is arthur sabintsev com  Who misses Obj C")
     }
 
 }

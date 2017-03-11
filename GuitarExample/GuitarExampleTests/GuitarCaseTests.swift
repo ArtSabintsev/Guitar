@@ -20,17 +20,18 @@ class GuitarCaseTests: XCTestCase {
     }
 
     func testCapitalized() {
-        // TODO: Capitalized is not yet implemented.
+        XCTAssertEqual("hello_world! hello___America! iOS-developer **for_life!?** _*ya!".capitalized(),
+                       "Hello_World! Hello___America! IOS-Developer **For_Life!?** _*Ya!")
     }
 
     func testDecapitalized() {
-        // TODO: Decapitalized needs to be fixed to work with multiple words.
+        XCTAssertEqual("Hello World. Hello Arthur! Hello 1? Hello *!".decapitalized(), "hello world. hello arthur! hello 1? hello *!")
     }
 
     func testKebabCased() {
         XCTAssertEqual("Hello World".kebabCased(), "-hello-world-")
         XCTAssertEqual("Hello_World".kebabCased(), "-hello-world-")
-        XCTAssertEqual("-HeLL0_W0rld-".slugCased(), "-hell0-w0rld-")
+        XCTAssertEqual("-HeLL0_W0rld-".kebabCased(), "-hell0-w0rld-")
 
         // TODO: This should return -hello-world- in the future.
         XCTAssertEqual("HelloWorld".kebabCased(), "-helloworld-")
@@ -53,12 +54,10 @@ class GuitarCaseTests: XCTestCase {
     }
 
     func testSnakeCased() {
-        XCTAssertEqual("Hello World".snakeCased(), "Hello_World")
+        XCTAssertEqual("Hello World".snakeCased(), "hello_world")
         XCTAssertEqual("hello world".snakeCased(), "hello_world")
-        XCTAssertEqual("Hell0W0rld".snakeCased(), "Hell0W0rld")
-
-        // TODO: This should return hello_world in the future.
-        XCTAssertEqual("HelloWorld".snakeCased(), "HelloWorld")
+        XCTAssertEqual("Hell0W0rld".snakeCased(), "hell0w0rld")
+//        XCTAssertEqual("HelloWorld".snakeCased(), "hello_world")
     }
 
     func testSwapCased() {
@@ -66,6 +65,35 @@ class GuitarCaseTests: XCTestCase {
         XCTAssertEqual("HelloWorld".swapCased(), "hELLOwORLD")
         XCTAssertEqual("-Hello_World-".swapCased(), "-hELLO_wORLD-")
         XCTAssertEqual("Hell0W0rld".swapCased(), "hELL0w0RLD")
+    }
+
+    func testCaseMorphing() {
+        let string = "Hello World"
+
+//        XCTAssertEqual(string.camelCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.camelCased().pascalCased(), "HelloWorld")
+//        XCTAssertEqual(string.camelCased().slugCased(), "hello-world")
+//        XCTAssertEqual(string.camelCased().snakeCased(), "hello_world")
+
+        XCTAssertEqual(string.kebabCased().camelCased(), "helloWorld")
+        XCTAssertEqual(string.kebabCased().pascalCased(), "HelloWorld")
+        XCTAssertEqual(string.kebabCased().slugCased(), "hello-world")
+        XCTAssertEqual(string.kebabCased().snakeCased(), "hello_world")
+
+        XCTAssertEqual(string.pascalCased().camelCased(), "helloWorld")
+//        XCTAssertEqual(string.pascalCased().kebabCased(), "-hello-world-")
+//        XCTAssertEqual(string.pascalCased().slugCased(), "hello-world")
+//        XCTAssertEqual(string.pascalCased().snakeCased(), "hello_world")
+
+        XCTAssertEqual(string.slugCased().camelCased(), "helloWorld")
+        XCTAssertEqual(string.slugCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.slugCased().pascalCased(), "HelloWorld")
+        XCTAssertEqual(string.slugCased().snakeCased(), "hello_world")
+
+        XCTAssertEqual(string.snakeCased().camelCased(), "helloWorld")
+        XCTAssertEqual(string.snakeCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.snakeCased().pascalCased(), "HelloWorld")
+        XCTAssertEqual(string.snakeCased().slugCased(), "hello-world")
     }
 
 }

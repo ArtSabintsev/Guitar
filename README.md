@@ -21,6 +21,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [ ] Latinization Functions
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
+- [ ] Performance Enhancements
 - [x] Regular Expressions (with Common Patterns Built-in)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
@@ -41,12 +42,14 @@ github "ArtSabintsev/Guitar"
 ```
 
 ## Example
-Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unstable. Therefore, it does not make sense to retain example until the API is stabilized.
+Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unstable. Therefore, it does not make sense to retain examples in the README until the API has stabilized.
 
-For the time being, check out the [tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) to see the library in action.
+For the time being, check out the [tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) to see the various functions in the library in action.
 
 ## Inspiration
-This project was inspired by [Voca](https://vocajs.com/).
+This project was inspired by:
+- [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html)
+- [Voca](https://vocajs.com/)
 
 ## Created and maintained by
 [Arthur Ariel Sabintsev](http://www.sabintsev.com/)
