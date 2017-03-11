@@ -47,7 +47,6 @@ Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unsta
 For the time being, check out the [tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) to see the various functions in the library in action.
 
 ## Inspiration
-This project was inspired by:
 - [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html)
 - [Voca](https://vocajs.com/)
 
