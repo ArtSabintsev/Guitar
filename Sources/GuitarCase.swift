@@ -13,10 +13,8 @@ public extension String {
 
     /// Returns a camel cased version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "HelloWorld"
-    ///     print(string.decapitalized())
+    ///     print(string.camelCased())
     ///     // Prints "helloWorld"
     ///
     /// - Returns: A camel cased copy of the string.
@@ -29,8 +27,6 @@ public extension String {
     ///
     /// - Warning: This method is a modified implementation of Swift stdlib's `capitalized` computer variabled.
     ///
-    /// Example:
-    ///
     ///     let string = "hello World"
     ///     print(string.capitalized())
     ///     // Prints "Hello World"
@@ -38,12 +34,12 @@ public extension String {
     /// - Returns: A capitalized copy of the string.
     @discardableResult
     func capitalized() -> String {
-        let ranges = Guitar(chord: Guitar.Chord.firstLetter).evaluate(string: self)
+        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
 
         var newString = self
         for range in ranges {
-            let character = self[range.lowerBound]
-            let uppercasedCharacter = String(character).uppercased()
+            let character = index(range.lowerBound, offsetBy: 0)
+            let uppercasedCharacter = String(self[character]).uppercased()
             newString = newString.replacingCharacters(in: range, with: uppercasedCharacter)
         }
 
@@ -52,8 +48,6 @@ public extension String {
 
     /// Returns a decapitalized version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
     ///     print(string.decapitalized())
     ///     // Prints "hello world"
@@ -61,7 +55,7 @@ public extension String {
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
     func decapitalized() -> String {
-        let ranges = Guitar(chord: Guitar.Chord.firstLetter).evaluate(string: self)
+        let ranges = Guitar(chord: Guitar.Chord.firstCharacter).evaluate(string: self)
 
         var newString = self
         for range in ranges {
@@ -76,8 +70,6 @@ public extension String {
 
     /// Returns the kebab cased version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
     ///     print(string.kebabCased())
     ///     // Prints "-Hellow-World-"
@@ -89,8 +81,6 @@ public extension String {
     }
 
     /// Returns a pascal cased version of the string.
-    ///
-    /// Example:
     ///
     ///     let string = "HELLO WORLD"
     ///     print(string.pascalCased())
@@ -104,8 +94,6 @@ public extension String {
 
     /// Returns the slug cased version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
     ///     print(string.slugCased())
     ///     // Prints "Hello-World"
@@ -118,11 +106,9 @@ public extension String {
 
     /// Returns the snake cased version of the string.
     ///
-    /// Example:
-    ///
-    ///     let string = "hello world"
+    ///     let string = "Hello World"
     ///     print(string.snakeCased())
-    ///     // Prints "hello_world"
+    ///     // Prints "Hello_World"
     ///
     /// - Returns: The snaked cased copy of the string.
     @discardableResult
@@ -131,8 +117,6 @@ public extension String {
     }
 
     /// Returns the swap cased version of the string.
-    ///
-    /// Example:
     ///
     ///     let string = "Hello World"
     ///     print(string.swapCased())

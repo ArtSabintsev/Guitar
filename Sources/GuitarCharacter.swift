@@ -13,8 +13,6 @@ public extension String {
 
     /// Returns the first character of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
     ///     print(string.first())
     ///     // Prints "H"
@@ -25,9 +23,7 @@ public extension String {
         return String(describing: self[startIndex])
     }
 
-    /// Returns the laster character of the string.
-    ///
-    /// Example:
+    /// Returns the last character of the string.
     ///
     ///     let string = "Hello World"
     ///     print(string.last())
@@ -41,6 +37,10 @@ public extension String {
 
     /// Returns the character count of the string.
     ///
+    ///     let string = "Hello World"
+    ///     print(string.length())
+    ///     // Prints 11
+    ///
     /// - Returns: The character count of the string.
     func length() -> Int {
         return characters.count
@@ -48,10 +48,8 @@ public extension String {
 
     /// Retuns the reversed version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
-    ///     print(string.reversedreversed())
+    ///     print(string.reversed())
     ///     // Prints "dlroW olleH"
     ///
     /// - Returns: The reversed copy of the string.

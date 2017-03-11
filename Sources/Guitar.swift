@@ -5,9 +5,7 @@
 //  Created by Sabintsev, Arthur on 3/9/17.
 //  Copyright © 2017 Arthur Ariel Sabintsev. All rights reserved.
 //
-//  Adapted from:
-//  http://benscheirman.com/2014/06/regex-in-swift/
-//  https://www.hackingwithswift.com/example-code/language/how-to-convert-an-nsrange-to-a-swift-string-index
+//  Adapted from: http://benscheirman.com/2014/06/regex-in-swift/
 
 import Foundation
 
@@ -15,31 +13,43 @@ import Foundation
 
 public struct Guitar {
     /// Common Regular Expression Patterns
-    public struct Chord {
+    public enum Chord: String {
         /// Pattern matches email addresses.
-        public static let email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
 
-        /// Pattern matches first letter of each word.
-        public static let firstLetter = "\\b\\w"
+        /// Pattern matches first alphanumeric character of each new word.
+        case firstCharacter = "(\\b\\w|(?<=_)[^_])"
+
+        /// Pattern matches first alphanumeric character of each last word.
+        case lastCharacter = "(\\w\\b|[^_](?=_))"
+
+        /// Pattern matches non-Alphanumeric characters.
+        case nonAlphanumeric = "[^a-zA-Z\\d]"
 
         /// Pattern matches non-Alphanumeric and non-Whitespace characters.
-        public static let nonAlphanumeric = "[^a-zA-Z\\d\\s]"
+        case nonAlphanumericSpace = "[^a-zA-Z\\d\\s]"
     }
 
     /// Regular expression pattern that will be used to evaluate a specific string.
-    let chord: String
+    let pattern: String
 
-    /// Designated Initializer for *GuitarRegex*
+    /// Designated Initializer for `Guitar`
     ///
     /// - Parameters:
-    ///     - chord: The pattern (also known as a `chord`) that will be used to perform the match. Common patterns (or chords) can be found in the `Chord` struct.
-    ///
-    /// - Returns: A list of matches.
-    public init(chord: String) {
-        self.chord = chord
+    ///     - pattern: The pattern that will be used to perform the match.
+    public init(pattern: String) {
+        self.pattern = pattern
     }
 
-    /// Evaluates a string for all instances of a regular expression pattern. 
+    /// Delegating Initializer for `Guitar`
+    ///
+    /// - Parameters:
+    ///     - chord: The `chord`, or build-in regex pattern that will be used to perform the match.
+    public init(chord: Chord) {
+        self.init(pattern: chord.rawValue)
+    }
+
+    /// Evaluates a string for all instances of a regular expression pattern.
     ///
     /// - Parameters:
     ///     - string: The string that will be evaluated.
@@ -48,7 +58,7 @@ public struct Guitar {
     /// - Returns: A list of matches.
     public func evaluate(string: String, options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
         let range = NSRange(location: 0, length: string.characters.count)
-        guard let regex = try? NSRegularExpression(pattern: chord, options: options) else {
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
             return []
         }
 
@@ -63,7 +73,7 @@ public struct Guitar {
     }
 
     public func replaceOccurences(in string: String, with character: String) -> String {
-        let ranges = Guitar(chord: chord).evaluate(string: string)
+        let ranges = Guitar(pattern: pattern).evaluate(string: string)
 
         var newString = string
         for range in ranges {
@@ -85,7 +95,7 @@ public struct Guitar {
     }
 }
 
-// MARK: - Regular Expressions (Common Evaluations and Tests)
+// MARK: - Common Evaluations and Tests
 
 public extension Guitar {
     /// Tests a string to check if it is a valid email address by using a regular expression.
@@ -95,7 +105,7 @@ public extension Guitar {
     ///
     /// - Returns: `true` if `string` is a valid email address, otherwise `false`.
     static func isValidEmail(email: String) -> Bool {
-        return Guitar(chord: Chord.email).test(string: email)
+        return Guitar(chord: .email).test(string: email)
     }
 
     /// Sanitizes of a string by removing all non-Alphanumeric characters (excluding whitespaces)
@@ -103,25 +113,6 @@ public extension Guitar {
     /// - Parameter string: The string that should be sanitized.
     /// - Returns: The sanitized string.
     static func sanitze(string: String) -> String {
-        return Guitar(chord: Chord.nonAlphanumeric).replaceOccurences(in: string, with: " ")
-    }
-}
-
-// MARK: - NSRange Helpers
-
-private extension NSRange {
-    /// Converts NSRange to Range<String.Index>
-    ///
-    /// - Parameter string: The string from which the NSRange was extracted.
-    /// - Returns: The `Range<String.Index>` representation of the NSRange.
-    func range(for string: String) -> Range<String.Index>? {
-        guard location != NSNotFound else { return nil }
-
-        guard let fromUTFIndex = string.utf16.index(string.utf16.startIndex, offsetBy: location, limitedBy: string.utf16.endIndex) else { return nil }
-        guard let toUTFIndex = string.utf16.index(fromUTFIndex, offsetBy: length, limitedBy: string.utf16.endIndex) else { return nil }
-        guard let fromIndex = String.Index(fromUTFIndex, within: string) else { return nil }
-        guard let toIndex = String.Index(toUTFIndex, within: string) else { return nil }
-
-        return fromIndex ..< toIndex
+        return Guitar(chord: .nonAlphanumericSpace).replaceOccurences(in: string, with: " ")
     }
 }

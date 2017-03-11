@@ -13,10 +13,8 @@ public extension String {
 
     /// Returns a prefixed version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
-    ///     print(string.prefixed(length: 7))
+    ///     print(trimLeft(byKeeping: 7))
     ///     // Prints "Hello W"
     ///
     /// - Parameter length: The length of the string that you'd like to return, starting at the beginning of the string. If the provided length is greater than the original string, the original string is returned.
@@ -28,10 +26,8 @@ public extension String {
 
     /// Returns a suffixed version of the string.
     ///
-    /// Example:
-    ///
     ///     let string = "Hello World"
-    ///     print(string.prefixed(length: 7))
+    ///     print(trimRight(byKeeping: 7))
     ///     // Prints "o World"
     ///
     /// - Parameter length: The length of the string that you'd like to return, starting at the end of the string. If the provided length is greater than the original string, the original string is returned.
@@ -46,7 +42,7 @@ public extension String {
     /// Example:
     ///
     ///     let string = "Hello World"
-    ///     print(string.trimLeft(length: 7))
+    ///     print(string.trimLeft(byRemoving: length: 7))
     ///     // Prints "o World"
     ///
     /// - Parameter length: The number of characters to trim from the beginning of the string. If the provided length is greater than the original string, the original string is returned.
@@ -62,7 +58,7 @@ public extension String {
     /// Example 1:
     ///
     ///     let string = "Hello World"
-    ///     print(string.trimRight(length: 7))
+    ///     print(string.trimRight(byRemoving: length: 7))
     ///     // Prints "Hello W"
     ///
     /// - Parameter length: The number of characters to trim from the end of the string. If the provided length is greater than the original string, the original string is returned.
@@ -88,13 +84,11 @@ public extension String {
         let ellipsis = "..."
 
         let delta = self.length() - length
-
         guard delta > 0 else {
             return self
         }
 
         let lengthWithoutEllipsis = length-ellipsis.length()
-
         guard lengthWithoutEllipsis > 0 else {
             return self
         }

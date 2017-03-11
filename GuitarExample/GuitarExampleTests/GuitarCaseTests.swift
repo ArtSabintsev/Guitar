@@ -20,7 +20,7 @@ class GuitarCaseTests: XCTestCase {
     }
 
     func testCapitalized() {
-        XCTAssertEqual("hello world. hello arthur! hello 1? hello *!".capitalized(), "Hello World. Hello Arthur! Hello 1? Hello *!")
+        XCTAssertEqual("hello_world! hello___America! iOS-developer **for_life!?**".capitalized(), "Hello_World! Hello___America! IOS-Developer **For_Life!?**")
     }
 
     func testDecapitalized() {
@@ -66,6 +66,13 @@ class GuitarCaseTests: XCTestCase {
         XCTAssertEqual("HelloWorld".swapCased(), "hELLOwORLD")
         XCTAssertEqual("-Hello_World-".swapCased(), "-hELLO_wORLD-")
         XCTAssertEqual("Hell0W0rld".swapCased(), "hELL0w0RLD")
+    }
+
+    func testCaseMorphing() {
+        let string = "Hello World"
+        XCTAssertEqual(string.slugCased().camelCased(), "helloWorld")
+        XCTAssertEqual(string.slugCased().snakeCased(), "hello_world")
+
     }
 
 }

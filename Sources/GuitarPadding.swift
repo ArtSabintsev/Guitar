@@ -42,13 +42,13 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.padLeft(length: 13))
-    ///     // Prints "Hello World  "
+    ///     // Prints "  Hello World"
     ///
     /// Example 2:
     ///
     ///     let string = "Hello World"
     ///     print(string.padLeft(length: 13, withToken: "*"))
-    ///     // Prints "Hello World**"
+    ///     // Prints "**Hello World"
     ///
     /// - Parameters:
     ///
@@ -70,13 +70,13 @@ public extension String {
     ///
     ///     let string = "Hello World"
     ///     print(string.padRight(length: 13))
-    ///     // Prints "  Hello World"
+    ///     // Prints "Hello World  "
     ///
     /// Example 2:
     ///
     ///     let string = "Hello World"
     ///     print(string.padRight(length: 13, withToken: "*", ))
-    ///     // Prints "  Hello World"
+    ///     // Prints "Hello World**"
     ///
     /// - Parameters:
     ///   - length: The final length of your string. If the provided length is less than or equal to the original string, the original string is returned.
