@@ -29,6 +29,14 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/GuitarChord.html">GuitarChord</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -41,9 +49,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/Guitar.html">Guitar</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/Guitar/Chord.html">– Chord</a>
               </li>
             </ul>
           </li>
@@ -90,7 +95,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if all characters are letters. Otherwise, false.</p>
+                        <p><code>true</code>, if all characters are letters. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -122,7 +127,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if all characters are alphanumeric. Otherwise, false.</p>
+                        <p><code>true</code>, if all characters are alphanumeric. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -141,7 +146,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A Boolean value indicating if the string is capitalized.</p>
+                        <p>A Boolean value indicating if the first characters in all of the words in the string are uppercased.</p>
 
                       </div>
                       <div class="declaration">
@@ -154,7 +159,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if the string is capitalized. Otherwise, false.</p>
+                        <p><code>true</code>, if the string is capitalized. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -173,7 +178,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A Boolean value indicating if the string&rsquo;s first character is lowercase.</p>
+                        <p>A Boolean value indicating if the first characters in all of the words in the string are lowercased.</p>
 
                       </div>
                       <div class="declaration">
@@ -186,7 +191,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if first character is lowercased. Otherwise, false.</p>
+                        <p><code>true</code>, if first character is lowercased. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -218,7 +223,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if the string is not capitalized. Otherwise, false.</p>
+                        <p><code>true</code>, if the string is not capitalized. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -250,7 +255,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if all characters are numbers. Otherwise, false.</p>
+                        <p><code>true</code>, if all characters are numbers. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -282,7 +287,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>True, if all characters are uppercased. Otherwise, false.</p>
+                        <p><code>true</code>, if all characters are uppercased. Otherwise, <code>false</code>.</p>
 
                       </div>
                     </section>
@@ -307,10 +312,8 @@
                       <div class="abstract">
                         <p>Returns a camel cased version of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "HelloWorld"
-print(string.decapitalized())
+print(string.camelCased())
 // Prints "helloWorld"
 </code></pre>
 
@@ -348,16 +351,13 @@ print(string.decapitalized())
 
 <div class="aside aside-warning">
     <p class="aside-title">Warning</p>
-    This method is a modified implementation of Swift stdlib&rsquo;s <code>capitalized</code> computer variabled.
+    <p>This method is a modified implementation of Swift stdlib&rsquo;s <code>capitalized</code> computer variabled.</p>
+
+<p>let string = <q>hello World</q>
+print(string.capitalized())
+// Prints <q>Hello World</q></p>
 
 </div>
-
-<p>Example:</p>
-
-<pre class="highlight plaintext"><code>let string = "helloworld"
-print(string.capitalized())
-// Prints "Helloworld"
-</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -391,11 +391,9 @@ print(string.capitalized())
                       <div class="abstract">
                         <p>Returns a decapitalized version of the string.</p>
 
-<p>Example:</p>
-
-<pre class="highlight plaintext"><code>let string = "HELLOWORLD"
+<pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.decapitalized())
-// Prints "hELLOWORLD"
+// Prints "hello world"
 </code></pre>
 
                       </div>
@@ -430,11 +428,9 @@ print(string.decapitalized())
                       <div class="abstract">
                         <p>Returns the kebab cased version of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.kebabCased())
-// Prints "-Hellow-World-"
+// Prints "-hello-world-"
 </code></pre>
 
                       </div>
@@ -468,8 +464,6 @@ print(string.kebabCased())
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns a pascal cased version of the string.</p>
-
-<p>Example:</p>
 
 <pre class="highlight plaintext"><code>let string = "HELLO WORLD"
 print(string.pascalCased())
@@ -506,13 +500,11 @@ print(string.pascalCased())
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the slug version of the string.</p>
-
-<p>Example:</p>
+                        <p>Returns the slug cased version of the string.</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.slugCased())
-// Prints "Hello-World"
+// Prints "hello-world"
 </code></pre>
 
                       </div>
@@ -526,7 +518,7 @@ print(string.slugCased())
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The slug copy of the string.</p>
+                        <p>The slug cased copy of the string.</p>
 
                       </div>
                     </section>
@@ -547,9 +539,7 @@ print(string.slugCased())
                       <div class="abstract">
                         <p>Returns the snake cased version of the string.</p>
 
-<p>Example:</p>
-
-<pre class="highlight plaintext"><code>let string = "hello world"
+<pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.snakeCased())
 // Prints "hello_world"
 </code></pre>
@@ -565,7 +555,7 @@ print(string.snakeCased())
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The slug copy of the string.</p>
+                        <p>The snaked cased copy of the string.</p>
 
                       </div>
                     </section>
@@ -585,8 +575,6 @@ print(string.snakeCased())
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the swap cased version of the string.</p>
-
-<p>Example:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.swapCased())
@@ -629,8 +617,6 @@ print(string.swapCased())
                       <div class="abstract">
                         <p>Returns the first character of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.first())
 // Prints "H"
@@ -666,9 +652,7 @@ print(string.first())
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns the laster character of the string.</p>
-
-<p>Example:</p>
+                        <p>Returns the last character of the string.</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.last())
@@ -707,6 +691,11 @@ print(string.last())
                       <div class="abstract">
                         <p>Returns the character count of the string.</p>
 
+<pre class="highlight plaintext"><code>let string = "Hello World"
+print(string.length())
+// Prints 11
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -739,10 +728,8 @@ print(string.last())
                       <div class="abstract">
                         <p>Retuns the reversed version of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.reversedreversed())
+print(string.reversed())
 // Prints "dlroW olleH"
 </code></pre>
 
@@ -865,14 +852,14 @@ print(string.pad(length: 13, withToken: "*"))
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.padLeft(length: 13))
-// Prints "Hello World  "
+// Prints "  Hello World"
 </code></pre>
 
 <p>Example 2:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.padLeft(length: 13, withToken: "*"))
-// Prints "Hello World**"
+// Prints "**Hello World"
 </code></pre>
 
                       </div>
@@ -944,14 +931,14 @@ print(string.padLeft(length: 13, withToken: "*"))
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.padRight(length: 13))
-// Prints "  Hello World"
+// Prints "Hello World  "
 </code></pre>
 
 <p>Example 2:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
 print(string.padRight(length: 13, withToken: "*", ))
-// Prints "  Hello World"
+// Prints "Hello World**"
 </code></pre>
 
                       </div>
@@ -1023,10 +1010,8 @@ print(string.padRight(length: 13, withToken: "*", ))
                       <div class="abstract">
                         <p>Returns a prefixed version of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.prefixed(length: 7))
+print(trimLeft(byKeeping: 7))
 // Prints "Hello W"
 </code></pre>
 
@@ -1082,10 +1067,8 @@ print(string.prefixed(length: 7))
                       <div class="abstract">
                         <p>Returns a suffixed version of the string.</p>
 
-<p>Example:</p>
-
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.prefixed(length: 7))
+print(trimRight(byKeeping: 7))
 // Prints "o World"
 </code></pre>
 
@@ -1144,7 +1127,7 @@ print(string.prefixed(length: 7))
 <p>Example:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.trimLeft(length: 7))
+print(string.trimLeft(byRemoving: length: 7))
 // Prints "o World"
 </code></pre>
 
@@ -1203,7 +1186,7 @@ print(string.trimLeft(length: 7))
 <p>Example 1:</p>
 
 <pre class="highlight plaintext"><code>let string = "Hello World"
-print(string.trimRight(length: 7))
+print(string.trimRight(byRemoving: length: 7))
 // Prints "Hello W"
 </code></pre>
 
