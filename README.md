@@ -42,9 +42,9 @@ github "ArtSabintsev/Guitar"
 ```
 
 ## Example
-Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unstable. Therefore, it does not make sense to retain example until the API is stabilized.
+Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unstable. Therefore, it does not make sense to retain examples in the README until the API has stabilized.
 
-For the time being, check out the [tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) to see the library in action.
+For the time being, check out the [tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) to see the various functions in the library in action.
 
 ## Inspiration
 This project was inspired by:
