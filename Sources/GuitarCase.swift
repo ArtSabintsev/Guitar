@@ -76,7 +76,7 @@ public extension String {
     /// - Returns: The kebab cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
-        return "-" + Guitar.sanitze(string: self).slugCased() + "-"
+        return "-" + Guitar.sanitze(string: self).splitWordsByCase().slugCased() + "-"
     }
 
     /// Returns a pascal cased version of the string.
@@ -88,7 +88,7 @@ public extension String {
     /// - Returns: A pascal cased copy of the string.
     @discardableResult
     func pascalCased() -> String {
-        return Guitar.sanitze(string: self).capitalized().components(separatedBy: .whitespaces).joined()
+        return Guitar.sanitze(string: self).splitWordsByCase().capitalized().components(separatedBy: .whitespaces).joined()
     }
 
     /// Returns the slug cased version of the string.
@@ -100,7 +100,7 @@ public extension String {
     /// - Returns: The slug cased copy of the string.
     @discardableResult
     func slugCased() -> String {
-        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "-").lowercased()
+        return Guitar.sanitze(string: self).splitWordsByCase().replacingOccurrences(of: " ", with: "-").lowercased()
     }
 
     /// Returns the snake cased version of the string.
@@ -112,7 +112,32 @@ public extension String {
     /// - Returns: The snaked cased copy of the string.
     @discardableResult
     func snakeCased() -> String {
-        return Guitar.sanitze(string: self).replacingOccurrences(of: " ", with: "_").lowercased()
+        return Guitar.sanitze(string: self).splitWordsByCase().replacingOccurrences(of: " ", with: "_").lowercased()
+    }
+
+    /// Splits a string into mutliple words, delimited by uppercase letters.
+    ///
+    ///     let string = "HelloWorld"
+    ///     print(string.splitWordsByCase())
+    ///     // Prints "Hello World"
+    ///
+    /// - Returns: A new string where each word in the original string is delimited by a whitespace.
+    @discardableResult
+    func splitWordsByCase() -> String {
+        var newStringArray: [String] = []
+        for character in Guitar.sanitze(string: self).characters {
+            if String(character) == String(character).uppercased() {
+                newStringArray.append(" ")
+            }
+            newStringArray.append(String(character))
+        }
+
+        return newStringArray
+            .joined()
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .components(separatedBy: .whitespaces)
+            .filter({ !$0.isEmpty })
+            .joined(separator: " ")
     }
 
     /// Returns the swap cased version of the string.
