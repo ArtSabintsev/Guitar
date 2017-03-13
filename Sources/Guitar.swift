@@ -26,7 +26,7 @@ public struct Guitar {
     /// Delegating Initializer for `Guitar`
     ///
     /// - Parameters:
-    ///     - chord: The `chord`, or build-in regex pattern that will be used to perform the match.
+    ///     - chord: A `chord`, or built-in regex pattern that will be used to perform the match.
     public init(chord: GuitarChord) {
         self.init(pattern: chord.rawValue)
     }
