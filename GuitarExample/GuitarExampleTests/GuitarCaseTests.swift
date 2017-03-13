@@ -31,10 +31,8 @@ class GuitarCaseTests: XCTestCase {
     func testKebabCased() {
         XCTAssertEqual("Hello World".kebabCased(), "-hello-world-")
         XCTAssertEqual("Hello_World".kebabCased(), "-hello-world-")
-        XCTAssertEqual("-HeLL0_W0rld-".kebabCased(), "-hell0-w0rld-")
-
-        // TODO: This should return -hello-world- in the future.
-        XCTAssertEqual("HelloWorld".kebabCased(), "-helloworld-")
+        XCTAssertEqual("HelloWorld".kebabCased(), "-hello-world-")
+        XCTAssertEqual("-HeLL0_W0rld-".kebabCased(), "-he-l-l-0-w-0rld-")
     }
 
     func testPascalCased() {
@@ -47,17 +45,14 @@ class GuitarCaseTests: XCTestCase {
     func testSlugCased() {
         XCTAssertEqual("Hello World".slugCased(), "hello-world")
         XCTAssertEqual("Hello_World".slugCased(), "hello-world")
-        XCTAssertEqual("HeLL0 W0rld".slugCased(), "hell0-w0rld")
-
-        // TODO: This should return hello-world in the future.
-        XCTAssertEqual("HelloWorld".slugCased(), "helloworld")
+        XCTAssertEqual("HelloWorld".slugCased(), "hello-world")
     }
 
     func testSnakeCased() {
         XCTAssertEqual("Hello World".snakeCased(), "hello_world")
         XCTAssertEqual("hello world".snakeCased(), "hello_world")
-        XCTAssertEqual("Hell0W0rld".snakeCased(), "hell0w0rld")
-//        XCTAssertEqual("HelloWorld".snakeCased(), "hello_world")
+        XCTAssertEqual("Hell0W0rld".snakeCased(), "hell_0_w_0rld")
+        XCTAssertEqual("HelloWorld".snakeCased(), "hello_world")
     }
 
     func testSwapCased() {

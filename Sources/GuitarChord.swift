@@ -26,7 +26,4 @@ public enum GuitarChord: String {
 
     /// Pattern matches non-Alphanumeric and non-Whitespace characters.
     case nonAlphanumericSpace = "[^a-zA-Z\\d\\s]"
-
-    /// Pattern matches uppercase characters.
-    case uppercase = "[\\p{Lu}\\p{Lt}]"
 }
