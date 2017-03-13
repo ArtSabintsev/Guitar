@@ -65,10 +65,10 @@ class GuitarCaseTests: XCTestCase {
     func testCaseMorphing() {
         let string = "Hello World"
 
-//        XCTAssertEqual(string.camelCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.camelCased().kebabCased(), "-hello-world-")
         XCTAssertEqual(string.camelCased().pascalCased(), "HelloWorld")
-//        XCTAssertEqual(string.camelCased().slugCased(), "hello-world")
-//        XCTAssertEqual(string.camelCased().snakeCased(), "hello_world")
+        XCTAssertEqual(string.camelCased().slugCased(), "hello-world")
+        XCTAssertEqual(string.camelCased().snakeCased(), "hello_world")
 
         XCTAssertEqual(string.kebabCased().camelCased(), "helloWorld")
         XCTAssertEqual(string.kebabCased().pascalCased(), "HelloWorld")
@@ -76,9 +76,9 @@ class GuitarCaseTests: XCTestCase {
         XCTAssertEqual(string.kebabCased().snakeCased(), "hello_world")
 
         XCTAssertEqual(string.pascalCased().camelCased(), "helloWorld")
-//        XCTAssertEqual(string.pascalCased().kebabCased(), "-hello-world-")
-//        XCTAssertEqual(string.pascalCased().slugCased(), "hello-world")
-//        XCTAssertEqual(string.pascalCased().snakeCased(), "hello_world")
+        XCTAssertEqual(string.pascalCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.pascalCased().slugCased(), "hello-world")
+        XCTAssertEqual(string.pascalCased().snakeCased(), "hello_world")
 
         XCTAssertEqual(string.slugCased().camelCased(), "helloWorld")
         XCTAssertEqual(string.slugCased().kebabCased(), "-hello-world-")
