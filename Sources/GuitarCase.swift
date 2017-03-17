@@ -73,7 +73,7 @@ public extension String {
     ///     print(string.kebabCased())
     ///     // Prints "hello-world"
     ///
-    /// - Returns: The slug cased copy of the string.
+    /// - Returns: The kebabg cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
         return Guitar.sanitze(string: self).splitWordsByCase().replacingOccurrences(of: " ", with: "-").lowercased()
