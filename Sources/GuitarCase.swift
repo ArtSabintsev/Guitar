@@ -67,16 +67,16 @@ public extension String {
         return newString
     }
 
-    /// Returns the kebab cased version of the string.
+    /// Returns the kebab cased (a.k.a. slug) version of the string.
     ///
     ///     let string = "Hello World"
     ///     print(string.kebabCased())
-    ///     // Prints "-hello-world-"
+    ///     // Prints "hello-world"
     ///
-    /// - Returns: The kebab cased copy of the string.
+    /// - Returns: The slug cased copy of the string.
     @discardableResult
     func kebabCased() -> String {
-        return "-" + Guitar.sanitze(string: self).splitWordsByCase().slugCased() + "-"
+        return Guitar.sanitze(string: self).splitWordsByCase().replacingOccurrences(of: " ", with: "-").lowercased()
     }
 
     /// Returns a pascal cased version of the string.
@@ -89,18 +89,6 @@ public extension String {
     @discardableResult
     func pascalCased() -> String {
         return Guitar.sanitze(string: self).splitWordsByCase().capitalized().components(separatedBy: .whitespaces).joined()
-    }
-
-    /// Returns the slug cased version of the string.
-    ///
-    ///     let string = "Hello World"
-    ///     print(string.slugCased())
-    ///     // Prints "hello-world"
-    ///
-    /// - Returns: The slug cased copy of the string.
-    @discardableResult
-    func slugCased() -> String {
-        return Guitar.sanitze(string: self).splitWordsByCase().replacingOccurrences(of: " ", with: "-").lowercased()
     }
 
     /// Returns the snake cased version of the string.

@@ -29,10 +29,9 @@ class GuitarCaseTests: XCTestCase {
     }
 
     func testKebabCased() {
-        XCTAssertEqual("Hello World".kebabCased(), "-hello-world-")
-        XCTAssertEqual("Hello_World".kebabCased(), "-hello-world-")
-        XCTAssertEqual("HelloWorld".kebabCased(), "-hello-world-")
-        XCTAssertEqual("-HeLL0_W0rld-".kebabCased(), "-he-l-l-0-w-0rld-")
+        XCTAssertEqual("Hello World".kebabCased(), "hello-world")
+        XCTAssertEqual("Hello_World".kebabCased(), "hello-world")
+        XCTAssertEqual("HelloWorld".kebabCased(), "hello-world")
     }
 
     func testPascalCased() {
@@ -40,12 +39,6 @@ class GuitarCaseTests: XCTestCase {
         XCTAssertEqual("HelloWorld".pascalCased(), "HelloWorld")
         XCTAssertEqual("-Hello_World-".pascalCased(), "HelloWorld")
         XCTAssertEqual("Hell0W0rld".pascalCased(), "Hell0W0rld")
-    }
-
-    func testSlugCased() {
-        XCTAssertEqual("Hello World".slugCased(), "hello-world")
-        XCTAssertEqual("Hello_World".slugCased(), "hello-world")
-        XCTAssertEqual("HelloWorld".slugCased(), "hello-world")
     }
 
     func testSnakeCased() {
@@ -65,30 +58,21 @@ class GuitarCaseTests: XCTestCase {
     func testCaseMorphing() {
         let string = "Hello World"
 
-        XCTAssertEqual(string.camelCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.camelCased().kebabCased(), "hello-world")
         XCTAssertEqual(string.camelCased().pascalCased(), "HelloWorld")
-        XCTAssertEqual(string.camelCased().slugCased(), "hello-world")
         XCTAssertEqual(string.camelCased().snakeCased(), "hello_world")
 
         XCTAssertEqual(string.kebabCased().camelCased(), "helloWorld")
         XCTAssertEqual(string.kebabCased().pascalCased(), "HelloWorld")
-        XCTAssertEqual(string.kebabCased().slugCased(), "hello-world")
         XCTAssertEqual(string.kebabCased().snakeCased(), "hello_world")
 
         XCTAssertEqual(string.pascalCased().camelCased(), "helloWorld")
-        XCTAssertEqual(string.pascalCased().kebabCased(), "-hello-world-")
-        XCTAssertEqual(string.pascalCased().slugCased(), "hello-world")
+        XCTAssertEqual(string.pascalCased().kebabCased(), "hello-world")
         XCTAssertEqual(string.pascalCased().snakeCased(), "hello_world")
 
-        XCTAssertEqual(string.slugCased().camelCased(), "helloWorld")
-        XCTAssertEqual(string.slugCased().kebabCased(), "-hello-world-")
-        XCTAssertEqual(string.slugCased().pascalCased(), "HelloWorld")
-        XCTAssertEqual(string.slugCased().snakeCased(), "hello_world")
-
         XCTAssertEqual(string.snakeCased().camelCased(), "helloWorld")
-        XCTAssertEqual(string.snakeCased().kebabCased(), "-hello-world-")
+        XCTAssertEqual(string.snakeCased().kebabCased(), "hello-world")
         XCTAssertEqual(string.snakeCased().pascalCased(), "HelloWorld")
-        XCTAssertEqual(string.snakeCased().slugCased(), "hello-world")
     }
 
 }
