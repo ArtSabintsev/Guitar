@@ -8,22 +8,26 @@
 
 import Foundation
 
-// MARK: - GuitarChord
+// MARK: - Chord
 
-/// Common Regular Expression Patterns
-public enum GuitarChord: String {
-    /// Pattern matches email addresses.
-    case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+public extension Guitar {
 
-    /// Pattern matches first alphanumeric character of each word.
-    case firstCharacter = "(\\b\\w|(?<=_)[^_])"
+    /// Common Regular Expression Patterns
+    enum Chord: String {
+        /// Pattern matches email addresses.
+        case email = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
 
-    /// Pattern matches last alphanumeric character of each word.
-    case lastCharacter = "(\\w\\b|[^_](?=_))"
+        /// Pattern matches first alphanumeric character of each word.
+        case firstCharacter = "(\\b\\w|(?<=_)[^_])"
 
-    /// Pattern matches non-Alphanumeric characters.
-    case nonAlphanumeric = "[^a-zA-Z\\d]"
+        /// Pattern matches last alphanumeric character of each word.
+        case lastCharacter = "(\\w\\b|[^_](?=_))"
 
-    /// Pattern matches non-Alphanumeric and non-Whitespace characters.
-    case nonAlphanumericSpace = "[^a-zA-Z\\d\\s]"
+        /// Pattern matches non-Alphanumeric characters.
+        case nonAlphanumeric = "[^a-zA-Z\\d]"
+
+        /// Pattern matches non-Alphanumeric and non-Whitespace characters.
+        case nonAlphanumericSpace = "[^a-zA-Z\\d\\s]"
+    }
+
 }
