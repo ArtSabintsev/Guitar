@@ -27,7 +27,7 @@ public struct Guitar {
     ///
     /// - Parameters:
     ///     - chord: A `chord`, or built-in regex pattern that will be used to perform the match.
-    public init(chord: GuitarChord) {
+    public init(chord: Chord) {
         self.init(pattern: chord.rawValue)
     }
 
