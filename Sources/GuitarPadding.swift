@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Padding Operations
+// MARK: - Padding Operations
+
 public extension String {
 
     /// Returns the center-padded version of the string.

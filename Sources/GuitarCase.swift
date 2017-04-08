@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Case Operations
+// MARK: - Case Operations
+
 public extension String {
 
     /// Returns a camel cased version of the string.

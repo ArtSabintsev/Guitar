@@ -30,7 +30,7 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("어떻게 지내세요?".latinized(), "eotteohge jinaeseyo?")
     }
 
-    func testlength() {
+    func testLength() {
         XCTAssertEqual("Hello World".length(), 11)
         XCTAssertEqual("Hello_World".length(), 11)
         XCTAssertEqual("  Hello World  ".length(), 15)
