@@ -45,9 +45,7 @@ public extension String {
     /// - Returns: The latinized version of the string without diacritics.
     @discardableResult
     func latinized() -> String {
-        let mutableString = NSMutableString(string: self) as CFMutableString
-        CFStringTransform(mutableString, nil, kCFStringTransformToLatin, false)
-        return String(mutableString).withoutAccents()
+        return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
     }
 
     /// Returns the character count of the string.
@@ -82,8 +80,6 @@ public extension String {
     /// - Returns: The string without diacritics.
     @discardableResult
     func withoutAccents() -> String {
-        let mutableString = NSMutableString(string: self) as CFMutableString
-        CFStringTransform(mutableString, nil, kCFStringTransformStripCombiningMarks, false)
-        return String(mutableString)
+        return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
     }
 }
