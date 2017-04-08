@@ -18,7 +18,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
 - [x] Character Functions (`first`, `length`, `reversed`, etc.)
-- [ ] Latinization Functions
+- [x] Latinization Functions (Remocing Diacritics)
 - [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [ ] Performance Enhancements
