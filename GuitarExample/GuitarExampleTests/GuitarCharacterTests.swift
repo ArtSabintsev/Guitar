@@ -22,7 +22,7 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("4ello Worl6".last(), "6")
         XCTAssertEqual("-Hello_World-".last(), "-")
     }
-    
+
     func testWithoutAccents() {
         XCTAssertEqual("Crème brûlée".withoutAccents(), "Creme brulee")
         XCTAssertEqual("août décembre".withoutAccents(), "aout decembre")
