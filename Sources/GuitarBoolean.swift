@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Boolean Operations
+// MARK: - Boolean Operations
+
 public extension String {
 
     /// A Boolean value indicating if all the characters are letters.

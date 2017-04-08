@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Trimming Operations
+// MARK: - Trimming Operations
+
 public extension String {
 
     /// Returns a prefixed version of the string.

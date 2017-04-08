@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: - Chord
+// MARK: - Guitar.Chord
 
 public extension Guitar {
 

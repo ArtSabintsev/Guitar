@@ -8,7 +8,8 @@
 
 import Foundation
 
-/// Character Operations
+// MARK: - Character Operations
+
 public extension String {
 
     /// Returns the first character of the string.

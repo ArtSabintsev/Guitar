@@ -43,13 +43,14 @@ GEM
       netrc (= 0.7.8)
     cocoapods-try (1.1.0)
     colored (1.2)
+    colored2 (3.1.2)
     colorize (0.8.1)
     escape (0.0.4)
     fourflusher (2.0.1)
     fuzzy_match (2.0.4)
     gh_inspector (1.0.3)
     i18n (0.8.1)
-    jazzy (0.7.4)
+    jazzy (0.7.5)
       cocoapods (~> 1.0)
       mustache (~> 0.99)
       open4
@@ -60,7 +61,7 @@ GEM
       xcinvoke (~> 0.3.0)
     liferaft (0.0.6)
     minitest (5.10.1)
-    molinillo (0.5.6)
+    molinillo (0.5.7)
     mustache (0.99.8)
     nanaimo (0.2.3)
     nap (1.1.0)
@@ -76,15 +77,14 @@ GEM
       colorize (~> 0.7)
       xcodeproj (~> 1.0)
     thread_safe (0.3.6)
-    tzinfo (1.2.2)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
     xcinvoke (0.3.0)
       liferaft (~> 0.0.6)
-    xcodeproj (1.4.2)
+    xcodeproj (1.4.4)
       CFPropertyList (~> 2.3.3)
-      activesupport (>= 3)
       claide (>= 1.0.1, < 2.0)
-      colored (~> 1.2)
+      colored2 (~> 3.1)
       nanaimo (~> 0.2.3)
 
 PLATFORMS
@@ -95,4 +95,4 @@ DEPENDENCIES
   synx
 
 BUNDLED WITH
-   1.14.5
+   1.14.6

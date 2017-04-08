@@ -1,6 +1,117 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 14,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 14,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 14,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 14,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 57,
+      "symbol": "Guitar.replaceOccurences(in:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 57,
+      "symbol": "Guitar.replaceOccurences(in:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 57,
+      "symbol": "Guitar.replaceOccurences(in:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 57,
+      "symbol": "Guitar.replaceOccurences(in:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/Arthur/Documents/oss/guitar/GuitarExample"
+  "source_directory": "/Users/Arthur/Documents/oss/guitar"
 }

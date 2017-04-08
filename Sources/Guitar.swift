@@ -54,17 +54,6 @@ public struct Guitar {
         return ranges
     }
 
-    public func replaceOccurences(in string: String, with character: String) -> String {
-        let ranges = Guitar(pattern: pattern).evaluate(string: string)
-
-        var newString = string
-        for range in ranges {
-            newString.replaceSubrange(range, with: character)
-        }
-
-        return newString
-    }
-
     /// Tests a string to see if it matches the regular expression pattern.
     ///
     /// - Parameters:
@@ -97,4 +86,21 @@ public extension Guitar {
     static func sanitze(string: String) -> String {
         return Guitar(chord: .nonAlphanumeric).replaceOccurences(in: string, with: " ").trimmingCharacters(in: .whitespacesAndNewlines)
     }
+}
+
+// MARK: - Helpers
+
+public extension Guitar {
+
+    func replaceOccurences(in string: String, with character: String) -> String {
+        let ranges = Guitar(pattern: pattern).evaluate(string: string)
+
+        var newString = string
+        for range in ranges {
+            newString.replaceSubrange(range, with: character)
+        }
+
+        return newString
+    }
+
 }

@@ -13,7 +13,7 @@
     <a title="Guitar  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Guitar Docs</a> (100% documented)</p>
+        <p><a href="index.html">Guitar Docs</a> (91% documented)</p>
         <p class="header-right"><a href="https://github.com/artsabintsev/guitar"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -54,18 +54,66 @@
             
             <a href='#guitar' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='guitar'>Guitar</h1>
 <a href='#a-cross-platform-string-and-regular-expression-library-written-in-swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-cross-platform-string-and-regular-expression-library-written-in-swift'>A Cross-Platform String and Regular Expression Library Written in Swift.</h3>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='installation'>Installation</h3>
+
+<p><a href="https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master"><img src="https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest" alt="BuddyBuild"></a> <a href="http://sabintsev.com/Guitar/"><img src="https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg" alt="Documentation"></a> <a href="http://sabintsev/com/Guitar"><img src="https://img.shields.io/badge/Platforms-iOS%20macOS%20tvOS%20watchOS%20Linux%20-lightgray.svg?style=flat" alt="Platform"></a></p>
+
+<p><a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/v/Guitar.svg" alt="CocoaPods"></a>  <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg" alt="SwiftPM Compatible"></a>  <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dt/Guitar.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dm/Guitar.svg" alt="CocoaPods"></a></p>
+<a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
+
+<p>This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift&rsquo;s Foundation library.</p>
+
+<p>The full documentation can be found at <a href="http://www.sabintsev.com/Guitar/">http://www.sabintsev.com/Guitar/</a>.</p>
+<a href='#status' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='status'>Status</h2>
+
+<ul>
+<li><strong>Release Stage</strong>: Alpha</li>
+<li><strong>API Stability</strong>: Unstable</li>
+</ul>
+<a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
+
+<ul>
+<li>[x] Boolean Functions (<code>isAlpha</code>, <code>isNumeric</code>, <code>isUppercase</code>, etc.)</li>
+<li>[x] Case Functions (<code>camelCased</code>, <code>pascalCased</code>, <code>kebabCased</code>, etc.)</li>
+<li>[x] Character Functions (<code>first</code>, <code>length</code>, <code>reversed</code>, etc.)</li>
+<li>[ ] Latinization Functions</li>
+<li>[ ] HTML Manipulation Functions</li>
+<li>[x] Padding Functions (<code>padLeft</code>, <code>padRight</code>, <code>pad</code>)</li>
+<li>[ ] Performance Enhancements</li>
+<li>[x] Regular Expressions (with Common Patterns Built-in)</li>
+<li>[x] Trimming Functions (<code>trimLeft</code>, <code>trimRight</code>, <code>truncated</code>, etc.)</li>
+</ul>
+
+<p>There&rsquo;s a lot more work in the pipeline, but community contributions are highly encouraged.</p>
+<a href='#installation-instructions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation-instructions'>Installation Instructions</h2>
+<a href='#cocoapods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='cocoapods'>CocoaPods</h3>
 <pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Guitar'</span>
 </code></pre>
-<a href='#authors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='authors'>Authors</h3>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='carthage'>Carthage</h3>
+<pre class="highlight swift"><code><span class="n">github</span> <span class="s">"ArtSabintsev/Guitar"</span>
+</code></pre>
+<a href='#swift-package-manager' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='swift-package-manager'>Swift Package Manager</h3>
+<pre class="highlight swift"><code><span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/ArtSabintsev/Guitar.git"</span><span class="p">,</span> <span class="nv">majorVersion</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre>
+<a href='#example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='example'>Example</h2>
 
-<p>Arthur Ariel Sabintsev</p>
+<p>Guitar is currently in Alpha (until v0.1.0). During this stage, the API is unstable. Therefore, it does not make sense to retain examples in the README until the API has stabilized.</p>
+
+<p>For the time being, check out the <a href="https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests">tests</a> to see the various functions in the library in action.</p>
+<a href='#inspiration' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='inspiration'>Inspiration</h2>
+
+<ul>
+<li><a href="https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html">StringUtils</a></li>
+<li><a href="https://vocajs.com/">Voca</a></li>
+</ul>
+<a href='#created-and-maintained-by' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='created-and-maintained-by'>Created and maintained by</h2>
+
+<p><a href="http://www.sabintsev.com/">Arthur Ariel Sabintsev</a></p>
 
           </section>
         </section>
         <section id="footer">
           <p>© 2016-2017 <a class="link" href="http://www.sabintsev.com" target="_blank" rel="external">Arthur Ariel Sabintsev</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
