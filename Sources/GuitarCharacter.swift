@@ -57,4 +57,16 @@ public extension String {
     func reversed() -> String {
         return String(characters.reversed())
     }
+
+    /// Returns the string without diacritics.
+    ///
+    ///     let string = "Crème brûlée"
+    ///     print(string.withoutAccents())
+    ///     // Prints "Creme brulee"
+    ///
+    /// - Returns: The string without diacritics.
+    @discardableResult
+    func withoutAccents() -> String {
+        return folding(options: .diacriticInsensitive, locale: .current)
+    }
 }

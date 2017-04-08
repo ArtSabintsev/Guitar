@@ -22,6 +22,15 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("4ello Worl6".last(), "6")
         XCTAssertEqual("-Hello_World-".last(), "-")
     }
+    
+    func testWithoutAccents() {
+        XCTAssertEqual("Crème brûlée".withoutAccents(), "Creme brulee")
+        XCTAssertEqual("août décembre".withoutAccents(), "aout decembre")
+        XCTAssertEqual("öffne die Tür".withoutAccents(), "offne die Tur")
+        XCTAssertEqual("El niño corrió hácia el balcón".withoutAccents(), "El nino corrio hacia el balcon")
+        XCTAssertEqual("meu coração vai continuar".withoutAccents(), "meu coracao vai continuar")
+        XCTAssertEqual("Hēllö wōrld, Î åm Šïrį āńd Ī čãrrÿ thė àñśwêr tó lìfę".withoutAccents(), "Hello world, I am Siri and I carry the answer to life")
+    }
 
     func testlength() {
         XCTAssertEqual("Hello World".length(), 11)
