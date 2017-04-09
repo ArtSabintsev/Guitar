@@ -29,7 +29,6 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("你叫(做)乜野名呀？".latinized(), "ni jiao (zuo) mie ye ming ya？")
         XCTAssertEqual("어떻게 지내세요?".latinized(), "eotteohge jinaeseyo?")
         XCTAssertEqual("What a wonderful world! That's not cliché at all!".latinized(), "What a wonderful world! That's not cliche at all!")
-
     }
 
     func testLength() {
