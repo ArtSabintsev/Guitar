@@ -58,9 +58,30 @@
     },
     {
       "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
-      "line": 14,
+      "line": null,
       "symbol": "Guitar",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": null,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
@@ -86,28 +107,35 @@
     },
     {
       "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
-      "line": 57,
+      "line": 14,
+      "symbol": "Guitar",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
+      "line": 95,
       "symbol": "Guitar.replaceOccurences(in:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
-      "line": 57,
+      "line": 95,
       "symbol": "Guitar.replaceOccurences(in:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
-      "line": 57,
+      "line": 95,
       "symbol": "Guitar.replaceOccurences(in:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Arthur/Documents/oss/guitar/Sources/Guitar.swift",
-      "line": 57,
+      "line": 95,
       "symbol": "Guitar.replaceOccurences(in:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
