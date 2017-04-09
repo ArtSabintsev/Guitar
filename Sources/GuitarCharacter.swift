@@ -36,6 +36,18 @@ public extension String {
         return reversed().first()
     }
 
+    /// Returns the latinized version of the string without diacritics.
+    ///
+    ///     let string = "Hello! こんにちは! สวัสดี! مرحبا! 您好!"
+    ///     print(string.latinized())
+    ///     // Prints "Hello! kon'nichiha! swasdi! mrhba! nin hao!"
+    ///
+    /// - Returns: The latinized version of the string without diacritics.
+    @discardableResult
+    func latinized() -> String {
+        return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
+    }
+
     /// Returns the character count of the string.
     ///
     ///     let string = "Hello World"
@@ -68,6 +80,6 @@ public extension String {
     /// - Returns: The string without diacritics.
     @discardableResult
     func withoutAccents() -> String {
-        return folding(options: .diacriticInsensitive, locale: .current)
+        return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
     }
 }

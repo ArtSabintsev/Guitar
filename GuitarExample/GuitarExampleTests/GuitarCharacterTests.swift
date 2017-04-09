@@ -23,6 +23,13 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("-Hello_World-".last(), "-")
     }
 
+    func testLatinized() {
+        XCTAssertEqual("Hello! こんにちは! สวัสดี! مرحبا! 您好!".latinized(), "Hello! kon'nichiha! swasdi! mrhba! nin hao!")
+        XCTAssertEqual("как прекрасен этот мир".latinized(), "kak prekrasen etot mir")
+        XCTAssertEqual("你叫(做)乜野名呀？".latinized(), "ni jiao (zuo) mie ye ming ya？")
+        XCTAssertEqual("어떻게 지내세요?".latinized(), "eotteohge jinaeseyo?")
+    }
+
     func testLength() {
         XCTAssertEqual("Hello World".length(), 11)
         XCTAssertEqual("Hello_World".length(), 11)
@@ -43,5 +50,4 @@ class GuitarCharacterTests: XCTestCase {
         XCTAssertEqual("meu coração vai continuar".withoutAccents(), "meu coracao vai continuar")
         XCTAssertEqual("Hēllö wōrld, Î åm Šïrį āńd Ī čãrrÿ thė àñśwêr tó lìfę".withoutAccents(), "Hello world, I am Siri and I carry the answer to life")
     }
-
 }
