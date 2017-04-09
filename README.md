@@ -19,9 +19,7 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
 - [x] Character Functions (`first`, `length`, `reversed`, etc.)
 - [x] Latinization Functions (`.latinized(), `.withoutAccents()`)
-- [ ] HTML Manipulation Functions
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
-- [ ] Performance Enhancements
 - [x] Regular Expressions (with Common Patterns Built-in)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
