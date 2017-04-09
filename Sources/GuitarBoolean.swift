@@ -63,6 +63,8 @@ public extension String {
 
 }
 
+// MARK: - Helpers
+
 private extension String {
 
     /// A Boolean value indicating if all the characters in the string belong to a specific `CharacterSet`.
