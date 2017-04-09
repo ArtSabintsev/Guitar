@@ -1,4 +1,4 @@
-# Guitar
+# Guitar 🎸
 ### A Cross-Platform String and Regular Expression Library Written in Swift.
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20macOS%20tvOS%20watchOS%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
