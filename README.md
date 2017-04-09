@@ -23,8 +23,6 @@ The full documentation can be found at http://www.sabintsev.com/Guitar/.
 - [x] Regular Expressions (with Common Patterns Built-in)
 - [x] Trimming Functions (`trimLeft`, `trimRight`, `truncated`, etc.)
 
-There's a lot more work in the pipeline, but community contributions are highly encouraged.
-
 ## Installation Instructions
 ### CocoaPods
 ```ruby
