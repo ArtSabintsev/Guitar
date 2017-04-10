@@ -31,14 +31,14 @@ public struct Guitar {
         self.init(pattern: chord.rawValue)
     }
 
-    /// Evaluates a string for all instances of a regular expression pattern.
+    /// Evaluates a string for all instances of a regular expression pattern and returns a list of matched ranges for that string.
     ///
     /// - Parameters:
     ///     - string: The string that will be evaluated.
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     ///
     /// - Returns: A list of matches.
-    public func evaluate(string: String, options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
+    public func evaluateForRanges(from string: String, with options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
         let range = NSRange(location: 0, length: string.characters.count)
         guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
             return []
@@ -54,6 +54,24 @@ public struct Guitar {
         return ranges
     }
 
+    /// Evaluates a string for all instances of a regular expression pattern and returns a list of matched strings for that string.
+    ///
+    /// - Parameters:
+    ///     - string: The string that will be evaluated.
+    ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
+    ///
+    /// - Returns: A list of matches.
+    public func evaluateForStrings(from string: String, with options: NSRegularExpression.Options = []) -> [String] {
+        let ranges = evaluateForRanges(from: string)
+
+        var strings: [String] = []
+        for range in ranges {
+            strings.append(string.substring(with: range))
+        }
+
+        return strings
+    }
+
     /// Tests a string to see if it matches the regular expression pattern.
     ///
     /// - Parameters:
@@ -61,8 +79,8 @@ public struct Guitar {
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     /// 
     /// - Returns: `true` if string passes the test, otherwise, `false`.
-    public func test(string: String, options: NSRegularExpression.Options = []) -> Bool {
-        return evaluate(string: string, options: options).count > 0
+    public func test(string: String, with options: NSRegularExpression.Options = []) -> Bool {
+        return evaluateForRanges(from: string, with: options).count > 0
     }
 }
 
@@ -93,7 +111,7 @@ public extension Guitar {
 public extension Guitar {
 
     func replaceOccurences(in string: String, with character: String) -> String {
-        let ranges = Guitar(pattern: pattern).evaluate(string: string)
+        let ranges = Guitar(pattern: pattern).evaluateForRanges(from: string)
 
         var newString = string
         for range in ranges {
