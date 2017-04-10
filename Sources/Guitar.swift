@@ -83,20 +83,3 @@ public struct Guitar {
         return evaluateForRanges(from: string, with: options).count > 0
     }
 }
-
-// MARK: - Helpers
-
-public extension Guitar {
-
-    func replaceOccurences(in string: String, with character: String) -> String {
-        let ranges = Guitar(pattern: pattern).evaluateForRanges(from: string)
-
-        var newString = string
-        for range in ranges {
-            newString.replaceSubrange(range, with: character)
-        }
-
-        return newString
-    }
-
-}
