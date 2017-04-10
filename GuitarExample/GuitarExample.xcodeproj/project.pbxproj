@@ -29,6 +29,7 @@
 		55EC367A1E6BBDD500726F13 /* Guitar.h in Headers */ = {isa = PBXBuildFile; fileRef = 55EC36781E6BBDD400726F13 /* Guitar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55EC367D1E6BBDD500726F13 /* Guitar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EC36761E6BBDD400726F13 /* Guitar.framework */; };
 		55EC367F1E6BBDD500726F13 /* Guitar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55EC36761E6BBDD400726F13 /* Guitar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E22BFE81E9C1DF200F1CCCD /* GuitarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E22BFE71E9C1DF200F1CCCD /* GuitarCommon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		55EC36761E6BBDD400726F13 /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Guitar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55EC36781E6BBDD400726F13 /* Guitar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guitar.h; sourceTree = "<group>"; };
 		55EC36791E6BBDD400726F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E22BFE71E9C1DF200F1CCCD /* GuitarCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GuitarCommon.swift; path = ../../Sources/GuitarCommon.swift; sourceTree = "<group>"; };
 		8EDB77C11E0A516B00B13A61 /* GuitarExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 				55A36A111E71228300DC6BBF /* GuitarCase.swift */,
 				55A36A121E71228300DC6BBF /* GuitarCharacter.swift */,
 				551626941E73CD4C00EA41AC /* GuitarChord.swift */,
+				8E22BFE71E9C1DF200F1CCCD /* GuitarCommon.swift */,
 				551626921E73C4B000EA41AC /* GuitarNSRangeExtension.swift */,
 				55A36A131E71228300DC6BBF /* GuitarPadding.swift */,
 				55A36A141E71228300DC6BBF /* GuitarTrimming.swift */,
@@ -380,6 +383,7 @@
 				551626931E73C4B000EA41AC /* GuitarNSRangeExtension.swift in Sources */,
 				55A36A191E71228300DC6BBF /* GuitarTrimming.swift in Sources */,
 				55A36A181E71228300DC6BBF /* GuitarPadding.swift in Sources */,
+				8E22BFE81E9C1DF200F1CCCD /* GuitarCommon.swift in Sources */,
 				55A36A171E71228300DC6BBF /* GuitarCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
