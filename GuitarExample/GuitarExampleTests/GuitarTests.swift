@@ -15,7 +15,13 @@ class GuitarTests: XCTestCase {
         XCTAssertEqual(Guitar(chord: .email).evaluate(string: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
     }
 
-    func testAlphanumericSpaceMatching() {
+    func testNonAlphanumericMatching() {
+        let string = "Hello World, and Hello Guitar Users! ^_^"
+        let newString = Guitar(chord: .nonAlphanumeric).replaceOccurences(in: string, with: "*")
+        XCTAssertEqual(newString, "Hello*World**and*Hello*Guitar*Users*****")
+    }
+
+    func testNonAlphanumericSpaceMatching() {
         let string = "Hello World, and Hello Guitar Users! ^_^"
         let newString = Guitar(chord: .nonAlphanumericSpace).replaceOccurences(in: string, with: "*")
         XCTAssertEqual(newString, "Hello World* and Hello Guitar Users* ***")
