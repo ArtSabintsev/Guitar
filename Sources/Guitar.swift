@@ -15,6 +15,11 @@ public struct Guitar {
     /// Regular expression pattern that will be used to evaluate a specific string.
     let pattern: String
 
+    /// `fatalError` occurs when using this empty initializer as Guitar must be initialized using `init(pattern:)` or `init(chord:)`.
+    public init() {
+        fatalError("Guitar must be initialized using `init(pattern:)` or `init(chord:)`.")
+    }
+
     /// Designated Initializer for `Guitar`
     ///
     /// - Parameters:
@@ -82,4 +87,5 @@ public struct Guitar {
     public func test(string: String, with options: NSRegularExpression.Options = []) -> Bool {
         return evaluateForRanges(from: string, with: options).count > 0
     }
+
 }
