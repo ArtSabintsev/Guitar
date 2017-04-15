@@ -54,7 +54,7 @@ Guitar(chord: Guitar.Chord) // A common regular expression with which to initial
 
 `evaluateForRanges(::)` returns an array of ranges, `[Range<String.Index>]`, that match a specific regular expression.
 ```swift
-Guitar(chord: .firstCharacter).evaluateForRanges(from: "hello world") // [Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 0), _countUTF16: 1)..<Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 1), _countUTF16: 1)), Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 6), _countUTF16: 1)..<Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 7), _countUTF16: 1))]
+Guitar(chord: .firstCharacter).evaluateForRanges(from: "Hello world") // [Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 0), _countUTF16: 1)..<Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 1), _countUTF16: 1)), Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 6), _countUTF16: 1)..<Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 7), _countUTF16: 1))]
 ```
 
 `evaluateForStrings(::)` returns an array of strings, `[String]`, that match a specific regular expression.
