@@ -1,18 +1,14 @@
 # Guitar 🎸
-### A Cross-Platform String and Regular Expression Library Written in Swift.
+### A Cross-Platform String and Regular Expression Library written in Swift.
 
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)  [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitar.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar)
 
 ## About
-This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift's Foundation library.
+This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift's Standard Library.
 
 The full documentation can be found at http://www.sabintsev.com/Guitar/.
-
-## Status
-- **Release Stage**: Alpha
-- **API Stability**: Unstable
 
 ## Features
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
@@ -40,7 +36,7 @@ github "ArtSabintsev/Guitar"
 ## Usage Examples
 
 ### Regular Expression
-The `Guitar` structure itself is used to make it easier to use Regular Expressions to test and evaluate `String` objects. `Guitar.Chord` enumerates common regular expressions. _GuitarChord.swift_ contains a list of built-in regular expressions. _GuitarCommon.swift_ contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it's a valid email address.
+The `Guitar` structure itself is used to make it easier to use Regular Expressions to test and evaluate `String` objects. `Guitar.Chord` enumerates common regular expressions and they are located in _GuitarChord.swift_. Also, _GuitarCommon.swift_ contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it's a valid email address.
 
 #### Initialization
 

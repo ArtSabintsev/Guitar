@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'Guitar'
-  s.version          = '0.0.15'
+  s.version          = '0.1.0'
   s.summary          = 'A Cross-Platform String and Regular Expression Library Written in Swift.'
 
 description      = <<-DESC
-A Cross-Platform String and Regular Expression Library Written in Swift.
+A Cross-Platform String and Regular Expression Library written in Swift.
                        DESC
 
   s.ios.deployment_target = '9.0'
