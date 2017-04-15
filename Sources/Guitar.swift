@@ -15,6 +15,11 @@ public struct Guitar {
     /// Regular expression pattern that will be used to evaluate a specific string.
     let pattern: String
 
+    /// `fatalError` occurs when using this empty initializer as Guitar must be initialized using `init(pattern:)` or `init(chord:)`.
+    public init() {
+        fatalError("Guitar must be initialized using `init(pattern:)` or `init(chord:)`.")
+    }
+
     /// Designated Initializer for `Guitar`
     ///
     /// - Parameters:
@@ -31,14 +36,14 @@ public struct Guitar {
         self.init(pattern: chord.rawValue)
     }
 
-    /// Evaluates a string for all instances of a regular expression pattern.
+    /// Evaluates a string for all instances of a regular expression pattern and returns a list of matched ranges for that string.
     ///
     /// - Parameters:
     ///     - string: The string that will be evaluated.
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     ///
     /// - Returns: A list of matches.
-    public func evaluate(string: String, options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
+    public func evaluateForRanges(from string: String, with options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
         let range = NSRange(location: 0, length: string.characters.count)
         guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
             return []
@@ -54,6 +59,24 @@ public struct Guitar {
         return ranges
     }
 
+    /// Evaluates a string for all instances of a regular expression pattern and returns a list of matched strings for that string.
+    ///
+    /// - Parameters:
+    ///     - string: The string that will be evaluated.
+    ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
+    ///
+    /// - Returns: A list of matches.
+    public func evaluateForStrings(from string: String, with options: NSRegularExpression.Options = []) -> [String] {
+        let ranges = evaluateForRanges(from: string)
+
+        var strings: [String] = []
+        for range in ranges {
+            strings.append(string.substring(with: range))
+        }
+
+        return strings
+    }
+
     /// Tests a string to see if it matches the regular expression pattern.
     ///
     /// - Parameters:
@@ -61,46 +84,8 @@ public struct Guitar {
     ///     - options: Regular expression options that are applied to the string during matching. Defaults to [].
     /// 
     /// - Returns: `true` if string passes the test, otherwise, `false`.
-    public func test(string: String, options: NSRegularExpression.Options = []) -> Bool {
-        return evaluate(string: string, options: options).count > 0
-    }
-}
-
-// MARK: - Common Evaluations and Tests
-
-public extension Guitar {
-    /// Tests a string to check if it is a valid email address by using a regular expression.
-    ///
-    /// - Parameters:
-    ///     - email: The string that needs to be evaluated.
-    ///
-    /// - Returns: `true` if `string` is a valid email address, otherwise `false`.
-    static func isValidEmail(email: String) -> Bool {
-        return Guitar(chord: .email).test(string: email)
-    }
-
-    /// Sanitizes of a string by removing all non-Alphanumeric characters (excluding whitespaces)
-    ///
-    /// - Parameter string: The string that should be sanitized.
-    /// - Returns: The sanitized string.
-    static func sanitze(string: String) -> String {
-        return Guitar(chord: .nonAlphanumeric).replaceOccurences(in: string, with: " ").trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-}
-
-// MARK: - Helpers
-
-public extension Guitar {
-
-    func replaceOccurences(in string: String, with character: String) -> String {
-        let ranges = Guitar(pattern: pattern).evaluate(string: string)
-
-        var newString = string
-        for range in ranges {
-            newString.replaceSubrange(range, with: character)
-        }
-
-        return newString
+    public func test(string: String, with options: NSRegularExpression.Options = []) -> Bool {
+        return evaluateForRanges(from: string, with: options).count > 0
     }
 
 }

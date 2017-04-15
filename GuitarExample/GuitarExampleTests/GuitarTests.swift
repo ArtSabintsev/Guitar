@@ -12,7 +12,17 @@ import XCTest
 class GuitarTests: XCTestCase {
 
     func testEmailMatching() {
-        XCTAssertEqual(Guitar(chord: .email).evaluate(string: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
+        XCTAssertEqual(Guitar(chord: .email).evaluateForRanges(from: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
+    }
+
+    func testFirstCharacter() {
+        let string = "Hello World, and Hello Guitar Users!"
+        XCTAssertEqual(Guitar(chord: .firstCharacter).evaluateForStrings(from: string), ["H", "W", "a", "H", "G", "U"])
+    }
+
+    func testLastCharacter() {
+        let string = "Hello World, and Hello Guitar Users!"
+        XCTAssertEqual(Guitar(chord: .lastCharacter).evaluateForStrings(from: string), ["o", "d", "d", "o", "r", "s"])
     }
 
     func testNonAlphanumericMatching() {

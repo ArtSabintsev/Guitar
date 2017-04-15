@@ -35,7 +35,7 @@ public extension String {
     /// - Returns: A capitalized copy of the string.
     @discardableResult
     func capitalized() -> String {
-        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
+        let ranges = Guitar(chord: .firstCharacter).evaluateForRanges(from: self)
 
         var newString = self
         for range in ranges {
@@ -56,7 +56,7 @@ public extension String {
     /// - Returns: A decapitalized copy of the string.
     @discardableResult
     func decapitalized() -> String {
-        let ranges = Guitar(chord: .firstCharacter).evaluate(string: self)
+        let ranges = Guitar(chord: .firstCharacter).evaluateForRanges(from: self)
 
         var newString = self
         for range in ranges {
