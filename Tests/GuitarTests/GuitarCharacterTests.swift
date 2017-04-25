@@ -11,6 +11,15 @@ import XCTest
 
 class GuitarCharacterTests: XCTestCase {
 
+    static var allTests = [
+        ("testFirst", testFirst),
+        ("testLast", testLast),
+        ("testLatinized", testLatinized),
+        ("testLength", testLength),
+        ("testReversed", testReversed),
+        ("testWithoutAccents", testWithoutAccents)
+    ]
+
     func testFirst() {
         XCTAssertEqual("Hello World".first(), "H")
         XCTAssertEqual("4ello World".first(), "4")
@@ -24,11 +33,15 @@ class GuitarCharacterTests: XCTestCase {
     }
 
     func testLatinized() {
-        XCTAssertEqual("Hello! こんにちは! สวัสดี! مرحبا! 您好!".latinized(), "Hello! kon'nichiha! swasdi! mrhba! nin hao!")
-        XCTAssertEqual("как прекрасен этот мир".latinized(), "kak prekrasen etot mir")
-        XCTAssertEqual("你叫(做)乜野名呀？".latinized(), "ni jiao (zuo) mie ye ming ya？")
-        XCTAssertEqual("어떻게 지내세요?".latinized(), "eotteohge jinaeseyo?")
-        XCTAssertEqual("What a wonderful world! That's not cliché at all!".latinized(), "What a wonderful world! That's not cliche at all!")
+        #if !os(Linux)
+        if #available(iOS 9.0, macOS 10.11, tvOS 9.0, watchOS 3.0, *) {
+            XCTAssertEqual("Hello! こんにちは! สวัสดี! مرحبا! 您好!".latinized(), "Hello! kon'nichiha! swasdi! mrhba! nin hao!")
+            XCTAssertEqual("как прекрасен этот мир".latinized(), "kak prekrasen etot mir")
+            XCTAssertEqual("你叫(做)乜野名呀？".latinized(), "ni jiao (zuo) mie ye ming ya？")
+            XCTAssertEqual("어떻게 지내세요?".latinized(), "eotteohge jinaeseyo?")
+            XCTAssertEqual("What a wonderful world! That's not cliché at all!".latinized(), "What a wonderful world! That's not cliche at all!")
+        }
+        #endif
     }
 
     func testLength() {

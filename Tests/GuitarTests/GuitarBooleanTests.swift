@@ -11,6 +11,16 @@ import XCTest
 
 class GuitarBooleanTests: XCTestCase {
 
+    static var allTests = [
+        ("testIsAlpha", testIsAlpha),
+        ("testIsAlphanumeric", testIsAlphanumeric),
+        ("testIsCapitalized", testIsCapitalized),
+        ("testIsDecapitalized", testIsDecapitalized),
+        ("testIsLowercased", testIsLowercased),
+        ("testIsNumeric", testIsNumeric),
+        ("testIsUppercased", testIsUppercased)
+    ]
+
     func testIsAlpha() {
         XCTAssertTrue("HelloWorld".isAlpha())
         XCTAssertFalse("Hell0World".isAlpha())

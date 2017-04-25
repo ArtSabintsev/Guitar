@@ -11,6 +11,16 @@ import XCTest
 
 class GuitarCaseTests: XCTestCase {
 
+    static var allTests = [
+        ("testCamelCased", testCamelCased),
+        ("testCapitalized", testCapitalized),
+        ("testDecapitalized", testDecapitalized),
+        ("testKebabCased", testKebabCased),
+        ("testPascalCased", testPascalCased),
+        ("testSnakeCased", testSnakeCased),
+        ("testCaseMorphing", testCaseMorphing)
+    ]
+
     func testCamelCased() {
         XCTAssertEqual("Hello World".camelCased(), "helloWorld")
         XCTAssertEqual("HelloWorld".camelCased(), "helloWorld")

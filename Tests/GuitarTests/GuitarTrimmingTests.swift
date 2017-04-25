@@ -11,6 +11,14 @@ import XCTest
 
 class GuitarTrimmingTests: XCTestCase {
 
+    static var allTests = [
+        ("testPrefixed", testPrefixed),
+        ("testSuffixed", testSuffixed),
+        ("testTrimLeft", testTrimLeft),
+        ("testTrimRight", testTrimRight),
+        ("testTruncated", testTruncated)
+    ]
+
     func testPrefixed() {
         XCTAssertEqual("Hello World".trimLeft(byKeeping: 7), "Hello W")
         XCTAssertEqual("Hello_World".trimLeft(byKeeping: 8), "Hello_Wo")
