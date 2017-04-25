@@ -11,6 +11,12 @@ import XCTest
 
 class GuitarPaddingTests: XCTestCase {
 
+    static var allTests = [
+        ("testPadLeft", testPadLeft),
+        ("testPadRight", testPadRight),
+        ("testPad", testPad)
+    ]
+
     func testPadLeft() {
         XCTAssertEqual("Hello World".padLeft(length: 15), "    Hello World")
         XCTAssertEqual("-Hello_World-".padLeft(length: 15), "  -Hello_World-")
@@ -46,5 +52,5 @@ class GuitarPaddingTests: XCTestCase {
         XCTAssertEqual(" -H3Llo W0rld_ ".pad(length: 20, withToken: "*"), "** -H3Llo W0rld_ ***")
         XCTAssertEqual("Hello World".pad(length: 5, withToken: "*"), "Hello World")
     }
-    
+
 }

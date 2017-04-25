@@ -11,6 +11,17 @@ import XCTest
 
 class GuitarTests: XCTestCase {
 
+    static var allTests = [
+        ("testEmailMatching", testEmailMatching),
+        ("testFirstCharacter", testFirstCharacter),
+        ("testLastCharacter", testLastCharacter),
+        ("testNonAlphanumericMatching", testNonAlphanumericMatching),
+        ("testNonAlphanumericSpaceMatching", testNonAlphanumericSpaceMatching),
+        ("testNonAlphanumericSpaceMatching", testNonAlphanumericSpaceMatching),
+        ("testIsValidEmail", testIsValidEmail),
+        ("testSanitize", testSanitize)
+    ]
+
     func testEmailMatching() {
         XCTAssertEqual(Guitar(chord: .email).evaluateForRanges(from: "This is one email address: arthur@sabintsev.com. This is another [arthur@example.com].").count, 2)
     }

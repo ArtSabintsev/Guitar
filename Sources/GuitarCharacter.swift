@@ -45,7 +45,17 @@ public extension String {
     /// - Returns: The latinized version of the string without diacritics.
     @discardableResult
     func latinized() -> String {
-        return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
+        #if !os(Linux)
+            if #available(iOS 9.0, macOS 10.11, tvOS 9.0, watchOS 3.0, *) {
+                return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
+            } else {
+                assertionFailure("The latinized function is only available iOS 9.0+, macOS 10.11+, tvOS 9.0+, and watchOS 3.0+")
+                return self.withoutAccents()
+            }
+        #else
+            assertionFailure("The latinized function is only available for Darwin devices; iOS, macOS, tvOS, watchOS")
+            return self.withoutAccents()
+        #endif
     }
 
     /// Returns the character count of the string.
@@ -80,6 +90,15 @@ public extension String {
     /// - Returns: The string without diacritics.
     @discardableResult
     func withoutAccents() -> String {
-        return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
+        #if !os(Linux)
+            if #available(iOS 9.0, macOS 10.11, tvOS 9.0, watchOS 2.0, *) {
+                return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
+            } else {
+                assertionFailure("The withoutAccents function is only available iOS 9.0+, macOS 10.11+, tvOS 9.0+, and watchOS 2.0+")
+                return self
+            }
+        #else
+            return folding(options: .diacriticInsensitive, locale: .current)
+        #endif
     }
 }
