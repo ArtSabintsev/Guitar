@@ -68,7 +68,7 @@ Guitar(chord: .email).test(string: "hello@world.com") // `true`
 This library also adds dozens of methods via `String` extensions that are missing in the Swift Standard Library or not easily accessible on the `String` class. Examples of each new method can be found in the [jazzy](https://github.com/realm/jazzy)-powered [documentation](http://sabintsev.com/Guitar/Extensions/String.html).
 
 More specific examples can be found in the
-[tests](https://github.com/ArtSabintsev/Guitar/tree/master/GuitarExample/GuitarExampleTests) folder.
+[tests](https://github.com/ArtSabintsev/Guitar/tree/master/Tests/GuitarTests) folder.
 
 ## Inspiration
 - [StringUtils](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html)
