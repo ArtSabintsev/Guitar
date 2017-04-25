@@ -53,22 +53,16 @@
           <section class="section">
             
             <a href='#guitar' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='guitar'>Guitar 🎸</h1>
-<a href='#a-cross-platform-string-and-regular-expression-library-written-in-swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-cross-platform-string-and-regular-expression-library-written-in-swift'>A Cross-Platform String and Regular Expression Library Written in Swift.</h3>
+<a href='#a-cross-platform-string-and-regular-expression-library-written-in-swift' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='a-cross-platform-string-and-regular-expression-library-written-in-swift'>A Cross-Platform String and Regular Expression Library written in Swift.</h3>
 
 <p><a href="https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master"><img src="https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest" alt="BuddyBuild"></a> <a href="http://sabintsev.com/Guitar/"><img src="https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg" alt="Documentation"></a> <a href="http://sabintsev/com/Guitar"><img src="https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat" alt="Platform"></a></p>
 
 <p><a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/v/Guitar.svg" alt="CocoaPods"></a>  <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a> <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg" alt="SwiftPM Compatible"></a>  <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dt/Guitar.svg" alt="CocoaPods"></a> <a href="https://cocoapods.org/pods/Guitar"><img src="https://img.shields.io/cocoapods/dm/Guitar.svg" alt="CocoaPods"></a></p>
 <a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
 
-<p>This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift&rsquo;s Foundation library.</p>
+<p>This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift&rsquo;s Standard Library.</p>
 
 <p>The full documentation can be found at <a href="http://www.sabintsev.com/Guitar/">http://www.sabintsev.com/Guitar/</a>.</p>
-<a href='#status' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='status'>Status</h2>
-
-<ul>
-<li><strong>Release Stage</strong>: Alpha</li>
-<li><strong>API Stability</strong>: Unstable</li>
-</ul>
 <a href='#features' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='features'>Features</h2>
 
 <ul>
@@ -93,7 +87,7 @@
 <a href='#usage-examples' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-examples'>Usage Examples</h2>
 <a href='#regular-expression' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='regular-expression'>Regular Expression</h3>
 
-<p>The <code>Guitar</code> structure itself is used to make it easier to use Regular Expressions to test and evaluate <code>String</code> objects. <code>Guitar.Chord</code> enumerates common regular expressions. <em>GuitarChord.swift</em> contains a list of built-in regular expressions. <em>GuitarCommon.swift</em> contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it&rsquo;s a valid email address.</p>
+<p>The <code>Guitar</code> structure itself is used to make it easier to use Regular Expressions to test and evaluate <code>String</code> objects. <code>Guitar.Chord</code> enumerates common regular expressions and they are located in <em>GuitarChord.swift</em>. Also, <em>GuitarCommon.swift</em> contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it&rsquo;s a valid email address.</p>
 <a href='#initialization' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='initialization'>Initialization</h4>
 <pre class="highlight swift"><code><span class="kt">Guitar</span><span class="p">(</span><span class="nv">pattern</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="c1">// A custom regular expression with which to initialize Guitar.</span>
 
@@ -103,7 +97,7 @@
 
 <p><code>evaluateForRanges(::)</code> returns an array of ranges, <code>[Range&lt;String.Index&gt;]</code>, that match a specific regular expression.
 <code>swift
-Guitar(chord: .firstCharacter).evaluateForRanges(from: &quot;hello world&quot;) // [Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 0), _countUTF16: 1)..&lt;Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 1), _countUTF16: 1)), Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 6), _countUTF16: 1)..&lt;Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 7), _countUTF16: 1))]
+Guitar(chord: .firstCharacter).evaluateForRanges(from: &quot;Hello world&quot;) // [Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 0), _countUTF16: 1)..&lt;Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 1), _countUTF16: 1)), Range(Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 6), _countUTF16: 1)..&lt;Swift.String.CharacterView.Index(_base: Swift.String.UnicodeScalarView.Index(_position: 7), _countUTF16: 1))]
 </code></p>
 
 <p><code>evaluateForStrings(::)</code> returns an array of strings, <code>[String]</code>, that match a specific regular expression.
