@@ -10,6 +10,8 @@ This library seeks to add common string manipulation functions, including common
 
 The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
+Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/source-compatibility/#current-list-of-projects). 
+
 ## Features
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
 - [x] Case Functions (`camelCased`, `pascalCased`, `kebabCased`, etc.)
