@@ -38,7 +38,7 @@ github "ArtSabintsev/Guitar"
 ## Usage Examples
 
 ### Regular Expression
-The `Guitar` structure itself is used to make it easier to use Regular Expressions to test and evaluate `String` objects. `Guitar.Chord` enumerates common regular expressions and they are located in _GuitarChord.swift_. Also, _GuitarCommon.swift_ contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it's a valid email address.
+The `Guitar` structure is used to make it easier to use Regular Expressions to test and evaluate `String` objects. `Guitar.Chord` enumerates common regular expressions and they are located in _GuitarChord.swift_. Also, _GuitarCommon.swift_ contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it's a valid email address.
 
 #### Initialization
 
