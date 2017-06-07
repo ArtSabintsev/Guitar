@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK - Guitar
+// MARK: - Guitar
 
 public struct Guitar {
     /// Regular expression pattern that will be used to evaluate a specific string.
