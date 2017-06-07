@@ -10,7 +10,7 @@ This library seeks to add common string manipulation functions, including common
 
 The full documentation can be found at http://www.sabintsev.com/Guitar/.
 
-Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/source-compatibility/#current-list-of-projects). 
+Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/source-compatibility/#current-list-of-projects).
 
 ## Features
 - [x] Boolean Functions (`isAlpha`, `isNumeric`, `isUppercase`, etc.)
@@ -23,13 +23,28 @@ Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/so
 
 ## Installation Instructions
 ### CocoaPods
+For Swift 3 support:
 ```ruby
 pod 'Guitar'
 ```
+
+For Swift 4 support:
+```ruby
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift4'
+```
+
 ### Carthage
-``` swift
+For Swift 3 support:
+
+```swift
 github "ArtSabintsev/Guitar"
 ```
+
+For Swift 4 support:
+```swift
+github "ArtSabintsev/Guitar", "swift4"
+```
+
 ### Swift Package Manager
 ```swift
 .Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 0)
@@ -38,8 +53,8 @@ github "ArtSabintsev/Guitar"
 ## Usage Examples
 
 ### Regular Expression
-- `Guitar` makes it easier to use Regular Expressions to test and evaluate `String` objects. 
-- `Guitar.Chord` enumerates common regular expressions and they are located in _GuitarChord.swift_. 
+- `Guitar` makes it easier to use Regular Expressions to test and evaluate `String` objects.
+- `Guitar.Chord` enumerates common regular expressions and they are located in _GuitarChord.swift_.
 - _GuitarCommon.swift_ contains a list of convenience methods for common regular expression evaluations and tests, such as checking the string to determine if it's a valid email address.
 
 #### Initialization
