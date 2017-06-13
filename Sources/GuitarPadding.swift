@@ -33,7 +33,7 @@ public extension String {
     func pad(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
 
-        let delta = Int(ceil(Double(length-self.length())/2))
+        let delta = Int(ceil(Double(length-count)/2))
         return padLeft(length: length-delta, withToken: token).padRight(length: length, withToken: token)
     }
 
