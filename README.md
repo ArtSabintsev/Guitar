@@ -23,7 +23,7 @@ Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/so
 
 ### Sherlocked
 
-A small set of functions offered by Guitar were removed in v0.3.0 of the library as Apple added many of these features to the Swift 4 language (aka, [Sherlocking](http://www.urbandictionary.com/define.php?term=sherlocked)). The functions that were removed were: `first, last, length, prefixed, suffixed, trimLeft, trimRight, truncated`. The `reversed` function was renamed to `reversedString` as it acts dslightly differently than Swift's built-in `reversed` function.
+A small set of functions offered by Guitar were removed in v0.3.0 of the library as Apple added many of these features to the Swift 4 language (aka, [Sherlocking](http://www.urbandictionary.com/define.php?term=sherlocked)). The functions that were removed were: `first, last, length, prefixed, suffixed, trimLeft, trimRight, truncated`. The `reversed` function was renamed to `reversedString` as it acts slightly differently than Swift's built-in `reversed` function.
 
 ## Installation Instructions
 
