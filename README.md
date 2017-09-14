@@ -1,6 +1,8 @@
 # Guitar 🎸
 ### A Cross-Platform String and Regular Expression Library written in Swift.
 
+![Swift Support](https://img.shields.io/badge/Swift-3.1%2C%203.2%2C%204.0-orange.svg)
+
 [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58b67d22d21c470100b0c394&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58b67d22d21c470100b0c394/build/latest?branch=master) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)  [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitar.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar)
@@ -20,15 +22,27 @@ Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/so
 - [x] Regular Expressions (with Common Patterns Built-in)
 
 ## Installation Instructions
+
+| Swift Version |  Branch Name  | Will Continue to Receive Updates?
+| ------------- | ------------- |  -------------
+| 4.0  | master   | **Yes**
+| 3.2  | swift3.2 | No
+| 3.1  | swift3.1  | No
+
 ### CocoaPods
-For Swift 3 support:
+For Swift 4 support:
 ```ruby
 pod 'Guitar'
 ```
 
-For Swift 4 support:
+For Swift 3.2 support:
 ```ruby
-pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift4'
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.2'
+```
+
+For Swift 3.1 support:
+```ruby
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.1'
 ```
 
 ### Carthage
@@ -38,9 +52,14 @@ For Swift 3 support:
 github "ArtSabintsev/Guitar"
 ```
 
-For Swift 4 support:
+For Swift 3.2 support:
 ```swift
-github "ArtSabintsev/Guitar", "swift4"
+github "ArtSabintsev/Guitar", "swift3.2"
+```
+
+For Swift 3.21 support:
+```swift
+github "ArtSabintsev/Guitar", "swift3.1"
 ```
 
 ### Swift Package Manager
