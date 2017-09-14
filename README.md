@@ -61,11 +61,8 @@ For Swift 3.2 support:
 github "ArtSabintsev/Guitar", "swift3.2"
 ```
 
-<<<<<<< HEAD
 For Swift 3.1 support:
-=======
-For Swift 3.21 support:
->>>>>>> 57787b2e381fe0eb80bae0f195e5ba1699573d9f
+
 ```swift
 github "ArtSabintsev/Guitar", "swift3.1"
 ```
