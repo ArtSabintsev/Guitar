@@ -21,6 +21,9 @@ Guitar is also part of [Swift's Source Compatibility Suite](https://swift.org/so
 - [x] Padding Functions (`padLeft`, `padRight`, `pad`)
 - [x] Regular Expressions (with Common Patterns Built-in)
 
+### Sherlocked
+A small set of functions offered by Guitar were removed in v0.3.0 of the library as Apple added many of these features to the Swift 4 language (aka, [Sherlocking](http://www.urbandictionary.com/define.php?term=sherlocked)). The functions that were removed were: `first, last, length, prefixed, suffixed, trimLeft, trimRight, truncated`. The `reversed` function was renamed to `reversedString` as it acts dslightly differently than Swift's built-in `reversed` function.
+
 ## Installation Instructions
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
@@ -57,7 +60,7 @@ For Swift 3.2 support:
 github "ArtSabintsev/Guitar", "swift3.2"
 ```
 
-For Swift 3.21 support:
+For Swift 3.1 support:
 ```swift
 github "ArtSabintsev/Guitar", "swift3.1"
 ```
