@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK - Guitar
+// MARK: - Guitar
 
 public struct Guitar {
     /// Regular expression pattern that will be used to evaluate a specific string.
@@ -70,7 +70,7 @@ public struct Guitar {
 
         var strings: [String] = []
         for range in ranges {
-            strings.append(string.substring(with: range))
+            strings.append(String(string[range]))
         }
 
         return strings

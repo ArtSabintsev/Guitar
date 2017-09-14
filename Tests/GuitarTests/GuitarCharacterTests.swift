@@ -12,25 +12,10 @@ import XCTest
 class GuitarCharacterTests: XCTestCase {
 
     static var allTests = [
-        ("testFirst", testFirst),
-        ("testLast", testLast),
         ("testLatinized", testLatinized),
-        ("testLength", testLength),
-        ("testReversed", testReversed),
+        ("testReversedString", testReversedString),
         ("testWithoutAccents", testWithoutAccents)
     ]
-
-    func testFirst() {
-        XCTAssertEqual("Hello World".first(), "H")
-        XCTAssertEqual("4ello World".first(), "4")
-        XCTAssertEqual("-Hello World".first(), "-")
-    }
-
-    func testLast() {
-        XCTAssertEqual("Hello World".last(), "d")
-        XCTAssertEqual("4ello Worl6".last(), "6")
-        XCTAssertEqual("-Hello_World-".last(), "-")
-    }
 
     func testLatinized() {
         #if !os(Linux)
@@ -44,16 +29,10 @@ class GuitarCharacterTests: XCTestCase {
         #endif
     }
 
-    func testLength() {
-        XCTAssertEqual("Hello World".length(), 11)
-        XCTAssertEqual("Hello_World".length(), 11)
-        XCTAssertEqual("  Hello World  ".length(), 15)
-    }
-
-    func testReversed() {
-        XCTAssertEqual("Hello World".reversed(), "dlroW olleH")
-        XCTAssertEqual("4ello Worl6".reversed(), "6lroW olle4")
-        XCTAssertEqual("-Hello_World-".reversed(), "-dlroW_olleH-")
+    func testReversedString() {
+        XCTAssertEqual("Hello World".reversedString(), "dlroW olleH")
+        XCTAssertEqual("4ello Worl6".reversedString(), "6lroW olle4")
+        XCTAssertEqual("-Hello_World-".reversedString(), "-dlroW_olleH-")
     }
 
     func testWithoutAccents() {
