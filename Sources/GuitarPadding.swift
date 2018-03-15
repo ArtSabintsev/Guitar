@@ -31,7 +31,7 @@ public extension String {
     ///   - token: The string used to pad the String. Must be 1 character in length. Defaults to a white space if the parameter is left blank.
     /// - Returns: The padded copy of the string.
     func pad(length: Int, withToken token: String = " ") -> String {
-        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+        guard padConditionsSatisfied(tokenCount: token.count, length: length) else { return self }
 
         let delta = Int(ceil(Double(length-count)/2))
         return padLeft(length: length-delta, withToken: token).padRight(length: length, withToken: token)
@@ -58,10 +58,10 @@ public extension String {
     /// - Returns: The left-padded copy of the string.
     @discardableResult
     func padLeft(length: Int, withToken token: String = " ") -> String {
-        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+        guard padConditionsSatisfied(tokenCount: token.count, length: length) else { return self }
 
         var s = self
-        repeat { s.insert(token.characters[token.startIndex], at: startIndex) } while s.characters.count < length
+        repeat { s.insert(token[token.startIndex], at: startIndex) } while s.count < length
         return s
     }
 
@@ -85,10 +85,10 @@ public extension String {
     /// - Returns: The right-padded copy of the string.
     @discardableResult
     func padRight(length: Int, withToken token: String = " ") -> String {
-        guard padConditionsSatisfied(tokenCount: token.characters.count, length: length) else { return self }
+        guard padConditionsSatisfied(tokenCount: token.count, length: length) else { return self }
 
         var s = self
-        repeat { s.insert(token.characters[token.startIndex], at: endIndex) } while s.characters.count < length
+        repeat { s.insert(token[token.startIndex], at: endIndex) } while s.count < length
         return s
     }
 
@@ -103,7 +103,7 @@ private extension String {
     ///   - length: The final length of the string.
     /// - Returns: True, if the string can be padded. Otherise, false.
     func padConditionsSatisfied(tokenCount: Int, length: Int) -> Bool {
-        guard length > characters.count, tokenCount == 1 else { return false }
+        guard length > count, tokenCount == 1 else { return false }
         return true
     }
 

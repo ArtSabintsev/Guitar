@@ -114,7 +114,7 @@ public extension String {
     @discardableResult
     func splitWordsByCase() -> String {
         var newStringArray: [String] = []
-        for character in Guitar.sanitze(string: self).characters {
+        for character in Guitar.sanitze(string: self) {
             if String(character) == String(character).uppercased() {
                 newStringArray.append(" ")
             }
@@ -138,7 +138,7 @@ public extension String {
     /// - Returns: The swap cased copy of the string.
     @discardableResult
     func swapCased() -> String {
-        return characters.map({
+        return map({
             String($0).isLowercased() ? String($0).uppercased() : String($0).lowercased()
         }).joined()
     }
