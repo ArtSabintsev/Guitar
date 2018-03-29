@@ -29,7 +29,7 @@ A small set of functions offered by Guitar were removed in v0.3.0 of the library
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
 | ------------- | ------------- |  -------------
-| 4.0  | master   | **Yes**
+| 4.1  | master   | **Yes**
 | 3.2  | swift3.2 | No
 | 3.1  | swift3.1  | No
 
