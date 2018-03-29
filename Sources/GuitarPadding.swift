@@ -60,9 +60,9 @@ public extension String {
     func padLeft(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.count, length: length) else { return self }
 
-        var s = self
-        repeat { s.insert(token[token.startIndex], at: startIndex) } while s.count < length
-        return s
+        var copySelf = self
+        repeat { copySelf.insert(token[token.startIndex], at: startIndex) } while copySelf.count < length
+        return copySelf
     }
 
     /// Returns the right-padded version of the string.
@@ -87,9 +87,9 @@ public extension String {
     func padRight(length: Int, withToken token: String = " ") -> String {
         guard padConditionsSatisfied(tokenCount: token.count, length: length) else { return self }
 
-        var s = self
-        repeat { s.insert(token[token.startIndex], at: endIndex) } while s.count < length
-        return s
+        var copySelf = self
+        repeat { copySelf.insert(token[token.startIndex], at: endIndex) } while copySelf.count < length
+        return copySelf
     }
 
 }

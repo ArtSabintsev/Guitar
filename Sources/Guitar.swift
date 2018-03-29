@@ -50,7 +50,7 @@ public struct Guitar {
 
         let matches = regex.matches(in: string, options: [], range: range)
 
-        let ranges = matches.flatMap { (match) -> Range<String.Index>? in
+        let ranges = matches.compactMap { (match) -> Range<String.Index>? in
             let nsRange = match.range
             return nsRange.range(for: string)
         }
