@@ -1,11 +1,10 @@
 import XCTest
-@testable import guitarTests
+@testable import GuitarTests
 
 XCTMain([
-    testCase(GuitarTests.allTests),
     testCase(GuitarBooleanTests.allTests),
     testCase(GuitarCaseTests.allTests),
     testCase(GuitarCharacterTests.allTests),
     testCase(GuitarPaddingTests.allTests),
-    testCase(GuitarTrimmingTests.allTests),
+    testCase(GuitarTests.allTests),
 ])
