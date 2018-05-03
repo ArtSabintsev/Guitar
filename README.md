@@ -34,7 +34,7 @@ A small set of functions offered by Guitar were removed in v0.3.0 of the library
 | 3.1  | swift3.1  | No
 
 ### CocoaPods
-For Swift 4 support:
+For Swift 4.1 support:
 ```ruby
 pod 'Guitar'
 ```
@@ -50,7 +50,7 @@ pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => '
 ```
 
 ### Carthage
-For Swift 3 support:
+For Swift 4 support:
 
 ```swift
 github "ArtSabintsev/Guitar"
