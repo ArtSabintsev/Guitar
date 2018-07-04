@@ -5,7 +5,7 @@
 
 ![Swift Support](https://img.shields.io/badge/Swift-3.1%2C%203.2%2C%204.1-orange.svg) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
 
-[![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)  [![CocoaPods](https://img.shields.io/cocoapods/dt/Guitar.svg)](https://cocoapods.org/pods/Guitar) [![CocoaPods](https://img.shields.io/cocoapods/dm/Guitar.svg)](https://cocoapods.org/pods/Guitar)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
 ## About
 This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift's Standard Library.
