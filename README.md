@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/ArtSabintsev/Guitar.svg?branch=master)](https://travis-ci.org/ArtSabintsev/Guitar)
 
-![Swift Support](https://img.shields.io/badge/Swift-3.1%2C%203.2%2C%204.1-orange.svg) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
+![Swift Support](https://img.shields.io/badge/Swift-4.2%2C%204.1%2C%203.2%203.1-orange.svg) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar)  [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
@@ -29,9 +29,10 @@ A small set of functions offered by Guitar were removed in v0.3.0 of the library
 
 | Swift Version |  Branch Name  | Will Continue to Receive Updates?
 | ------------- | ------------- |  -------------
-| 4.1  | master   | **Yes**
+| 4.2  | master   | **Yes**
+| 4.1  | Swift4.1 | No
 | 3.2  | swift3.2 | No
-| 3.1  | swift3.1  | No
+| 3.1  | swift3.1 | No
 
 ### CocoaPods
 ```ruby
