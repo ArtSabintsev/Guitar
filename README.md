@@ -34,37 +34,19 @@ A small set of functions offered by Guitar were removed in v0.3.0 of the library
 | 3.1  | swift3.1  | No
 
 ### CocoaPods
-For Swift 4.1 support:
 ```ruby
-pod 'Guitar'
-```
-
-For Swift 3.2 support:
-```ruby
-pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.2'
-```
-
-For Swift 3.1 support:
-```ruby
-pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.1'
+pod 'Guitar' # Swift 4.2
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift4.1' # Swift 4.1
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.2' # Swift 3.2
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.1' # Swift 3.1
 ```
 
 ### Carthage
-For Swift 4 support:
-
 ```swift
-github "ArtSabintsev/Guitar"
-```
-
-For Swift 3.2 support:
-```swift
-github "ArtSabintsev/Guitar", "swift3.2"
-```
-
-For Swift 3.1 support:
-
-```swift
-github "ArtSabintsev/Guitar", "swift3.1"
+github "ArtSabintsev/Guitar" // Swift 4.2
+github "ArtSabintsev/Guitar", "swift4.1" // Swift 4.1
+github "ArtSabintsev/Guitar", "swift3.2" // Swift 3.2
+github "ArtSabintsev/Guitar", "swift3.1" // Swift 3.1
 ```
 
 ### Swift Package Manager
