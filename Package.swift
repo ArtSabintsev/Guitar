@@ -3,5 +3,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "Guitar"
+    name: "Guitar",
+    targets: [
+        .target(name: "Guitar", path: "Sources/"),
+    ]   
 )
