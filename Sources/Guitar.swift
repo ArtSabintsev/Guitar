@@ -43,7 +43,7 @@ public struct Guitar {
     ///
     /// - Returns: A list of matches.
     public func evaluateForRanges(from string: String, with options: NSRegularExpression.Options = []) -> [Range<String.Index>] {
-        let range = NSRange(location: 0, length: string.count)
+        let range = NSRange(location: 0, length: string.utf16.count)
         guard let regex = try? NSRegularExpression(pattern: pattern, options: options) else {
             return []
         }
