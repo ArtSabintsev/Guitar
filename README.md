@@ -37,7 +37,8 @@ A small set of functions offered by Guitar were removed in v0.3.0 of the library
 
 ### CocoaPods
 ```ruby
-pod 'Guitar' # Swift 4.2
+pod 'Guitar' # Swift 5.0
+pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift4.2' # Swift 4.2
 pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift4.1' # Swift 4.1
 pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.2' # Swift 3.2
 pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => 'swift3.1' # Swift 3.1
@@ -45,7 +46,8 @@ pod 'Guitar', :git => 'https://github.com/ArtSabintsev/Guitar.git', :branch => '
 
 ### Carthage
 ```swift
-github "ArtSabintsev/Guitar" // Swift 4.2
+github "ArtSabintsev/Guitar" // Swift 5.0
+github "ArtSabintsev/Guitar" "swift4.1" // Swift 4.2
 github "ArtSabintsev/Guitar" "swift4.1" // Swift 4.1
 github "ArtSabintsev/Guitar" "swift3.2" // Swift 3.2
 github "ArtSabintsev/Guitar" "swift3.1" // Swift 3.1
