@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # Version
-  s.version         = '0.5.0'
-  s.swift_version   = '4.2'
+  s.version         = '1.0.0'
+  s.swift_version   = '5.0'
 
   # Meta
   s.name             = 'Guitar'
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
                        DESC
 
   # Deployment Targets
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.osx.deployment_target = '10.11'
-  s.tvos.deployment_target = '9.0'
+  s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
 
   # Sources
