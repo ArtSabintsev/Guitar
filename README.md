@@ -55,7 +55,7 @@ github "ArtSabintsev/Guitar" "swift3.1" // Swift 3.1
 
 ### Swift Package Manager
 ```swift
-.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 0)
+.Package(url: "https://github.com/ArtSabintsev/Guitar.git", majorVersion: 1)
 ```
 
 ## Usage Examples
