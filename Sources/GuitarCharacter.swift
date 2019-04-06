@@ -22,7 +22,12 @@ public extension String {
     @discardableResult
     func latinized() -> String {
         #if !os(Linux)
-            return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
+            if #available(iOS 10.0, macOS 10.11, tvOS 10.0, watchOS 3.0, *) {
+                return (applyingTransform(.toLatin, reverse: false) ?? self).withoutAccents()
+            } else {
+                assertionFailure("The latinized function is only available iOS 9.0+, macOS 10.11+, tvOS 9.0+, and watchOS 3.0+")
+                return self.withoutAccents()
+            }
         #else
             assertionFailure("The latinized function is only available for Darwin devices; iOS, macOS, tvOS, watchOS")
             return self.withoutAccents()
@@ -51,7 +56,12 @@ public extension String {
     @discardableResult
     func withoutAccents() -> String {
         #if !os(Linux)
-            return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
+            if #available(iOS 10.0, macOS 10.11, tvOS 10.0, watchOS 2.0, *) {
+                return (applyingTransform(.stripCombiningMarks, reverse: false) ?? self)
+            } else {
+                assertionFailure("The withoutAccents function is only available iOS 9.0+, macOS 10.11+, tvOS 9.0+, and watchOS 2.0+")
+                return self
+            }
         #else
             return folding(options: .diacriticInsensitive, locale: .current)
         #endif
