@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # Version
-  s.version         = '1.0.2'
-  s.swift_version   = '5.0'
+  s.version         = '1.1.0'
+  s.swift_version   = '5.1'
 
   # Meta
   s.name             = 'Guitar'
