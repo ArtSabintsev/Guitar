@@ -10,6 +10,6 @@ let package = Package(
     targets: [
         .target(name: "Guitar", path: "Sources/"),
     ],
-    platforms: [.iOS(.v8)],  
+    platforms: [.iOS(.v9)],  
     swiftLanguageVersions: [.v5]   
 )
