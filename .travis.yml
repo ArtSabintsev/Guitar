@@ -5,7 +5,6 @@ notifications:
   email: false
 
 before_install:
-  - brew update
   - gem install bundler
   - bundle
   - cd Example/
