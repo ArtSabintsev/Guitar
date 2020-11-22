@@ -1,0 +1,16 @@
+PODS:
+  - Guitar (1.1.3)
+
+DEPENDENCIES:
+  - Guitar (from `../`)
+
+EXTERNAL SOURCES:
+  Guitar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Guitar: cd5d3197fb0db67410274fcee8b625a7d17c1de3
+
+PODFILE CHECKSUM: 3f2eef428913429c4f436cc442060a1fbbd4d6bc
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E240C825379D2A277527E57C912855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		064B6EA270296C23E6AC1888914D7484 /* GuitarCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8222AEACDF30D33E2FD647089E59BCDF /* GuitarCommon.swift */; };
+		0A43D33FED87255C9671BFAB27EB6A4F /* Pods-Example-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAE97BBEB3D5E4F45CEC2708FAFB72C /* Pods-Example-Tests-dummy.m */; };
+		2AB85D496D1A7D367BB3E8E25E4E3D74 /* GuitarHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1185D3C01C49B0D6EE5340F30463A7EC /* GuitarHelpers.swift */; };
+		2B4FC61EB21419123BD6BF530E6C642B /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 850060B744F1FDFB6ADCAFD76D4D34EB /* Pods-Example-dummy.m */; };
+		4D81E701355232F2A18844108636DEBA /* GuitarCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AE96BAFA94998F2F4EA8F60ADB6A55 /* GuitarCase.swift */; };
+		5D64FD90BACB6D7CEEB1F27CA1542349 /* GuitarChord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D0AD81076156E97C8BF6E718EF2E28 /* GuitarChord.swift */; };
+		7A62C0DCCF8CB2B95CDDF9EC71FE2635 /* Pods-Example-Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F92A716E93EDF48D0C9EF3C5062B558 /* Pods-Example-Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C963EADFDF266C1D10699B14E2308D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9337AE6F46DB7E39ACB61A06D85BBB8E /* Guitar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CCFFF281F1BC70115A8DDC9E9F18E2 /* Guitar-dummy.m */; };
+		93E1757AF3AF58A3598CEC56E885D6E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9906EC4940DE2A54FD0EF1814C99A003 /* GuitarNSRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB7C6BDDB86932E6730588F876ECBE /* GuitarNSRangeExtension.swift */; };
+		E1CB586CE20E98D0403E3A60B655C037 /* GuitarPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0D1827E3855175FE8D8494E19AA16D /* GuitarPadding.swift */; };
+		E6B4503F2EEC0ACB43A7E97FF2A4D5E3 /* GuitarBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = D965F869E4839660666D64461BB01773 /* GuitarBoolean.swift */; };
+		EE74A390FDE944AEBAAF1A953447932A /* Guitar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DEA17928FE8E72674F1BEE69FAE215 /* Guitar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F45CA66FA0288FD0612C0979642F1387 /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC711F95C94465B69978D95D4055BC7 /* Guitar.swift */; };
+		F854798F60AE50131DDBB5CA7ED48589 /* GuitarCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679DCC32A0529B525595D8D4ADA9193A /* GuitarCharacter.swift */; };
+		FEA0F6D7E256BC46400C3670D141BE89 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BF25316BE6972758B31C52602CE12C /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A51210C11249AF36DE8938969AD7044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B615105CE3870B42F0D7EAF3EF8C03DE;
+			remoteInfo = Guitar;
+		};
+		6F6D34D45FF4E751A7974BFA94CBB677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B615105CE3870B42F0D7EAF3EF8C03DE;
+			remoteInfo = Guitar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07692E025EFBB5F5C9DD63817289A7F2 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0EEA607C912B95AFB9A895DF85C16451 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1185D3C01C49B0D6EE5340F30463A7EC /* GuitarHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarHelpers.swift; path = Sources/GuitarHelpers.swift; sourceTree = "<group>"; };
+		1BA24BC1E607E24F1C9AED046EE27110 /* Pods-Example-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A9EE3161661300EE21E26A59635E3A /* Guitar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Guitar.release.xcconfig; sourceTree = "<group>"; };
+		27809964D647C11D4B07299C7B264724 /* Pods-Example-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C0257A9A3D8C5B62771A4DDEB17A0ED /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		2F92A716E93EDF48D0C9EF3C5062B558 /* Pods-Example-Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-Tests-umbrella.h"; sourceTree = "<group>"; };
+		2FC711F95C94465B69978D95D4055BC7 /* Guitar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guitar.swift; path = Sources/Guitar.swift; sourceTree = "<group>"; };
+		43CCFFF281F1BC70115A8DDC9E9F18E2 /* Guitar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Guitar-dummy.m"; sourceTree = "<group>"; };
+		5281882E9C6A7A11616D41DF41B0CC7A /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D4FE7110B9B745BB1C19762AF16D55A /* Guitar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Guitar.modulemap; sourceTree = "<group>"; };
+		5E0D1827E3855175FE8D8494E19AA16D /* GuitarPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarPadding.swift; path = Sources/GuitarPadding.swift; sourceTree = "<group>"; };
+		5F07D536331FF5270EDAEB3CDDBB81E4 /* Guitar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Guitar.debug.xcconfig; sourceTree = "<group>"; };
+		62D0AD81076156E97C8BF6E718EF2E28 /* GuitarChord.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarChord.swift; path = Sources/GuitarChord.swift; sourceTree = "<group>"; };
+		679DCC32A0529B525595D8D4ADA9193A /* GuitarCharacter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarCharacter.swift; path = Sources/GuitarCharacter.swift; sourceTree = "<group>"; };
+		688C1754B2F8DFC0710F4772C4A75C32 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
+		6D859521A91F233E653F06300C561D0A /* Pods-Example-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6FE61F66C83C50497BB430E4C3C49CD6 /* Pods-Example-Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Tests-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8222AEACDF30D33E2FD647089E59BCDF /* GuitarCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarCommon.swift; path = Sources/GuitarCommon.swift; sourceTree = "<group>"; };
+		850060B744F1FDFB6ADCAFD76D4D34EB /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
+		8A6DC302C9A154A572298DE148BFCFF5 /* Guitar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Guitar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		90BF25316BE6972758B31C52602CE12C /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
+		94AE96BAFA94998F2F4EA8F60ADB6A55 /* GuitarCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarCase.swift; path = Sources/GuitarCase.swift; sourceTree = "<group>"; };
+		9AEB7C6BDDB86932E6730588F876ECBE /* GuitarNSRangeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarNSRangeExtension.swift; path = Sources/GuitarNSRangeExtension.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2D5633C9DFACF001D250AC90A2EAD23 /* Pods_Example_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example_Tests.framework; path = "Pods-Example-Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DEA17928FE8E72674F1BEE69FAE215 /* Guitar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-umbrella.h"; sourceTree = "<group>"; };
+		AB37C628ACFCAD98A383C821813EFBBF /* Pods-Example-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AEAE97BBEB3D5E4F45CEC2708FAFB72C /* Pods-Example-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-Tests-dummy.m"; sourceTree = "<group>"; };
+		AEB39A55C28B48D98B02090079C5C084 /* Pods-Example-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BAF0057010D70F86A6D1A1CACC33F82C /* Guitar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Guitar.framework; path = Guitar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA27B26F228EC96D2CE0BD18897F8C34 /* Guitar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Guitar-Info.plist"; sourceTree = "<group>"; };
+		D965F869E4839660666D64461BB01773 /* GuitarBoolean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GuitarBoolean.swift; path = Sources/GuitarBoolean.swift; sourceTree = "<group>"; };
+		D991827462FB11E20C03858A8A0EF766 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		DDB351CF336FC775897FB3DEFC1AECE1 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		E15988D7B97D5EC9CC4A98B6EFFB9F52 /* Guitar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Guitar-prefix.pch"; sourceTree = "<group>"; };
+		EEF458E38855C5A2A0F70C968763EEAD /* Pods-Example-Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example-Tests.modulemap"; sourceTree = "<group>"; };
+		F35C3A4F4AA680AE37BB5DD5A7ABFA34 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F924C881D2735430B1A17EDFF024E317 /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D31F354D75CF893668AD0B59FE33D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C963EADFDF266C1D10699B14E2308D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17693F5BECB3FB1ED0A3C6B922EF7F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E240C825379D2A277527E57C912855 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26566971DEBE0D49FBDBEA974927006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93E1757AF3AF58A3598CEC56E885D6E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06328A7E3251B040E08AE984A32C2400 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E07A8DE9E5911BD17059B01E56841D6 /* Guitar */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2AB23FE0D146177CE9B03D686A1146C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0057010D70F86A6D1A1CACC33F82C /* Guitar.framework */,
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */,
+				A2D5633C9DFACF001D250AC90A2EAD23 /* Pods_Example_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E07A8DE9E5911BD17059B01E56841D6 /* Guitar */ = {
+			isa = PBXGroup;
+			children = (
+				2FC711F95C94465B69978D95D4055BC7 /* Guitar.swift */,
+				D965F869E4839660666D64461BB01773 /* GuitarBoolean.swift */,
+				94AE96BAFA94998F2F4EA8F60ADB6A55 /* GuitarCase.swift */,
+				679DCC32A0529B525595D8D4ADA9193A /* GuitarCharacter.swift */,
+				62D0AD81076156E97C8BF6E718EF2E28 /* GuitarChord.swift */,
+				8222AEACDF30D33E2FD647089E59BCDF /* GuitarCommon.swift */,
+				1185D3C01C49B0D6EE5340F30463A7EC /* GuitarHelpers.swift */,
+				9AEB7C6BDDB86932E6730588F876ECBE /* GuitarNSRangeExtension.swift */,
+				5E0D1827E3855175FE8D8494E19AA16D /* GuitarPadding.swift */,
+				8175BFCBC3506D682F378C223E973EFA /* Pod */,
+				63B783BE4A69F47DBB63A451719EF7A4 /* Support Files */,
+			);
+			name = Guitar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63B783BE4A69F47DBB63A451719EF7A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D4FE7110B9B745BB1C19762AF16D55A /* Guitar.modulemap */,
+				43CCFFF281F1BC70115A8DDC9E9F18E2 /* Guitar-dummy.m */,
+				CA27B26F228EC96D2CE0BD18897F8C34 /* Guitar-Info.plist */,
+				E15988D7B97D5EC9CC4A98B6EFFB9F52 /* Guitar-prefix.pch */,
+				A6DEA17928FE8E72674F1BEE69FAE215 /* Guitar-umbrella.h */,
+				5F07D536331FF5270EDAEB3CDDBB81E4 /* Guitar.debug.xcconfig */,
+				25A9EE3161661300EE21E26A59635E3A /* Guitar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Guitar";
+			sourceTree = "<group>";
+		};
+		79BF3B1D578C929414C256003C35CDDA /* Pods-Example-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EEF458E38855C5A2A0F70C968763EEAD /* Pods-Example-Tests.modulemap */,
+				6D859521A91F233E653F06300C561D0A /* Pods-Example-Tests-acknowledgements.markdown */,
+				AEB39A55C28B48D98B02090079C5C084 /* Pods-Example-Tests-acknowledgements.plist */,
+				AEAE97BBEB3D5E4F45CEC2708FAFB72C /* Pods-Example-Tests-dummy.m */,
+				AB37C628ACFCAD98A383C821813EFBBF /* Pods-Example-Tests-frameworks.sh */,
+				6FE61F66C83C50497BB430E4C3C49CD6 /* Pods-Example-Tests-Info.plist */,
+				2F92A716E93EDF48D0C9EF3C5062B558 /* Pods-Example-Tests-umbrella.h */,
+				27809964D647C11D4B07299C7B264724 /* Pods-Example-Tests.debug.xcconfig */,
+				1BA24BC1E607E24F1C9AED046EE27110 /* Pods-Example-Tests.release.xcconfig */,
+			);
+			name = "Pods-Example-Tests";
+			path = "Target Support Files/Pods-Example-Tests";
+			sourceTree = "<group>";
+		};
+		8175BFCBC3506D682F378C223E973EFA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8A6DC302C9A154A572298DE148BFCFF5 /* Guitar.podspec */,
+				F35C3A4F4AA680AE37BB5DD5A7ABFA34 /* LICENSE */,
+				0EEA607C912B95AFB9A895DF85C16451 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A8A8EA9BC9538376CEF195F2EAAC8200 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E91BC7AD44E15DE8E857ACB38F588DF3 /* Pods-Example */,
+				79BF3B1D578C929414C256003C35CDDA /* Pods-Example-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				06328A7E3251B040E08AE984A32C2400 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2AB23FE0D146177CE9B03D686A1146C9 /* Products */,
+				A8A8EA9BC9538376CEF195F2EAAC8200 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91BC7AD44E15DE8E857ACB38F588DF3 /* Pods-Example */ = {
+			isa = PBXGroup;
+			children = (
+				D991827462FB11E20C03858A8A0EF766 /* Pods-Example.modulemap */,
+				F924C881D2735430B1A17EDFF024E317 /* Pods-Example-acknowledgements.markdown */,
+				5281882E9C6A7A11616D41DF41B0CC7A /* Pods-Example-acknowledgements.plist */,
+				850060B744F1FDFB6ADCAFD76D4D34EB /* Pods-Example-dummy.m */,
+				DDB351CF336FC775897FB3DEFC1AECE1 /* Pods-Example-frameworks.sh */,
+				688C1754B2F8DFC0710F4772C4A75C32 /* Pods-Example-Info.plist */,
+				90BF25316BE6972758B31C52602CE12C /* Pods-Example-umbrella.h */,
+				07692E025EFBB5F5C9DD63817289A7F2 /* Pods-Example.debug.xcconfig */,
+				2C0257A9A3D8C5B62771A4DDEB17A0ED /* Pods-Example.release.xcconfig */,
+			);
+			name = "Pods-Example";
+			path = "Target Support Files/Pods-Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37A80CE7874F3B0AE5D5EACE93717DFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE74A390FDE944AEBAAF1A953447932A /* Guitar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8B976C2D107E6BBD4F7EBA9B05F0C91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A62C0DCCF8CB2B95CDDF9EC71FE2635 /* Pods-Example-Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF75D96AD2E63546B9435E7CBC91B0B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA0F6D7E256BC46400C3670D141BE89 /* Pods-Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C986AA42E0B92EBA245C9F519D81580B /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildPhases = (
+				FF75D96AD2E63546B9435E7CBC91B0B6 /* Headers */,
+				FD735CCEED3509D915E4488319D66AF3 /* Sources */,
+				17693F5BECB3FB1ED0A3C6B922EF7F1B /* Frameworks */,
+				E62122294C2AECA9188F26CBCBEC82F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB292A383E120F9D4688F47EB1BB5DB0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example";
+			productName = "Pods-Example";
+			productReference = 1F667CC0E19EAF34E5A4119E2121F585 /* Pods_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		258F10561A9DF823C49949D6176054DD /* Pods-Example-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE88FB46047C61CBFCA4C646BCE61BD /* Build configuration list for PBXNativeTarget "Pods-Example-Tests" */;
+			buildPhases = (
+				A8B976C2D107E6BBD4F7EBA9B05F0C91 /* Headers */,
+				CDECD9913BFF565E088346A3679F243A /* Sources */,
+				26566971DEBE0D49FBDBEA974927006A /* Frameworks */,
+				44F9FBE03A2C8F659FC7C20CD14C3CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				057F82FAA782F8822D78BF323B7371B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example-Tests";
+			productName = "Pods-Example-Tests";
+			productReference = A2D5633C9DFACF001D250AC90A2EAD23 /* Pods_Example_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B615105CE3870B42F0D7EAF3EF8C03DE /* Guitar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D6616F06EDD58C9A1E7538E65FF4DB2 /* Build configuration list for PBXNativeTarget "Guitar" */;
+			buildPhases = (
+				37A80CE7874F3B0AE5D5EACE93717DFE /* Headers */,
+				5D7A0D9EB53006290226C9DC84529F5E /* Sources */,
+				0D31F354D75CF893668AD0B59FE33D4D /* Frameworks */,
+				33BBE8567509B57D3657EC54C97AD0D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Guitar;
+			productName = Guitar;
+			productReference = BAF0057010D70F86A6D1A1CACC33F82C /* Guitar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2AB23FE0D146177CE9B03D686A1146C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B615105CE3870B42F0D7EAF3EF8C03DE /* Guitar */,
+				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
+				258F10561A9DF823C49949D6176054DD /* Pods-Example-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33BBE8567509B57D3657EC54C97AD0D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F9FBE03A2C8F659FC7C20CD14C3CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E62122294C2AECA9188F26CBCBEC82F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7A0D9EB53006290226C9DC84529F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9337AE6F46DB7E39ACB61A06D85BBB8E /* Guitar-dummy.m in Sources */,
+				F45CA66FA0288FD0612C0979642F1387 /* Guitar.swift in Sources */,
+				E6B4503F2EEC0ACB43A7E97FF2A4D5E3 /* GuitarBoolean.swift in Sources */,
+				4D81E701355232F2A18844108636DEBA /* GuitarCase.swift in Sources */,
+				F854798F60AE50131DDBB5CA7ED48589 /* GuitarCharacter.swift in Sources */,
+				5D64FD90BACB6D7CEEB1F27CA1542349 /* GuitarChord.swift in Sources */,
+				064B6EA270296C23E6AC1888914D7484 /* GuitarCommon.swift in Sources */,
+				2AB85D496D1A7D367BB3E8E25E4E3D74 /* GuitarHelpers.swift in Sources */,
+				9906EC4940DE2A54FD0EF1814C99A003 /* GuitarNSRangeExtension.swift in Sources */,
+				E1CB586CE20E98D0403E3A60B655C037 /* GuitarPadding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDECD9913BFF565E088346A3679F243A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A43D33FED87255C9671BFAB27EB6A4F /* Pods-Example-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD735CCEED3509D915E4488319D66AF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4FC61EB21419123BD6BF530E6C642B /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		057F82FAA782F8822D78BF323B7371B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guitar;
+			target = B615105CE3870B42F0D7EAF3EF8C03DE /* Guitar */;
+			targetProxy = 6F6D34D45FF4E751A7974BFA94CBB677 /* PBXContainerItemProxy */;
+		};
+		FB292A383E120F9D4688F47EB1BB5DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Guitar;
+			target = B615105CE3870B42F0D7EAF3EF8C03DE /* Guitar */;
+			targetProxy = 1A51210C11249AF36DE8938969AD7044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0290BF203289338770556333BAA46195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27809964D647C11D4B07299C7B264724 /* Pods-Example-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example-Tests/Pods-Example-Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example-Tests/Pods-Example-Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		052569D8D80375B7F557AC90004FD5A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA24BC1E607E24F1C9AED046EE27110 /* Pods-Example-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example-Tests/Pods-Example-Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example-Tests/Pods-Example-Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4856399E93EEB3522CE0E05EF3D186AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0257A9A3D8C5B62771A4DDEB17A0ED /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EC2004090AEB92772AFEADC8057EFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07692E025EFBB5F5C9DD63817289A7F2 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77D216A4A7E7311E62C3BC885DD4AFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F07D536331FF5270EDAEB3CDDBB81E4 /* Guitar.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Guitar/Guitar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Guitar/Guitar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Guitar/Guitar.modulemap";
+				PRODUCT_MODULE_NAME = Guitar;
+				PRODUCT_NAME = Guitar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB63D8B72EBA0A8CB3D89423E2F0F8B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A9EE3161661300EE21E26A59635E3A /* Guitar.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Guitar/Guitar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Guitar/Guitar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Guitar/Guitar.modulemap";
+				PRODUCT_MODULE_NAME = Guitar;
+				PRODUCT_NAME = Guitar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D6616F06EDD58C9A1E7538E65FF4DB2 /* Build configuration list for PBXNativeTarget "Guitar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D216A4A7E7311E62C3BC885DD4AFB1 /* Debug */,
+				FB63D8B72EBA0A8CB3D89423E2F0F8B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE88FB46047C61CBFCA4C646BCE61BD /* Build configuration list for PBXNativeTarget "Pods-Example-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0290BF203289338770556333BAA46195 /* Debug */,
+				052569D8D80375B7F557AC90004FD5A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C986AA42E0B92EBA245C9F519D81580B /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC2004090AEB92772AFEADC8057EFD5 /* Debug */,
+				4856399E93EEB3522CE0E05EF3D186AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
