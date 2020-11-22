@@ -1,11 +1,9 @@
 # Guitar 🎸
 ### A Cross-Platform String and Regular Expression Library written in Swift.
 
-[![Build Status](https://travis-ci.org/ArtSabintsev/Guitar.svg?branch=master)](https://travis-ci.org/ArtSabintsev/Guitar)
+[![Build Status](https://travis-ci.org/ArtSabintsev/Guitar.svg?branch=master)](https://travis-ci.org/ArtSabintsev/Guitar) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
 
-![Swift Support](https://img.shields.io/badge/Swift-5.3-orange.svg) [![Documentation](https://cdn.rawgit.com/ArtSabintsev/Guitar/master/docs/badge.svg)](http://sabintsev.com/Guitar/) [![Platform](https://img.shields.io/badge/Platforms-iOS%20%7c%20macOS%20%7c%20tvOS%20%7c%20watchOS%20%7c%20Linux%20-lightgray.svg?style=flat)](http://sabintsev/com/Guitar)
-
-[![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
+![Swift Support](https://img.shields.io/badge/Swift-5.3-orange.svg)  [![CocoaPods](https://img.shields.io/cocoapods/v/Guitar.svg)](https://cocoapods.org/pods/Guitar) [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-Compatible-brightgreen.svg)](https://swift.org/package-manager/)
 
 ## About
 This library seeks to add common string manipulation functions, including common regular expression capabilities, that are needed in both mobile and server-side development, but are missing in Swift's Standard Library.
