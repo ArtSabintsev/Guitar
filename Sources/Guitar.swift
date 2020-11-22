@@ -86,5 +86,4 @@ public struct Guitar {
     public func test(string: String, with options: NSRegularExpression.Options = []) -> Bool {
         return evaluateForRanges(from: string, with: options).count > 0
     }
-
 }
