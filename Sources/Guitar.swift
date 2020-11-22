@@ -66,7 +66,7 @@ public struct Guitar {
     ///
     /// - Returns: A list of matches.
     public func evaluateForStrings(from string: String, with options: NSRegularExpression.Options = []) -> [String] {
-        let ranges = evaluateForRanges(from: string)
+        let ranges = evaluateForRanges(from: string, with: options)
 
         var strings: [String] = []
         for range in ranges {
