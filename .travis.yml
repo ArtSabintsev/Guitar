@@ -1,15 +1,17 @@
-language: objective-c
-osx_image: xcode9.3
+language: swift
+osx_image: xcode11
 
 notifications:
   email: false
 env:
   - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
 before_install:
-  - rvm install ruby-2.4.1
-  - gem install cocoapods
-  - gem install xcpretty -N
-  - brew update
+ - brew update
+  - gem install bundler
+  - bundle
+  - cd Example/
+  - pod install
 script:
   - set -o pipefail
-  - xcodebuild -project GuitarExample/GuitarExample.xcodeproj -scheme GuitarExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - xcodebuild -project Example.xcworkspace -scheme Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  

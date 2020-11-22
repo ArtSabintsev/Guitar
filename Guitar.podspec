@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   # Version
-  s.version         = '1.1.2'
-  s.swift_version   = '5.2'
+  s.version         = '1.1.3'
+  s.swift_version   = '5.3'
 
   # Meta
   s.name             = 'Guitar'
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
                        DESC
 
   # Deployment Targets
-  s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.11'
-  s.tvos.deployment_target = '10.0'
-  s.watchos.deployment_target = '3.0'
+  s.ios.deployment_target = '11.0'
+  s.osx.deployment_target = '10.13'
+  s.tvos.deployment_target = '11.0'
+  s.watchos.deployment_target = '4.0'
 
   # Sources
   s.source           = { :git => 'https://github.com/ArtSabintsev/Guitar.git', :tag => s.version.to_s }
